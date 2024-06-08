@@ -6,6 +6,9 @@
   home.username = "nicholas";
   home.homeDirectory = "/home/nicholas";
 
+  # Allow unfree software
+  nixpkgs.config.allowUnfree = true;
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -18,10 +21,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    pkgs.hello
-
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -34,6 +33,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    pkgs.spotify
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -73,7 +73,7 @@
 
   # Configure git
   programs.git = {
-    enable = "true";
+    enable = true;
     userName = "Nicholas R. Smith";
     userEmail = "nicholasrsmith1600@gmail.com";
     extraConfig = {
