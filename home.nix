@@ -71,6 +71,18 @@
     # EDITOR = "emacs";
   };
 
+  # Configure git
+  programs.git = {
+    enable = "true";
+    userName = "Nicholas R. Smith";
+    userEmail = "nicholasrsmith1600@gmail.com";
+    extraConfig = {
+      credential = {
+        helper = "oauth";
+      };
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }

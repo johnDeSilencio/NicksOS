@@ -97,17 +97,6 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  programs.git = {
-    enable = "true";
-    userName = "Nicholas R. Smith";
-    userEmail = "nicholasrsmith1600@gmail.com";
-    extraConfig = {
-      credential = {
-        helper = "oauth";
-      };
-    };
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
