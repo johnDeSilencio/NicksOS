@@ -109,6 +109,7 @@
      pkgs.helix
      pkgs.git
      pkgs.git-credential-oauth
+     pkgs.discord
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
