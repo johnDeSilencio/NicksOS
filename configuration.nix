@@ -27,9 +27,6 @@
   # Enable experimental features of nix
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Allow unfree software
-  nixpkgs.config.allowUnfree = true;
-
   # Enable networking
   networking.networkmanager.enable = true;
 
