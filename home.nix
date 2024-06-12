@@ -86,6 +86,7 @@
       yzhang.markdown-all-in-one
       bbenoist.nix
       streetsidesoftware.code-spell-checker
+      vscodevim.vim
     ];
   };
 
