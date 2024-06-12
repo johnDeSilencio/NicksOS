@@ -95,6 +95,16 @@
     ];
   };
 
+  # Fish
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      set fish_greeting # Disable greeting
+    '';
+  };
+
+  users.defaultUserShell = pkgs.fish;
+
   # Install firefox.
   programs.firefox.enable = true;
 
