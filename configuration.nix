@@ -128,6 +128,7 @@
      pkgs.rustup
      pkgs.cargo
      pkgs.rustc
+     pkgs.nodePackages.cspell
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
