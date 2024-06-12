@@ -125,6 +125,9 @@
      pkgs.git-credential-oauth
      pkgs.discord
      pkgs.gnome3.gnome-tweaks
+     pkgs.rustup
+     pkgs.cargo
+     pkgs.rustc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
