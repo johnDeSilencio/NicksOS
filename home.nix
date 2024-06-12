@@ -85,6 +85,7 @@
       davidanson.vscode-markdownlint
       yzhang.markdown-all-in-one
       bbenoist.nix
+      streetsidesoftware.code-spell-checker
     ];
   };
 
