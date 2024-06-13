@@ -89,6 +89,7 @@
   users.users.nicholas = {
     isNormalUser = true;
     description = "Nicholas Ryan Smith";
+    shell = pkgs.fish;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
@@ -102,8 +103,6 @@
       set fish_greeting # Disable greeting
     '';
   };
-
-  users.defaultUserShell = pkgs.fish;
 
   # Install firefox.
   programs.firefox.enable = true;
