@@ -113,6 +113,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Allow Minecraft to install
+  nixpkgs.config.allowBroken = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -123,6 +126,7 @@
      pkgs.git
      pkgs.git-credential-oauth
      pkgs.discord
+     pkgs.minecraft
      pkgs.gnome3.gnome-tweaks
      pkgs.rustup
      pkgs.cargo
