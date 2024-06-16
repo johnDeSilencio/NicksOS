@@ -110,6 +110,7 @@
     "org/gnome/desktop/interface" = {
       "color-scheme" = "prefer-dark";
       "font-antialiasing" = "rgba";
+      "text-scaling-factor" = 1.50;
     };
   };
 
