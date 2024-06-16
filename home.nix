@@ -69,7 +69,7 @@
   #  /etc/profiles/per-user/nicholas/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    STARSHIP_CONFIG = "/home/nicholas/.dotfiles/starship.toml";
   };
 
   # Configure VSCodium
