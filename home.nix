@@ -107,6 +107,9 @@
     "org/gnome/desktop/background" = {
       "picture-uri" = "/home/nicholas/.dotfiles/.background-image";
     };
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
   };
 
   # Let Home Manager install and manage itself.
