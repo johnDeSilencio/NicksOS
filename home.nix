@@ -103,6 +103,12 @@
     };
   };
 
+  dconf.settings = {
+    "org/gnome/desktop/background" = {
+      "picture-uri" = "/home/nicholas/.dotfiles/.background-image";
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
