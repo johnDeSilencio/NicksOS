@@ -105,7 +105,7 @@
 
   dconf.settings = {
     "org/gnome/desktop/background" = {
-      "picture-uri" = "/home/nicholas/.dotfiles/.background-image";
+      "picture-uri-dark" = "/home/nicholas/.dotfiles/.background-image";
     };
     "org/gnome/desktop/interface" = {
       "color-scheme" = "prefer-dark";
