@@ -108,7 +108,8 @@
       "picture-uri" = "/home/nicholas/.dotfiles/.background-image";
     };
     "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
+      "color-scheme" = "prefer-dark";
+      "font-antialiasing" = "rgba";
     };
   };
 
