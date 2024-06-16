@@ -13,5 +13,11 @@ config.font_size = 20.0
 -- Change theme
 config.color_scheme = "catppuccin-macchiato"
 
+-- Hide window banner
+config.window_decorations = "RESIZE"
+
+-- Hide tab banner when not necessary
+config.hide_tab_bar_if_only_one_tab = true
+
 -- Return the configuration to wezterm
 return config
