@@ -34,6 +34,7 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
     pkgs.spotify
+    pkgs.signal-desktop
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
