@@ -141,6 +141,7 @@
      pkgs.nodePackages.cspell
      pkgs.starship
      pkgs.android-tools
+     pkgs.lua-language-server
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
