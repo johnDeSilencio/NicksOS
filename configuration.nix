@@ -140,6 +140,7 @@
      pkgs.rustc
      pkgs.nodePackages.cspell
      pkgs.starship
+     pkgs.android-tools
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
