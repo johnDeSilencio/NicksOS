@@ -150,6 +150,7 @@
      pkgs.nodePackages.bash-language-server
      pkgs.gopls
      pkgs.golangci-lint-langserver
+     pkgs.zellij
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
