@@ -100,7 +100,11 @@
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
-      set fish_greeting # Disable greeting
+      # Disable greeting
+      set fish_greeting 
+
+      # Set up the starship prompt
+      starship init fish | source
     '';
   };
 
