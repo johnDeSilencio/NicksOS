@@ -147,6 +147,7 @@
      pkgs.markdown-oxide
      pkgs.nodePackages.vscode-json-languageserver
      pkgs.taplo
+     pkgs.nodePackages.bash-language-server
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
