@@ -148,6 +148,8 @@
      pkgs.nodePackages.vscode-json-languageserver
      pkgs.taplo
      pkgs.nodePackages.bash-language-server
+     pkgs.gopls
+     pkgs.golangci-lint-langserver
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
