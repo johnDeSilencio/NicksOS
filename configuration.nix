@@ -144,6 +144,7 @@
      pkgs.lua-language-server
      pkgs.yaml-language-server
      pkgs.nodePackages.typescript-language-server
+     pkgs.markdown-oxide
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
