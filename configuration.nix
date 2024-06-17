@@ -143,6 +143,7 @@
      pkgs.android-tools
      pkgs.lua-language-server
      pkgs.yaml-language-server
+     pkgs.nodePackages.typescript-language-server
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
