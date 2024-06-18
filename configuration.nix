@@ -147,6 +147,7 @@
      pkgs.golangci-lint-langserver
      pkgs.zellij
      pkgs.nil
+     pkgs.dockerfile-language-server-nodejs
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
