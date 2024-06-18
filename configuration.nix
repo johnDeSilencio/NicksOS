@@ -151,6 +151,7 @@
      pkgs.lldb_16
      pkgs.nodePackages.vscode-html-languageserver-bin
      pkgs.nodePackages.vscode-css-languageserver-bin
+     pkgs.buf-language-server
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
