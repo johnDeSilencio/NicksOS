@@ -146,6 +146,7 @@
      pkgs.gopls
      pkgs.golangci-lint-langserver
      pkgs.zellij
+     pkgs.nil
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
