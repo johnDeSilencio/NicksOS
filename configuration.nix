@@ -102,6 +102,9 @@
   # Steam
   programs.steam.enable = true;
 
+  # Fish
+  programs.fish.enable = true;
+
   # 1Password
   programs._1password.enable = true;
   programs._1password-gui = {
