@@ -96,18 +96,6 @@
     ];
   };
 
-  # Fish
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = ''
-      # Disable greeting
-      set fish_greeting 
-
-      # Set up the starship prompt
-      starship init fish | source
-    '';
-  };
-
   # Install firefox.
   programs.firefox.enable = true;
 

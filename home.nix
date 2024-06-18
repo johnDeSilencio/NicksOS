@@ -91,6 +91,18 @@
     ];
   };
 
+  # Configure fish
+  programs.fish = {
+    enable = true;
+    interactiveShellInit = ''
+      # Disable greeting
+      set fish_greeting
+
+      # Set up the starship prompt
+      starship init fish | source
+    '';
+  };
+
   # Configure git
   programs.git = {
     enable = true;
