@@ -148,6 +148,7 @@
      pkgs.zellij
      pkgs.nil
      pkgs.dockerfile-language-server-nodejs
+     pkgs.lldb_16
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
