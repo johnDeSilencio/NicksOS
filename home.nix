@@ -70,6 +70,7 @@
   #
   home.sessionVariables = {
     STARSHIP_CONFIG = "/home/nicholas/.dotfiles/starship.toml";
+    ZELLIJ_CONFIG_DIR = "/home/nicholas/.dotfiles/";
   };
 
   # Configure VSCodium
@@ -100,6 +101,9 @@
 
       # Set up the starship prompt
       starship init fish | source
+
+      # Set up Zellij
+      eval (zellij setup --generate-auto-start fish | string collect)
     '';
   };
 
