@@ -150,6 +150,7 @@
      pkgs.dockerfile-language-server-nodejs
      pkgs.lldb_16
      pkgs.nodePackages.vscode-html-languageserver-bin
+     pkgs.nodePackages.vscode-css-languageserver-bin
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
