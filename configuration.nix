@@ -169,6 +169,8 @@
     pkgs.cargo-udeps
     pkgs.cargo-expand
     pkgs.cargo-tarpaulin
+    pkgs.cargo-audit
+    pkgs.cargo-deny
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
