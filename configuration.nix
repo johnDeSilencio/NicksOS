@@ -167,6 +167,7 @@
     pkgs.cargo-machete
     pkgs.cargo-edit
     pkgs.cargo-udeps
+    pkgs.cargo-expand
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
