@@ -126,27 +126,30 @@
     settings = {
       theme = "catppuccin_macchiato";
       editor = {
-        rulers = [80 120];
+        rulers = [
+          80
+          120
+        ];
       };
     };
     languages = {
       language = [
         {
           name = "json";
-          language-servers = ["vscode-json-language-server"];
+          language-servers = [ "vscode-json-language-server" ];
         }
         {
           name = "html";
-          language-servers = ["vscode-html-languageserver"];
+          language-servers = [ "vscode-html-languageserver" ];
         }
         {
           name = "css";
-          language-servers = ["vscode-css-languageserver"];
+          language-servers = [ "vscode-css-languageserver" ];
         }
         {
           name = "nix";
           auto-format = true;
-          language-servers = ["nil"];
+          language-servers = [ "nil" ];
           formatter = {
             command = "nixfmt";
           };
@@ -175,8 +178,9 @@
     "org/gnome/desktop/interface" = {
       "color-scheme" = "prefer-dark";
       "font-antialiasing" = "rgba";
-      "text-scaling-factor" = 1.50;
-    };};
+      "text-scaling-factor" = 1.5;
+    };
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

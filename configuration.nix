@@ -2,13 +2,18 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -25,7 +30,10 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable experimental features of nix
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -50,7 +58,7 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "amdgpu "];
+  services.xserver.videoDrivers = [ "amdgpu " ];
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
@@ -90,9 +98,12 @@
     isNormalUser = true;
     description = "Nicholas Ryan Smith";
     shell = pkgs.fish;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
-    #  thunderbird
+      #  thunderbird
     ];
   };
 
@@ -121,38 +132,38 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-     pkgs.wezterm
-     pkgs.git
-     pkgs.git-credential-oauth
-     pkgs.discord
-     pkgs.minecraft
-     pkgs.gnome3.gnome-tweaks
-     pkgs.rustup
-     pkgs.cargo
-     pkgs.rustc
-     pkgs.nodePackages.cspell
-     pkgs.starship
-     pkgs.android-tools
-     pkgs.lua-language-server
-     pkgs.yaml-language-server
-     pkgs.nodePackages.typescript-language-server
-     pkgs.markdown-oxide
-     pkgs.nodePackages.vscode-json-languageserver
-     pkgs.taplo
-     pkgs.nodePackages.bash-language-server
-     pkgs.gopls
-     pkgs.golangci-lint-langserver
-     pkgs.zellij
-     pkgs.nil
-     pkgs.dockerfile-language-server-nodejs
-     pkgs.lldb_16
-     pkgs.nodePackages.vscode-html-languageserver-bin
-     pkgs.nodePackages.vscode-css-languageserver-bin
-     pkgs.buf-language-server
-     pkgs.cargo-binstall
-     pkgs.nixfmt-rfc-style
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
+    pkgs.wezterm
+    pkgs.git
+    pkgs.git-credential-oauth
+    pkgs.discord
+    pkgs.minecraft
+    pkgs.gnome3.gnome-tweaks
+    pkgs.rustup
+    pkgs.cargo
+    pkgs.rustc
+    pkgs.nodePackages.cspell
+    pkgs.starship
+    pkgs.android-tools
+    pkgs.lua-language-server
+    pkgs.yaml-language-server
+    pkgs.nodePackages.typescript-language-server
+    pkgs.markdown-oxide
+    pkgs.nodePackages.vscode-json-languageserver
+    pkgs.taplo
+    pkgs.nodePackages.bash-language-server
+    pkgs.gopls
+    pkgs.golangci-lint-langserver
+    pkgs.zellij
+    pkgs.nil
+    pkgs.dockerfile-language-server-nodejs
+    pkgs.lldb_16
+    pkgs.nodePackages.vscode-html-languageserver-bin
+    pkgs.nodePackages.vscode-css-languageserver-bin
+    pkgs.buf-language-server
+    pkgs.cargo-binstall
+    pkgs.nixfmt-rfc-style
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
