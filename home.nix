@@ -119,6 +119,47 @@
     };
   };
 
+  # Configure helix
+  programs.helix = {
+    enable = true;
+    defaultEditor = true;
+    settings = {
+      theme = "catppuccin_macchiato";
+      editor = {
+        rulers = [80 120];
+      };
+    };
+    languages = {
+      language = [
+        {
+          name = "json";
+          language-servers = ["vscode-json-language-server"];
+        }
+        {
+          name = "html";
+          language-servers = ["vscode-html-languageserver"];
+        }
+        {
+          name = "css";
+          language-servers = ["vscode-css-languageserver"];
+        }
+      ];
+
+      language-server.vscode-json-language-server = {
+        command = "vscode-json-languageserver";
+      };
+
+      language-server.vscode-html-languageserver = {
+        command = "html-languageserver";
+      };
+
+      language-server.vscode-css-languageserver = {
+        command = "css-languageserver";
+      };
+    };
+  };
+
+  # Configure GNOME
   dconf.settings = {
     "org/gnome/desktop/background" = {
       "picture-uri-dark" = "/home/nicholas/.dotfiles/.background-image";
