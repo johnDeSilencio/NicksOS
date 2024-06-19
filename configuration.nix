@@ -166,6 +166,7 @@
     pkgs.nixfmt-rfc-style
     pkgs.cargo-machete
     pkgs.cargo-edit
+    pkgs.cargo-udeps
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
