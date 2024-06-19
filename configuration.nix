@@ -152,6 +152,7 @@
      pkgs.nodePackages.vscode-css-languageserver-bin
      pkgs.buf-language-server
      pkgs.cargo-binstall
+     pkgs.nixfmt-rfc-style
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

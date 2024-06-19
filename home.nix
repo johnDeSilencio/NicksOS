@@ -143,6 +143,14 @@
           name = "css";
           language-servers = ["vscode-css-languageserver"];
         }
+        {
+          name = "nix";
+          auto-format = true;
+          language-servers = ["nil"];
+          formatter = {
+            command = "nixfmt";
+          };
+        }
       ];
 
       language-server.vscode-json-language-server = {
@@ -168,8 +176,7 @@
       "color-scheme" = "prefer-dark";
       "font-antialiasing" = "rgba";
       "text-scaling-factor" = 1.50;
-    };
-  };
+    };};
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
