@@ -174,6 +174,7 @@
     pkgs.cargo-update
     pkgs.cargo-watch
     pkgs.cargo-nextest
+    pkgs.fd
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
