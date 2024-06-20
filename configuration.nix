@@ -176,6 +176,7 @@
     pkgs.cargo-nextest
     pkgs.fd
     pkgs.ripgrep
+    pkgs.bat
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
