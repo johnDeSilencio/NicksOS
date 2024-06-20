@@ -174,6 +174,7 @@
     pkgs.cargo-update
     pkgs.cargo-watch
     pkgs.cargo-nextest
+    pkgs.cargo-flamegraph
     pkgs.fd
     pkgs.ripgrep
     pkgs.bat
