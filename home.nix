@@ -182,6 +182,18 @@
     };
   };
 
+  # Configure GTK theme
+  gtk = {
+    enable = true;
+    catppuccin = {
+      enable = true;
+      flavor = "macchiato";
+      accent = "pink";
+      size = "standard";
+      tweaks = [ "normal" ];
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
