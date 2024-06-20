@@ -179,6 +179,7 @@
     pkgs.ripgrep
     pkgs.bat
     pkgs.atuin
+    pkgs.uutils-coreutils-noprefix
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
