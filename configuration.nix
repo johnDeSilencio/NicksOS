@@ -173,6 +173,7 @@
     pkgs.cargo-deny
     pkgs.cargo-update
     pkgs.cargo-watch
+    pkgs.cargo-nextest
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
