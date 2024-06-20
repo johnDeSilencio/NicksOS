@@ -180,6 +180,7 @@
     pkgs.bat
     pkgs.atuin
     pkgs.uutils-coreutils-noprefix
+    pkgs.procs
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
