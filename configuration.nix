@@ -182,6 +182,7 @@
     pkgs.uutils-coreutils-noprefix
     pkgs.procs
     pkgs.tealdeer
+    pkgs.lsd
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
