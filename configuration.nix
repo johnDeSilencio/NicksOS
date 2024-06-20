@@ -178,6 +178,7 @@
     pkgs.fd
     pkgs.ripgrep
     pkgs.bat
+    pkgs.atuin
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -102,6 +102,9 @@
       # Set up the starship prompt
       starship init fish | source
 
+      # Set up atuin shell history tool
+      atuin init fish | source
+
       # Set up Zellij
       eval (zellij setup --generate-auto-start fish | string collect)
     '';
