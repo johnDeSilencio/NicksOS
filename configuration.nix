@@ -175,6 +175,7 @@
     pkgs.cargo-watch
     pkgs.cargo-nextest
     pkgs.fd
+    pkgs.ripgrep
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
