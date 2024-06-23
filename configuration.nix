@@ -175,6 +175,7 @@
     pkgs.cargo-watch
     pkgs.cargo-nextest
     pkgs.cargo-flamegraph
+    pkgs.cargo-crev
     pkgs.eureka-ideas
     pkgs.fd
     pkgs.ripgrep
