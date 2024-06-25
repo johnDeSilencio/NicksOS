@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -73,6 +78,9 @@
     ZELLIJ_CONFIG_DIR = "/home/nicholas/.dotfiles/";
   };
 
+  # Configure theme
+  catppuccin.flavor = "frappe";
+
   # Configure VSCodium
   programs.vscode = {
     enable = true;
@@ -95,6 +103,7 @@
   # Configure fish
   programs.fish = {
     enable = true;
+    catppuccin.enable = true;
     interactiveShellInit = ''
       # Disable greeting
       set fish_greeting
@@ -125,9 +134,9 @@
   # Configure helix
   programs.helix = {
     enable = true;
+    catppuccin.enable = true;
     defaultEditor = true;
     settings = {
-      theme = "catppuccin_macchiato";
       editor = {
         rulers = [
           80
