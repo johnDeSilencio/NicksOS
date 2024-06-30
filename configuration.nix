@@ -181,6 +181,7 @@
     pkgs.cargo-auditable
     pkgs.cargo-msrv
     pkgs.cargo-release
+    pkgs.cargo-asm
     pkgs.eureka-ideas
     pkgs.fd
     pkgs.ripgrep
