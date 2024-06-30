@@ -176,6 +176,7 @@
     pkgs.cargo-nextest
     pkgs.cargo-flamegraph
     pkgs.cargo-crev
+    pkgs.cargo-limit
     pkgs.eureka-ideas
     pkgs.fd
     pkgs.ripgrep
