@@ -27,7 +27,6 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      packages.${system}.default = fenix.packages.${system}.minimal.toolchain;
       nixosConfigurations = {
         framework = lib.nixosSystem {
           inherit system;
