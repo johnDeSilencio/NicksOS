@@ -182,6 +182,7 @@
     pkgs.cargo-msrv
     pkgs.cargo-release
     pkgs.cargo-asm
+    pkgs.cargo-modules
     pkgs.eureka-ideas
     pkgs.fd
     pkgs.ripgrep
