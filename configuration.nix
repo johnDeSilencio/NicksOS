@@ -179,6 +179,7 @@
     pkgs.cargo-limit
     pkgs.cargo-sort
     pkgs.cargo-auditable
+    pkgs.cargo-msrv
     pkgs.eureka-ideas
     pkgs.fd
     pkgs.ripgrep
