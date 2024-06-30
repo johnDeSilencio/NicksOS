@@ -180,6 +180,7 @@
     pkgs.cargo-sort
     pkgs.cargo-auditable
     pkgs.cargo-msrv
+    pkgs.cargo-release
     pkgs.eureka-ideas
     pkgs.fd
     pkgs.ripgrep
