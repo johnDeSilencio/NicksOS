@@ -193,6 +193,7 @@
     pkgs.procs
     pkgs.tealdeer
     pkgs.lsd
+    pkgs.gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
