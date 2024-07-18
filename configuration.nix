@@ -184,6 +184,7 @@
     pkgs.cargo-asm
     pkgs.cargo-modules
     pkgs.cargo-semver-checks
+    pkgs.cargo-generate
     pkgs.eureka-ideas
     pkgs.fd
     pkgs.ripgrep
