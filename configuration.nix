@@ -194,6 +194,7 @@
     pkgs.tealdeer
     pkgs.lsd
     pkgs.gcc
+    pkgs.qemu
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
