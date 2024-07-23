@@ -206,6 +206,12 @@
       "font-antialiasing" = "rgba";
       "text-scaling-factor" = 1.5;
     };
+    "org/gnome/settings-daemon/plugins/power" = {
+      "sleep-inactive-ac-timeout" = 300;
+      "sleep-inactive-ac-type" = "blank";
+      "sleep-inactive-battery-timeout" = 300;
+      "sleep-inactive-battery-type" = "blank";
+    };
   };
 
   # Configure GTK theme
