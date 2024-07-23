@@ -217,12 +217,9 @@
   # Configure GTK theme
   gtk = {
     enable = true;
-    catppuccin = {
-      enable = true;
-      flavor = "macchiato";
-      accent = "pink";
-      size = "standard";
-      tweaks = [ "normal" ];
+    theme = {
+      name = "Tokyonight-Dark-B";
+      package = pkgs.tokyonight-gtk-theme;
     };
   };
 
