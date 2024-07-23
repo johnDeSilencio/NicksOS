@@ -116,6 +116,9 @@
     enable = true;
     catppuccin.enable = true;
     interactiveShellInit = ''
+      # PATH extensions
+      fish_add_path ~/.cargo/bin/
+
       # Disable greeting
       set fish_greeting
 
