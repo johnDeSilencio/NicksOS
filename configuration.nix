@@ -137,6 +137,7 @@
     pkgs.wezterm
     pkgs.git
     pkgs.git-credential-oauth
+    pkgs.keepassxc
     pkgs.discord
     pkgs.minecraft
     pkgs.gnome3.gnome-tweaks
