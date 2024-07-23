@@ -99,6 +99,7 @@
         bbenoist.nix
         streetsidesoftware.code-spell-checker
         vscodevim.vim
+        usernamehw.errorlens
       ]
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
