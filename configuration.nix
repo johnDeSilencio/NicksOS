@@ -141,6 +141,7 @@
     pkgs.discord
     pkgs.minecraft
     pkgs.gnome3.gnome-tweaks
+    pkgs.gnome3.gnome-settings-daemon
     pkgs.tokyonight-gtk-theme
     pkgs.rustup
     pkgs.cargo
