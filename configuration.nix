@@ -197,6 +197,9 @@
     pkgs.uutils-coreutils-noprefix
     pkgs.procs
     pkgs.tealdeer
+    pkgs.libreoffice-qt
+    pkgs.hunspell
+    pkgs.hunspellDicts.en_US
     pkgs.lsd
     pkgs.gcc
     pkgs.qemu
