@@ -137,6 +137,8 @@
     pkgs.wezterm
     pkgs.alacritty
     pkgs.git
+    pkgs.taskwarrior3
+    pkgs.taskwarrior-tui
     pkgs.git-credential-oauth
     pkgs.keepassxc
     pkgs.discord
