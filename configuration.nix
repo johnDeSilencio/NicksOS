@@ -123,6 +123,12 @@
     polkitPolicyOwners = [ "nicholas" ];
   };
 
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+    pinentryPackage = pkgs.pinentry-tty;
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -140,6 +146,8 @@
     pkgs.taskwarrior-tui
     pkgs.git-credential-oauth
     pkgs.keepassxc
+    pkgs.gnupg
+    pkgs.pinentry-tty
     pkgs.discord
     pkgs.minecraft
     pkgs.gnome3.gnome-tweaks
