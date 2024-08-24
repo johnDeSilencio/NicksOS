@@ -139,6 +139,9 @@
     userName = "Nicholas R. Smith";
     userEmail = "nicholasrsmith1600@gmail.com";
     extraConfig = {
+      commit.gpgsign = true;
+      gpg.format = "openpgp";
+      user.signingkey = "2A603AA9D0619A75";
       credential = {
         helper = "oauth";
       };
