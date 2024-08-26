@@ -116,6 +116,12 @@
   # Fish
   programs.fish.enable = true;
 
+  # Hyprland
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
   # 1Password
   programs._1password.enable = true;
   programs._1password-gui = {
@@ -142,22 +148,31 @@
     pkgs.wget
     pkgs.alacritty
     pkgs.git
+    pkgs.hypridle
     pkgs.taskwarrior3
     pkgs.taskwarrior-tui
+    pkgs.hyprpaper
     pkgs.git-credential-oauth
     pkgs.keepassxc
+    pkgs.brightnessctl
     pkgs.gnupg
     pkgs.pinentry-tty
     pkgs.discord
     pkgs.minecraft
+    pkgs.mako
     pkgs.gnome3.gnome-tweaks
     pkgs.gnome3.gnome-settings-daemon
+    pkgs.waybar
     pkgs.tokyonight-gtk-theme
+    pkgs.libnotify
     pkgs.rustup
     pkgs.cargo
     pkgs.rustc
     pkgs.nodePackages.cspell
+    pkgs.rofi-wayland
     pkgs.starship
+    pkgs.networkmanagerapplet
+    pkgs.pavucontrol
     pkgs.android-tools
     pkgs.lua-language-server
     pkgs.yaml-language-server
@@ -210,7 +225,10 @@
     pkgs.libreoffice-qt
     pkgs.hunspell
     pkgs.hunspellDicts.en_US
+    pkgs.hyprshot
     pkgs.lsd
+    pkgs.wev
+    pkgs.playerctl
     pkgs.gcc
     pkgs.qemu
   ];

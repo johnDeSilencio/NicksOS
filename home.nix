@@ -55,6 +55,38 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/hypr/" = {
+      source = ./home/.config/hypr;
+      recursive = true;
+    };
+
+    ".config/bat/" = {
+      source = ./home/.config/bat;
+      recursive = true;
+    };
+
+    ".config/fish/" = {
+      source = ./home/.config/fish;
+      recursive = true;
+    };
+
+    ".config/helix" = {
+      source = ./home/.config/helix;
+      recursive = true;
+    };
+
+    ".config/zellij" = {
+      source = ./home/.config/zellij;
+      recursive = true;
+    };
+
+    ".config/starship.toml" = {
+      source = ./home/.config/starship.toml;
+    };
+
+    ".gitconfig" = {
+      source = ./home/.gitconfig;
+    };
   };
 
   # Home Manager can also manage your environment variables through
@@ -73,13 +105,7 @@
   #
   #  /etc/profiles/per-user/nicholas/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = {
-    STARSHIP_CONFIG = "/home/nicholas/.dotfiles/starship.toml";
-    ZELLIJ_CONFIG_DIR = "/home/nicholas/.dotfiles/";
-  };
-
-  # Configure theme
-  catppuccin.flavor = "frappe";
+  home.sessionVariables = { };
 
   # Configure VSCodium
   programs.vscode = {
@@ -111,26 +137,9 @@
       ];
   };
 
-  # Configure fish
+  # Enable fish
   programs.fish = {
     enable = true;
-    catppuccin.enable = true;
-    interactiveShellInit = ''
-      # PATH extensions
-      fish_add_path ~/.cargo/bin/
-
-      # Disable greeting
-      set fish_greeting
-
-      # Set up the starship prompt
-      starship init fish | source
-
-      # Set up atuin shell history tool
-      atuin init fish | source
-
-      # Set up Zellij
-      eval (zellij setup --generate-auto-start fish | string collect)
-    '';
   };
 
   # Configure git
@@ -148,82 +157,17 @@
     };
   };
 
+  # Configure Alacritty
+  programs.alacritty.settings = {
+    font = {
+      size = 20.0;
+    };
+  };
+
   # Configure helix
   programs.helix = {
     enable = true;
-    catppuccin.enable = true;
     defaultEditor = true;
-    settings = {
-      editor = {
-        rulers = [
-          80
-          120
-        ];
-      };
-    };
-    languages = {
-      language = [
-        {
-          name = "json";
-          language-servers = [ "vscode-json-language-server" ];
-        }
-        {
-          name = "html";
-          language-servers = [ "vscode-html-languageserver" ];
-        }
-        {
-          name = "css";
-          language-servers = [ "vscode-css-languageserver" ];
-        }
-        {
-          name = "nix";
-          auto-format = true;
-          language-servers = [ "nil" ];
-          formatter = {
-            command = "nixfmt";
-          };
-        }
-      ];
-
-      language-server.vscode-json-language-server = {
-        command = "vscode-json-languageserver";
-      };
-
-      language-server.vscode-html-languageserver = {
-        command = "html-languageserver";
-      };
-
-      language-server.vscode-css-languageserver = {
-        command = "css-languageserver";
-      };
-    };
-  };
-
-  # Configure GNOME
-  dconf.settings = {
-    "org/gnome/desktop/background" = {
-      "picture-uri-dark" = "/home/nicholas/.dotfiles/.background-image";
-    };
-    "org/gnome/desktop/interface" = {
-      "color-scheme" = "prefer-dark";
-      "font-antialiasing" = "rgba";
-      "text-scaling-factor" = 1.5;
-    };
-    "org/gnome/settings-daemon/plugins/power" = {
-      "sleep-inactive-ac-timeout" = 300;
-      "sleep-inactive-ac-type" = "blank";
-      "sleep-inactive-battery-timeout" = 300;
-      "sleep-inactive-battery-type" = "blank";
-    };
-  };
-
-  # Configure GTK theme
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Tokyonight-Dark-B";
-      package = pkgs.tokyonight-gtk-theme;
-    };
   };
 
   # Let Home Manager install and manage itself.
