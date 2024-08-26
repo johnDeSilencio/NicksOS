@@ -217,6 +217,7 @@
     pkgs.cargo-generate
     pkgs.bugstalker
     pkgs.eureka-ideas
+    pkgs.pre-commit
     pkgs.fd
     pkgs.ripgrep
     pkgs.bat
