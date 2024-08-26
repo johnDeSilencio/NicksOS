@@ -168,6 +168,8 @@
     pkgs.rustup
     pkgs.cargo
     pkgs.rustc
+    pkgs.cmake
+    pkgs.gnumake
     pkgs.nodePackages.cspell
     pkgs.rofi-wayland
     pkgs.starship
