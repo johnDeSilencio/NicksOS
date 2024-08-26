@@ -7,3 +7,6 @@
 
 [credential]
 	helper = oauth
+
+[core]
+	editor = hx
