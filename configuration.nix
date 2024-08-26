@@ -234,6 +234,7 @@
     pkgs.wev
     pkgs.playerctl
     pkgs.gcc
+    pkgs.nmap
     pkgs.qemu
   ];
 
