@@ -225,6 +225,7 @@
     pkgs.uutils-coreutils-noprefix
     pkgs.procs
     pkgs.tealdeer
+    pkgs.ouch
     pkgs.libreoffice-qt
     pkgs.hunspell
     pkgs.hunspellDicts.en_US
