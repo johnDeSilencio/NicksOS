@@ -63,6 +63,11 @@
       recursive = true;
     };
 
+    ".config/rofi/" = {
+      source = ./home/.config/rofi;
+      recursive = true;
+    };
+
     ".config/hypr/" = {
       source = ./home/.config/hypr;
       recursive = true;
