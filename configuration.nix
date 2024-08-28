@@ -242,6 +242,7 @@
     pkgs.gcc
     pkgs.nmap
     pkgs.qemu
+    pkgs.killall
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
