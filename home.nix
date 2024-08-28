@@ -58,6 +58,11 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    ".config/alacritty/" = {
+      source = ./home/.config/alacritty;
+      recursive = true;
+    };
+
     ".config/hypr/" = {
       source = ./home/.config/hypr;
       recursive = true;
