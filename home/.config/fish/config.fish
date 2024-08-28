@@ -7,6 +7,9 @@ status is-interactive; and begin
     # Disable greeting
     set fish_greeting
 
+    # Default editor
+    set -gx EDITOR hx
+
     # Set up the starship prompt
     starship init fish | source
 
