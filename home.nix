@@ -88,6 +88,11 @@
       recursive = true;
     };
 
+    ".config/waybar" = {
+      source = ./home/.config/waybar;
+      recursive = true;
+    };
+
     ".config/zellij" = {
       source = ./home/.config/zellij;
       recursive = true;
