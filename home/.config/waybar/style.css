@@ -1,97 +1,75 @@
-@import "frappe.css";
-
 * {
-  font-family: "IntoneMono Nerd Font", monospace;
+	font-size: 20px;
+	font-family: "IntoneOne Nerd Font";
 }
-window.eDP-1 * { font-size: 14px; }
-window.DP-1 * { font-size: 16px; }
 
 window#waybar {
-  color: #ffffff;
-}
-window#waybar.eDP-1 {
-  background-color: rgba(42, 42, 42, 0.8);
-  border: none;
-}
-window#waybar.DP-1 {
-  background-color: rgba(42, 42, 42, 0.8);
-  border-bottom: 3px solid rgba(115, 115, 115, 0.5);
-  transition-property: background-color;
-  transition-duration: .5s;
+	background: #292b2e;
+	color: #fdf6e3;
 }
 
-window#waybar.hidden {
- opacity: 0.2;
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+	color: #1a1a1a;
 }
-
-button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px white;
-}
-
-#workspaces button {
-    color: #ffffff;
-}
-
-#workspaces button:hover {
-    background: #FABD2F;
-}
-
-#workspaces button.focused {
-    background-color: #000;
-    box-shadow: inset 0 -3px #FABD2F;
-    color: #FABD2F;
-}
-
-#workspaces button.urgent {
-    background-color: #EB4D4B;
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+	color: #292b2e;
+	background: #1a1a1a;
 }
 
 #workspaces,
-#sway-mode,
-#sway-scratchpad,
-#window,
-#privacy,
-#taskbar,
-#power {
-    background-color: black;
+#clock.1,
+#clock.2,
+#clock.3,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#custom-power,
+#tray {
+	background: #1a1a1a;
 }
 
-#window {
-    padding-left: 1em;
-    padding-right: 1em;
+#workspaces button {
+	padding: 0 2px;
+	color: #fdf6e3;
+}
+#workspaces button.focused {
+	color: #268bd2;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #1a1a1a;
+	border: #1a1a1a;
+	padding: 0 3px;
 }
 
-#custom-suffix,
-#custom-prefix {
-    background-color: transparent;
-    color: black;
-    font-size: 2.2em;
+#pulseaudio {
+	color: #268bd2;
 }
-#custom-prefix {
-    margin-right: .5em;
+#memory {
+	color: #2aa198;
 }
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+#cpu {
+	color: #6c71c4;
 }
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+#battery {
+	color: #859900;
+}
+#disk {
+	color: #b58900;
 }
 
-#privacy {
-    color: white;
-    background-color: #EB4D4B;
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk {
+	padding: 0 10px;
 }
