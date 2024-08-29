@@ -243,6 +243,7 @@
     pkgs.nmap
     pkgs.qemu
     pkgs.killall
+    pkgs.wlogout
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
