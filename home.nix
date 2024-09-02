@@ -88,6 +88,11 @@
       recursive = true;
     };
 
+    ".config/mako" = {
+      source = ./home/.config/mako;
+      recursive = true;
+    };
+
     ".config/waybar" = {
       source = ./home/.config/waybar;
       recursive = true;
