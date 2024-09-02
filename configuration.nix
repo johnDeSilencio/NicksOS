@@ -159,7 +159,7 @@
     pkgs.taskwarrior-tui
     pkgs.hyprpaper
     pkgs.thunderbird
-    pkgs.git-credential-oauth
+    pkgs.git-credential-manager
     pkgs.keepassxc
     pkgs.brightnessctl
     pkgs.gnupg
