@@ -194,6 +194,83 @@
     defaultEditor = true;
   };
 
+  # Configure firefox
+  programs.firefox = {
+    enable = true;
+
+    profiles = {
+      nick = {
+        id = 0;
+        name = "nick";
+        search = {
+          default = "DuckDuckGo";
+        };
+      };
+    };
+
+    policies = {
+      DisableTelemetry = true;
+      DisableFirefoxStudies = true;
+      EnableTrackingProtection = {
+        Value = true;
+        Locked = true;
+        Cryptomining = true;
+        Fingerprinting = true;
+      };
+      DisablePocket = true;
+      DisableFirefoxAccounts = true;
+      DisableAccounts = true;
+      DisableFirefoxScreenshots = true;
+
+      Preferences = {
+        "browser.newtabpage.activity-stream.feeds.section.topstories" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.feeds.snippets" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.section.highlights.includePocket" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.section.highlights.includeBookmarks" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.section.highlights.includeDownloads" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.section.highlights.includeVisited" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.showSponsored" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.system.showSponsored" = {
+          Value = false;
+          Status = "locked";
+        };
+
+        "browser.newtabpage.activity-stream.showSponsoredTopSites" = {
+          Value = false;
+          Status = "locked";
+        };
+      };
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
