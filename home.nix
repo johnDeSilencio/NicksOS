@@ -176,6 +176,7 @@
       user.signingkey = "2A603AA9D0619A75";
       credential = {
         helper = "manager";
+        credentialStore = "gpg";
       };
     };
   };

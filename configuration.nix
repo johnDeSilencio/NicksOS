@@ -161,6 +161,7 @@
     pkgs.thunderbird
     pkgs.git-credential-manager
     pkgs.keepassxc
+    pkgs.pass
     pkgs.brightnessctl
     pkgs.gnupg
     pkgs.pinentry-tty
