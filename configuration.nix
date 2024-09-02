@@ -242,6 +242,7 @@
     pkgs.playerctl
     pkgs.gcc
     pkgs.nmap
+    pkgs.smartmontools
     pkgs.qemu
     pkgs.killall
     pkgs.wlogout
