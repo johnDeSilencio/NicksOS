@@ -98,6 +98,11 @@
       recursive = true;
     };
 
+    ".config/wlogout" = {
+      source = ./home/.config/wlogout;
+      recursive = true;
+    };
+
     ".config/starship.toml" = {
       source = ./home/.config/starship.toml;
     };
