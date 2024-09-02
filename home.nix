@@ -203,6 +203,7 @@
         id = 0;
         name = "nick";
         search = {
+          force = true;
           default = "DuckDuckGo";
         };
       };
