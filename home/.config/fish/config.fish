@@ -18,4 +18,7 @@ status is-interactive; and begin
 
     # Set up Zellij
     eval (zellij setup --generate-auto-start fish | string collect)
+
+    # Import fish aliases
+    source ~/.config/fish/aliases.fish
 end
