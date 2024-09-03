@@ -221,6 +221,7 @@
     pkgs.cargo-semver-checks
     pkgs.cargo-generate
     pkgs.bugstalker
+    pkgs.wl-clipboard-rs
     pkgs.eureka-ideas
     pkgs.pre-commit
     pkgs.fd
