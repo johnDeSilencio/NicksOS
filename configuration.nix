@@ -173,6 +173,7 @@
     pkgs.rustup
     pkgs.cargo
     pkgs.rustc
+    pkgs.trunk
     pkgs.cmake
     pkgs.gnumake
     pkgs.nodePackages.cspell
