@@ -246,6 +246,7 @@
     pkgs.qemu
     pkgs.killall
     pkgs.wlogout
+    pkgs.tailwindcss
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
