@@ -13,6 +13,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ./nixos/hypr/default.nix
   ];
 
   # Bootloader.
@@ -119,12 +120,6 @@
   # Fish
   programs.fish.enable = true;
 
-  # Hyprland
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
   # 1Password
   programs._1password.enable = true;
   programs._1password-gui = {
@@ -151,10 +146,8 @@
     pkgs.wget
     pkgs.alacritty
     pkgs.git
-    pkgs.hypridle
     pkgs.taskwarrior3
     pkgs.taskwarrior-tui
-    pkgs.hyprpaper
     pkgs.thunderbird
     pkgs.git-credential-manager
     pkgs.keepassxc
@@ -236,7 +229,6 @@
     pkgs.libreoffice-qt
     pkgs.hunspell
     pkgs.hunspellDicts.en_US
-    pkgs.hyprshot
     pkgs.lsd
     pkgs.wev
     pkgs.playerctl
