@@ -247,6 +247,7 @@
     pkgs.killall
     pkgs.wlogout
     pkgs.tailwindcss
+    pkgs.dmidecode
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
