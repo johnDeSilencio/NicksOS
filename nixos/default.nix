@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  import = [
+  imports = [
     ./hypr/default.nix
     ./language-servers/default.nix
   ];
