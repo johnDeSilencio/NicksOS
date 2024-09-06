@@ -22,7 +22,6 @@
     gcc
     git
     gnumake
-    gnupg
     killall
 
     # ;) (ls replacement)
@@ -32,7 +31,6 @@
     # Compression / decompression tool
     ouch
     pass
-    pinentry-tty
 
     # Supports running arbitrary hooks during commit lifecycle
     pre-commit

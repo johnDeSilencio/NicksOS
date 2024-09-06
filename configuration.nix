@@ -128,12 +128,6 @@
     polkitPolicyOwners = [ "nicholas" ];
   };
 
-  programs.gnupg.agent = {
-    enable = true;
-    enableSSHSupport = true;
-    pinentryPackage = pkgs.pinentry-tty;
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
