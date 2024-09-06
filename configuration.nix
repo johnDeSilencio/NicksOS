@@ -55,9 +55,6 @@
     options = "caps:swapescape"; # Swaps the Esc and Caps Lock keys
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   services.avahi = {
     enable = true;
     nssmdns4 = true;
