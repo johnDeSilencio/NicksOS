@@ -8,5 +8,6 @@
     ./desktop-environment/default.nix
     ./language-servers/default.nix
     ./libreoffice/default.nix
+    ./localization/default.nix
   ];
 }
