@@ -12,6 +12,7 @@
     dockerfile-language-server-nodejs
     nodePackages.vscode-html-languageserver-bin
     nodePackages.vscode-css-languageserver-bin
+    nixfmt-rfc-style
 
     # TOML
     taplo

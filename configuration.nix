@@ -160,7 +160,6 @@
     pkgs.pavucontrol
     pkgs.lldb_16
     pkgs.cargo-binstall
-    pkgs.nixfmt-rfc-style
     pkgs.cargo-machete
     pkgs.cargo-edit
     pkgs.cargo-udeps
