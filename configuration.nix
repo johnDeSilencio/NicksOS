@@ -91,35 +91,8 @@
     pkgs.gnome3.gnome-tweaks
     pkgs.gnome3.gnome-settings-daemon
     pkgs.tokyonight-gtk-theme
-    pkgs.rustup
-    pkgs.cargo
-    pkgs.rustc
-    pkgs.trunk
     pkgs.nodePackages.cspell
     pkgs.lldb_16
-    pkgs.cargo-binstall
-    pkgs.cargo-machete
-    pkgs.cargo-edit
-    pkgs.cargo-udeps
-    pkgs.cargo-expand
-    pkgs.cargo-tarpaulin
-    pkgs.cargo-audit
-    pkgs.cargo-deny
-    pkgs.cargo-update
-    pkgs.cargo-watch
-    pkgs.cargo-nextest
-    pkgs.cargo-flamegraph
-    pkgs.cargo-crev
-    pkgs.cargo-limit
-    pkgs.cargo-sort
-    pkgs.cargo-auditable
-    pkgs.cargo-msrv
-    pkgs.cargo-release
-    pkgs.cargo-asm
-    pkgs.cargo-modules
-    pkgs.cargo-semver-checks
-    pkgs.cargo-generate
-    pkgs.bugstalker
     pkgs.wev
   ];
 

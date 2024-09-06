@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 {
   imports = [
+    ./cargo/default.nix
     ./cli-tools/default.nix
     ./git/default.nix
     ./gnupg/default.nix
