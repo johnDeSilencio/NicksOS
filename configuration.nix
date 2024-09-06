@@ -138,20 +138,14 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    pkgs.mako
     pkgs.gnome3.gnome-tweaks
     pkgs.gnome3.gnome-settings-daemon
-    pkgs.waybar
     pkgs.tokyonight-gtk-theme
-    pkgs.libnotify
     pkgs.rustup
     pkgs.cargo
     pkgs.rustc
     pkgs.trunk
     pkgs.nodePackages.cspell
-    pkgs.rofi-wayland
-    pkgs.networkmanagerapplet
-    pkgs.pavucontrol
     pkgs.lldb_16
     pkgs.cargo-binstall
     pkgs.cargo-machete
@@ -177,8 +171,6 @@
     pkgs.cargo-generate
     pkgs.bugstalker
     pkgs.wev
-    pkgs.playerctl
-    pkgs.wlogout
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

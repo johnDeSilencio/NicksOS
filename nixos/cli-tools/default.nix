@@ -8,7 +8,6 @@
 
     # cat clone that supports colors and paging
     bat
-    brightnessctl
     cmake
 
     # Query and display system information like serial #
