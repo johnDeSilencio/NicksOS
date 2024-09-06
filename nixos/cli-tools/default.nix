@@ -62,4 +62,7 @@
     # Terminal multiplexer
     zellij
   ];
+
+  # Fish
+  programs.fish.enable = true;
 }
