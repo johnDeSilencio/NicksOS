@@ -10,8 +10,7 @@
     gopls
     golangci-lint-langserver
     dockerfile-language-server-nodejs
-    nodePackages.vscode-html-languageserver-bin
-    nodePackages.vscode-css-languageserver-bin
+    vscode-langservers-extracted
     nixfmt-rfc-style
 
     # TOML
