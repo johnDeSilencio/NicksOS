@@ -20,7 +20,6 @@
     # A better GNU find
     fd
     gcc
-    git
     gnumake
     killall
 

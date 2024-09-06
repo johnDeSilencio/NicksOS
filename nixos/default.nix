@@ -2,6 +2,7 @@
 {
   imports = [
     ./cli-tools/default.nix
+    ./git/default.nix
     ./gnupg/default.nix
     ./gui-apps/default.nix
     ./hypr/default.nix
