@@ -144,18 +144,10 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    pkgs.wget
     pkgs.alacritty
-    pkgs.git
-    pkgs.taskwarrior3
-    pkgs.taskwarrior-tui
     pkgs.thunderbird
     pkgs.git-credential-manager
     pkgs.keepassxc
-    pkgs.pass
-    pkgs.brightnessctl
-    pkgs.gnupg
-    pkgs.pinentry-tty
     pkgs.discord
     pkgs.minecraft
     pkgs.mako
@@ -168,15 +160,10 @@
     pkgs.cargo
     pkgs.rustc
     pkgs.trunk
-    pkgs.cmake
-    pkgs.gnumake
     pkgs.nodePackages.cspell
     pkgs.rofi-wayland
-    pkgs.starship
     pkgs.networkmanagerapplet
     pkgs.pavucontrol
-    pkgs.android-tools
-    pkgs.zellij
     pkgs.lldb_16
     pkgs.cargo-binstall
     pkgs.nixfmt-rfc-style
@@ -202,28 +189,9 @@
     pkgs.cargo-semver-checks
     pkgs.cargo-generate
     pkgs.bugstalker
-    pkgs.wl-clipboard-rs
-    pkgs.eureka-ideas
-    pkgs.pre-commit
-    pkgs.fd
-    pkgs.ripgrep
-    pkgs.bat
-    pkgs.atuin
-    pkgs.uutils-coreutils-noprefix
-    pkgs.procs
-    pkgs.tealdeer
-    pkgs.ouch
-    pkgs.lsd
     pkgs.wev
     pkgs.playerctl
-    pkgs.gcc
-    pkgs.nmap
-    pkgs.smartmontools
-    pkgs.qemu
-    pkgs.killall
     pkgs.wlogout
-    pkgs.tailwindcss
-    pkgs.dmidecode
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
