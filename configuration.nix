@@ -175,22 +175,8 @@
     pkgs.networkmanagerapplet
     pkgs.pavucontrol
     pkgs.android-tools
-    pkgs.lua-language-server
-    pkgs.yaml-language-server
-    pkgs.nodePackages.typescript-language-server
-    pkgs.markdown-oxide
-    pkgs.nodePackages.vscode-json-languageserver
-    pkgs.taplo
-    pkgs.nodePackages.bash-language-server
-    pkgs.gopls
-    pkgs.golangci-lint-langserver
     pkgs.zellij
-    pkgs.nil
-    pkgs.dockerfile-language-server-nodejs
     pkgs.lldb_16
-    pkgs.nodePackages.vscode-html-languageserver-bin
-    pkgs.nodePackages.vscode-css-languageserver-bin
-    pkgs.buf-language-server
     pkgs.cargo-binstall
     pkgs.nixfmt-rfc-style
     pkgs.cargo-machete
