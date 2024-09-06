@@ -213,9 +213,6 @@
     pkgs.procs
     pkgs.tealdeer
     pkgs.ouch
-    pkgs.libreoffice-qt
-    pkgs.hunspell
-    pkgs.hunspellDicts.en_US
     pkgs.lsd
     pkgs.wev
     pkgs.playerctl
