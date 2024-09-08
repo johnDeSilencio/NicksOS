@@ -1,0 +1,18 @@
+/*******************************************************************************
+ * ROUNDED THEME FOR ROFI 
+ * User                 : LR-Tech               
+ * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+
+* {
+    bg0:    #131313f2; // Main background color #0f0f0ff2
+    bg1:    #0f0f0f; // Text field input background color
+    bg2:    #0f0f0f;
+    bg3:    #0f0f0f; // Selection highlight and text field border color
+    fg0:    #b18840; // Main text color
+    fg1:    #b18840;
+    fg2:    #b18840; // "drun" text before text field input
+    fg3:    #b18840; // Color of the default text field string
+}
+
+@import "deus-ex-rounded-common.rasi"
