@@ -13,6 +13,12 @@
     vscode-langservers-extracted
     nixfmt-rfc-style
 
+    # For code formatting
+    dprint
+
+    # Markdown
+    marksman
+
     # TOML
     taplo
 

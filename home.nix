@@ -112,6 +112,10 @@
       source = ./home/.config/starship.toml;
     };
 
+    ".dprint.json" = {
+      source = ./home/.dprint.json;
+    };
+
     ".gitconfig" = {
       source = ./home/.gitconfig;
     };

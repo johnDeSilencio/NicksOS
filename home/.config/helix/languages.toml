@@ -14,9 +14,12 @@ name = "css"
 auto-format = true
 language-servers = ["nil"]
 name = "nix"
+formatter = { command = "nixfmt" }
 
-[language.formatter]
-command = "nixfmt"
+[[language]]
+auto-format = true
+name = "markdown"
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "md" ] }
 
 [language-server]
 [language-server.vscode-css-languageserver]
