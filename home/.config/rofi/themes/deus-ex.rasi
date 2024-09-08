@@ -5,7 +5,7 @@
  *******************************************************************************/
 
 * {
-    bg0:    #131313f2; // Main background color #0f0f0ff2
+    bg0:    #131313f2; // Main background color
     bg1:    #0f0f0f; // Text field input background color
     bg2:    #0f0f0f;
     bg3:    #0f0f0f; // Selection highlight and text field border color
