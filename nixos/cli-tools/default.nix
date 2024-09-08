@@ -54,6 +54,9 @@
 
     # Rust rewrite
     uutils-coreutils-noprefix
+
+    # Execute arbitrary commands when a file changes
+    watchexec
     wget
 
     # wl-copy and wl-paste
