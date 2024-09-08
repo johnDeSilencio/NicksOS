@@ -158,6 +158,7 @@
         streetsidesoftware.code-spell-checker
         vscodevim.vim
         usernamehw.errorlens
+        naumovs.color-highlight
       ]
       ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
