@@ -10,6 +10,7 @@
     settings = {
       default_session = {
         command = "${pkgs.hyprlock}/bin/hyprlock";
+        user = "nicholas";
       };
     };
   };
