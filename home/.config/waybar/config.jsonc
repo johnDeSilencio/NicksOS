@@ -39,10 +39,10 @@
 		"disk",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
-		"custom/power",
+		"tray",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
-		"tray"
+		"custom/power"
 	],
 
 	"custom/left-arrow-dark": {
