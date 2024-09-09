@@ -45,6 +45,10 @@
 		"bluetooth",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
+		"network#wireless",
+		"network#wired",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
 		"custom/power"
 	],
 
@@ -148,6 +152,29 @@
 		"tooltip-format-connected": "{device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 		"on-click": "blueman-manager"
+	},
+
+	"network#wireless": {
+		"interface": "wl*",
+		"format": "  ",
+		"format-wifi": " 󰀂 ",
+		"format-disconnected": " 󰯡 ",
+		"format-disabled": " 󰀂 ",
+		"tooltip-format-wifi": "WiFi Network:\t\t{essid}\nIP Address:\t\t{ipaddr}/{cidr}\nSignal Strength:\t{signalStrength}% ({signaldBm}dBm)\nUp Speed:\t\t{bandwidthUpBytes}\nDown Speed:\t\t{bandwidthDownBytes}",
+		"tooltip-format-disconnected": "WiFi Network:\t\tDisconnected",
+		"tooltip-format-disabled": "Wifi Disabled",
+		"on-click": "nm-applet --indicator",
+		"interval": 3
+	},
+
+	"network#wired": {
+		"interface": "en*",
+		"format": "",
+		"format-ethernet": " 󰲝 ",
+		"format-linked": " 󰲝 ",
+		"tooltip-format-ethernet": "Ethernet Interface:\t{ifname}\nIP Address:\t\t{ipaddr}/{cidr}\nUp Speed:\t\t{bandwidthUpBytes}\nDown Speed:\t\t{bandwidthDownBytes}",
+		"on-click": "nm-applet --indicator",
+		"interval": 3
 	},
 
 	"custom/power": {

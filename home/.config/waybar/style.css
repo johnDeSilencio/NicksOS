@@ -29,6 +29,7 @@ window#waybar {
 #battery,
 #disk,
 #bluetooth,
+#network,
 #custom-power,
 #tray {
 	background: #0f0f0f;
