@@ -78,6 +78,9 @@
     ];
   };
 
+  # Enable dconf at the system level
+  programs.dconf.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
