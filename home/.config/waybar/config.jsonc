@@ -24,6 +24,9 @@
 
 	"modules-right": [
 		"custom/left-arrow-dark",
+		"tray",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
 		"pulseaudio",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
@@ -37,9 +40,6 @@
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"disk",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
-		"tray",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
 		"bluetooth",
