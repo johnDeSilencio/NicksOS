@@ -1,21 +1,22 @@
 * {
-	font-size: 20px;
+	font-size: 24px;
 	font-family: "IntoneOne Nerd Font";
 }
 
 window#waybar {
-	background: #292b2e;
-	color: #fdf6e3;
+	background: #131313;
+	color: #b18840;
 }
 
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
-	color: #1a1a1a;
+	color: #0f0f0f;
 }
+
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: #292b2e;
-	background: #1a1a1a;
+	color: #131313;
+	background: #0f0f0f;
 }
 
 #workspaces,
@@ -29,40 +30,35 @@ window#waybar {
 #disk,
 #custom-power,
 #tray {
-	background: #1a1a1a;
+	background: #0f0f0f;
 }
 
 #workspaces button {
 	padding: 0 2px;
-	color: #fdf6e3;
+	color: #b18840;
 }
+
 #workspaces button.focused {
-	color: #268bd2;
+	color: #cc922d;
 }
+
 #workspaces button:hover {
 	box-shadow: inherit;
 	text-shadow: inherit;
 }
+
 #workspaces button:hover {
-	background: #1a1a1a;
-	border: #1a1a1a;
+	background: #cc922d;
+	border: #cc922d;
 	padding: 0 3px;
 }
 
-#pulseaudio {
-	color: #268bd2;
-}
-#memory {
-	color: #2aa198;
-}
-#cpu {
-	color: #6c71c4;
-}
-#battery {
-	color: #859900;
-}
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
 #disk {
-	color: #b58900;
+	color: #b18840;
 }
 
 #clock,
