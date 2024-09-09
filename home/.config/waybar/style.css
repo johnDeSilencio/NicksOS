@@ -8,6 +8,18 @@ window#waybar {
 	color: #b18840;
 }
 
+tooltip {
+	color: #b18840;
+	background-color: #131313;
+	text-shadow: none;
+	opacity: 0.95;
+}
+
+tooltip * {
+	color: #b18840;
+	text-shadow: none;
+}
+
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
 	color: #0f0f0f;
