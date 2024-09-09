@@ -42,6 +42,9 @@
 		"tray",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
+		"bluetooth",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
 		"custom/power"
 	],
 
@@ -135,6 +138,16 @@
 		"interval": 5,
 		"format": "Disk {percentage_used:2}%",
 		"path": "/"
+	},
+
+	"bluetooth": {
+		"format-on": " 󰂯 ",
+		"format-off": " 󰂲 ",
+		"format-disabled": " 󰂲 ",
+		"format-connected": " 󰂰 ",
+		"tooltip-format-connected": "{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"on-click": "blueman-manager"
 	},
 
 	"custom/power": {
