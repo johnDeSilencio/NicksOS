@@ -6,6 +6,7 @@
     keepassxc
     minecraft
     thunderbird
+    gimp
   ];
 
   # Steam
