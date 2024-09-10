@@ -60,17 +60,16 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.nicholas = {
-    isNormalUser = true;
-    description = "Nicholas Ryan Smith";
-    shell = pkgs.fish;
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
+  users.users = {
+    nicholas = {
+      isNormalUser = true;
+      description = "Nicholas Ryan Smith";
+      shell = pkgs.fish;
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+      ];
+    };
   };
 
   # Enable dconf at the system level
