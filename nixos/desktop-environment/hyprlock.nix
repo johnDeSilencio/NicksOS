@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 {
   environment.systemPackages = with pkgs; [
     greetd.wlgreet
@@ -9,7 +14,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.hyprlock}/bin/hyprlock";
+        command = "${lib.getExe config.programs.hyprland.package}";
         user = "nicholas";
       };
     };
