@@ -6,7 +6,7 @@
 }:
 {
   environment.systemPackages = with pkgs; [
-    greetd.wlgreet
+    greetd.tuigreet
     hyprlock
   ];
 
@@ -14,8 +14,15 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${lib.getExe config.programs.hyprland.package}";
-        user = "nicholas";
+        command = lib.concatStrings [
+          "${pkgs.greetd.tuigreet}/bin/tuigreet "
+          "--time "
+          "--asterisks "
+          "--remember "
+          "--remember-session "
+          "--cmd 'hyprland &>/dev/null'"
+        ];
+        user = "greeter";
       };
     };
   };
