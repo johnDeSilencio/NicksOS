@@ -40,13 +40,8 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "amdgpu " ];
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  # Load AMD module for GPU
+  services.xserver.videoDrivers = [ "amdgpu" ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
