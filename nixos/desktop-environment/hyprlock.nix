@@ -20,6 +20,7 @@
           "--asterisks "
           "--remember "
           "--remember-session "
+          "--remember-user-session "
           "--cmd 'hyprland &>/dev/null'"
         ];
         user = "greeter";
