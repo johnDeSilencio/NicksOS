@@ -19,8 +19,8 @@
           "--time "
           "--asterisks "
           "--remember "
-          "--remember-session "
           "--remember-user-session "
+          "--theme 'text=yellow;action=yellow;input=lightyellow;prompt=yellow;border=yellow;container=black' "
           "--cmd 'hyprland &>/dev/null'"
         ];
         user = "greeter";
