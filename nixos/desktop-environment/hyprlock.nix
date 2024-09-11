@@ -20,7 +20,17 @@
           "--asterisks "
           "--remember "
           "--remember-user-session "
-          "--theme 'text=yellow;action=yellow;input=lightyellow;prompt=yellow;border=yellow;container=black' "
+          "--theme '"
+          "text=yellow;"
+          "time=yellow;"
+          "container=black;"
+          "border=yellow;"
+          "title=yellow;"
+          "greet=yellow;"
+          "prompt=yellow;"
+          "input=yellow;"
+          "action=yellow;"
+          "button=yellow;' "
           "--cmd 'hyprland &>/dev/null'"
         ];
         user = "greeter";
