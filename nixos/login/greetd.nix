@@ -7,7 +7,6 @@
 {
   environment.systemPackages = with pkgs; [
     greetd.tuigreet
-    hyprlock
   ];
 
   systemd.services.greetd.serviceConfig = {
