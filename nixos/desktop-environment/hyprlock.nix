@@ -10,6 +10,18 @@
     hyprlock
   ];
 
+  systemd.services.greetd.serviceConfig = {
+    Type = "idle";
+    StandardInput = "tty";
+    StandardOutput = "tty";
+    # Without this, errors will spam on screen
+    StandardError = "journal";
+    # Without these, bootlogs will spam on screen
+    TTYReset = true;
+    TTYVHangup = true;
+    TTYVDisallocate = true;
+  };
+
   services.greetd = {
     enable = true;
     settings = {
