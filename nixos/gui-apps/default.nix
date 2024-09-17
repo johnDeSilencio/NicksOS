@@ -7,6 +7,7 @@
     keepassxc
     minecraft
     thunderbird
+    zed-editor
   ];
 
   # Steam
