@@ -3,10 +3,10 @@
   environment.systemPackages = with pkgs; [
     alacritty
     discord
+    gimp
     keepassxc
     minecraft
     thunderbird
-    gimp
   ];
 
   # Steam
