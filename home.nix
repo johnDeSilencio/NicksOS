@@ -108,6 +108,11 @@
       recursive = true;
     };
 
+    ".config/zed" = {
+      source = ./home/.config/zed;
+      recursive = true;
+    };
+
     ".config/starship.toml" = {
       source = ./home/.config/starship.toml;
     };
