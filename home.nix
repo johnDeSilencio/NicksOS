@@ -88,6 +88,11 @@
       recursive = true;
     };
 
+    ".config/nvim" = {
+      source = ./home/.config/nvim;
+      recursive = true;
+    };
+
     ".config/mako" = {
       source = ./home/.config/mako;
       recursive = true;
@@ -207,6 +212,14 @@
   programs.helix = {
     enable = true;
     defaultEditor = true;
+  };
+
+  # Configure NeoVim
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
   };
 
   # Configure firefox
