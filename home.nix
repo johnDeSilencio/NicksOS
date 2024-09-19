@@ -208,12 +208,6 @@
     };
   };
 
-  # Configure helix
-  programs.helix = {
-    enable = true;
-    defaultEditor = true;
-  };
-
   # Configure NeoVim
   programs.neovim = {
     enable = true;
