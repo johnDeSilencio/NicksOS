@@ -30,6 +30,9 @@
 
     # ;) (ls replacement)
     lsd
+
+    # Displaying OS / system information
+    neofetch
     nmap
 
     # Compression / decompression tool
