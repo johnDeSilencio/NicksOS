@@ -24,6 +24,8 @@
     fd
     gcc
     gnumake
+    gping
+    htop
     killall
 
     # ;) (ls replacement)
