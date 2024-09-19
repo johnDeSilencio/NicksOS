@@ -8,7 +8,7 @@ status is-interactive; and begin
     set fish_greeting
 
     # Default editor
-    set -gx EDITOR hx
+    set -gx EDITOR nvim
 
     # Set up the starship prompt
     starship init fish | source
