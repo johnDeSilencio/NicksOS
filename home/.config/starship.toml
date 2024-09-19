@@ -1,30 +1,91 @@
-# Sets the user-defined palette
-palette = "catppuccin_macchiato"
+command_timeout = 1000
 
-[palettes.catppuccin_macchiato]
-rosewater = "#f4dbd6"
-flamingo = "#f0c6c6"
-pink = "#f5bde6"
-mauve = "#c6a0f6"
-red = "#ed8796"
-maroon = "#ee99a0"
-peach = "#f5a97f"
-yellow = "#eed49f"
-green = "#a6da95"
-teal = "#8bd5ca"
-sky = "#91d7e3"
-sapphire = "#7dc4e4"
-blue = "#8aadf4"
-lavender = "#b7bdf8"
-text = "#cad3f5"
-subtext1 = "#b8c0e0"
-subtext0 = "#a5adcb"
-overlay2 = "#939ab7"
-overlay1 = "#8087a2"
-overlay0 = "#6e738d"
-surface2 = "#5b6078"
-surface1 = "#494d64"
-surface0 = "#363a4f"
-base = "#24273a"
-mantle = "#1e2030"
-crust = "#181926"
+[character]
+success_symbol = "[❯](#cc922d)"
+error_symbol = "[✗](#ff5555)"
+
+[cmd_duration]
+style = "#75beff"
+format = "[ ](fg:black bg:#75beff)[⌛$duration](bg:$style fg:black)[](fg:$style)"
+
+[directory]
+style = "#cc922d"
+truncate_to_repo = false
+fish_style_pwd_dir_length = 1
+format = "[ ](fg:black bg:#cc922d)[$path[$read_only](bg:$style fg:black)](bg:$style fg:black)[](fg:$style)"
+read_only = " "
+
+[docker_context]
+style = "fg:black bg:#cc922d"
+symbol = "🐳  "
+format = "[ ](fg:black bg:#cc922d)[$symbol$context]($style)[](fg:#cc922d)"
+
+[git_branch]
+style = "#cc922d"
+format = "[](fg:black bg:$style)[ $symbol$branch](fg:black bg:$style)[](fg:$style)"
+
+[git_commit]
+style = "#cc922d"
+format = "\b[ ](bg:$style)[\\($hash$tag\\)](fg:black bg:$style)[](fg:$style)"
+
+[git_state]
+style = "#cc922d"
+format = "\b[ ](bg:$style)[ \\($state( $progress_current/$progress_total)\\)](fg:black bg:$style)[](fg:$style)"
+
+[git_status]
+style = "#cc922d"
+format = "(\b[ ](bg:$style fg:black)$conflicted$staged$modified$renamed$deleted$untracked$stashed$ahead_behind[](fg:$style))"
+conflicted = "[ ](bold fg:88 bg:#cc922d)[  ${count} ](fg:black bg:#cc922d)"
+staged = "[ $count ](fg:black bg:#cc922d)"
+modified = "[✏️ ${count} ](fg:black bg:#cc922d)"
+renamed = "[ ${count} ](fg:black bg:#cc922d)"
+deleted = "[ ${count} ](fg:black bg:#cc922d)"
+untracked = "[❓${count} ](fg:black bg:#cc922d)"
+stashed = "[ ${count} ](fg:black bg:#cc922d)"
+ahead = "[ ${count} ](fg:#f07178 bg:#cc922d)"
+behind = "[ ${count} ](fg:black bg:#cc922d)"
+diverged = "[ ](fg:88 bg:#cc922d)[ נּ ](fg:black bg:#cc922d)[ ${ahead_count} ](fg:black bg:#cc922d)[ ${behind_count} ](fg:black bg:#cc922d)"
+
+[golang]
+symbol = "ﳑ "
+style = "fg:black bg:#cc922d"
+format = "[ ](fg:black bg:#cc922d)[$symbol$version]($style)[](fg:#cc922d)"
+
+[helm]
+style = "fg:black bg:#cc922d"
+format = "[ ](fg:black bg:#cc922d)[$symbol($version)]($style)[](fg:#cc922d)"
+
+[kubernetes]
+format = "[ ](fg:black bg:#cc922d)[$symbol$context](fg:black bg:#cc922d)[](fg:#cc922d)"
+disabled = false
+
+[ocaml]
+style = "fg:black bg:#cc922d"
+format = "[ ](fg:black bg:#cc922d)[$symbol$version]($style)[](fg:#cc922d)"
+
+[package]
+disabled = true
+
+[rust]
+style = "fg:black bg:#cc922d"
+format = "[ ](fg:black bg:#cc922d)[$symbol$version]($style)[](fg:#cc922d)"
+
+[shell]
+fish_indicator = ""
+bash_indicator = "bash "
+zsh_indicator = "zsh "
+powershell_indicator = ""
+format = "[$indicator](fg:#f07178)"
+disabled = false
+
+[shlvl]
+disabled = true
+
+[terraform]
+style = "fg:black bg:#cc922d"
+format = "[ ](fg:black bg:#cc922d)[$symbol$workspace]($style)[](fg:#cc922d)"
+
+[username]
+style_user = "#8be9fd"
+style_root = "#ff5555"
+format = "[ ](fg:black bg:$style)[$user](fg:black bg:$style)[](fg:$style)"
