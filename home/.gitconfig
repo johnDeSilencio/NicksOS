@@ -9,4 +9,4 @@
 	autoSetupRemote = true
 
 [core]
-	editor = hx
+	editor = nvim
