@@ -223,55 +223,56 @@
 
     extraLuaConfig = ''
       ${builtins.readFile ./home/.config/nvim/options.lua}
-	'';
+    '';
 
-	extraPackages = with pkgs; [
-	  lua-language-server
-	  nil
-	];
+    extraPackages = with pkgs; [
+      lua-language-server
+      nil
+    ];
 
-	plugins = with pkgs.vimPlugins; [
-      	  {
-            plugin = nvim-lspconfig;
-            config = toLuaFile ./home/.config/nvim/plugin/lsp.lua;
-          }
-	  {
-	    plugin = comment-nvim;
-	    config = toLua "require(\"Comment\").setup()";
-	  }
+    plugins = with pkgs.vimPlugins; [
+      {
+        plugin = nvim-lspconfig;
+        config = toLuaFile ./home/.config/nvim/plugin/lsp.lua;
+      }
+      {
+        plugin = comment-nvim;
+        config = toLua "require(\"Comment\").setup()";
+      }
 
-	  neodev-nvim
-          nvim-cmp
-          miasma-nvim
+      neodev-nvim
+      nvim-cmp
+      miasma-nvim
 
-          {
-	    plugin = nvim-cmp;
-	    config = toLuaFile ./home/.config/nvim/plugin/cmp.lua;
-          }
-          {
-	    plugin = telescope-nvim;
-	    config = toLuaFile ./home/.config/nvim/plugin/telescope.lua;
-	  }
+      {
+        plugin = nvim-cmp;
+        config = toLuaFile ./home/.config/nvim/plugin/cmp.lua;
+      }
+      {
+        plugin = telescope-nvim;
+        config = toLuaFile ./home/.config/nvim/plugin/telescope.lua;
+      }
 
-	  telescope-fzf-native-nvim
-	  cmp_luasnip
-	  cmp-nvim-lsp
-	  luasnip
-	  friendly-snippets
-	  lualine-nvim
-	  nvim-web-devicons
+      telescope-fzf-native-nvim
+      cmp_luasnip
+      cmp-nvim-lsp
+      luasnip
+      friendly-snippets
+      lualine-nvim
+      nvim-web-devicons
+      vim-sleuth
             
-	  {
-	    plugin = (nvim-treesitter.withPlugins (p: [
-	      p.tree-sitter-nix
-	      p.tree-sitter-vim
-	      p.tree-sitter-bash
-	      p.tree-sitter-lua
-	      p.tree-sitter-python
-	      p.tree-sitter-json
-	    ]));
-	  }
-	];
+      {
+        plugin = (nvim-treesitter.withPlugins (p: [
+          p.tree-sitter-nix
+          p.tree-sitter-vim
+          p.tree-sitter-bash
+          p.tree-sitter-lua
+          p.tree-sitter-python
+          p.tree-sitter-json
+        ]));
+      }
+    ];
   };
 
   # Configure firefox
