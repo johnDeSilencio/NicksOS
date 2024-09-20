@@ -44,7 +44,14 @@ require("lspconfig").lua_ls.setup {
 	}
 }
 
--- require("lspconfig").nil.setup {
-	-- on_attach = on_attach,
-	-- capabilities = capabilities,
--- }
+require("lspconfig").nil_ls.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		["nil"] = {
+			formatting = {
+				command = { "nixfmt" },
+			}
+		},
+	},
+}
