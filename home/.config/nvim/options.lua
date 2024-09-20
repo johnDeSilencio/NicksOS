@@ -5,6 +5,8 @@ vim.g.maplocalleader = ' '
 
 vim.o.clipboard = 'unnamedplus'
 
+vim.cmd.colorscheme("miasma")
+
 vim.o.number = true
 -- vim.o.relativenumber = true
 

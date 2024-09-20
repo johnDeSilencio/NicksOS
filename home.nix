@@ -242,6 +242,7 @@
 
 	  neodev-nvim
           nvim-cmp
+          miasma-nvim
 
           {
 	    plugin = nvim-cmp;
