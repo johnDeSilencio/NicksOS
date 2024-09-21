@@ -224,45 +224,47 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
-      {
-        plugin = nvim-lspconfig;
-        config = "${builtins.readFile ./home/.config/nvim/plugin/lsp.lua}";
-        type = "lua";
-      }
+      cmp_luasnip
+      cmp-nvim-lsp
+      friendly-snippets
+      luasnip
+      miasma-nvim
+      neodev-nvim
+      nvim-cmp
+      nvim-web-devicons
+      telescope-fzf-native-nvim
+      vim-sleuth
+
       {
         plugin = comment-nvim;
         config = ''require("Comment").setup()'';
         type = "lua";
       }
 
-      neodev-nvim
-      nvim-cmp
-      miasma-nvim
+      {
+        plugin = lualine-nvim;
+        config = ''require("lualine").setup({ icons_enabled = true })'';
+        type = "lua";
+      }
 
       {
         plugin = nvim-cmp;
         config = "${builtins.readFile ./home/.config/nvim/plugin/cmp.lua}";
         type = "lua";
       }
+
+      {
+        plugin = nvim-lspconfig;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/lsp.lua}";
+        type = "lua";
+      }
+
       {
         plugin = telescope-nvim;
         config = "${builtins.readFile ./home/.config/nvim/plugin/telescope.lua}";
         type = "lua";
       }
 
-      telescope-fzf-native-nvim
-      cmp_luasnip
-      cmp-nvim-lsp
-      luasnip
-      friendly-snippets
-      nvim-web-devicons
-      vim-sleuth
-
-      {
-        plugin = lualine-nvim;
-        config = ''require("lualine").setup({ icons_enabled = true })'';
-        type = "lua";
-      }
       {
         plugin = (
           nvim-treesitter.withPlugins (p: [
