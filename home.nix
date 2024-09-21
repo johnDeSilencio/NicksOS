@@ -209,76 +209,74 @@
   };
 
   # Configure NeoVim
-  programs.neovim =
-    let
-      toLua = str: "lua << EOF\n${str}\nEOF\n";
-      toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
-    in
-    {
-      enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
-      vimdiffAlias = true;
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
 
-      extraLuaConfig = ''
-        ${builtins.readFile ./home/.config/nvim/options.lua}
-      '';
+    extraLuaConfig = "${builtins.readFile ./home/.config/nvim/options.lua}";
 
-      extraPackages = with pkgs; [
-        lua-language-server
-        nil
-      ];
+    extraPackages = with pkgs; [
+      lua-language-server
+      nil
+    ];
 
-      plugins = with pkgs.vimPlugins; [
-        {
-          plugin = nvim-lspconfig;
-          config = toLuaFile ./home/.config/nvim/plugin/lsp.lua;
-        }
-        {
-          plugin = comment-nvim;
-          config = toLua "require(\"Comment\").setup()";
-        }
+    plugins = with pkgs.vimPlugins; [
+      {
+        plugin = nvim-lspconfig;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/lsp.lua}";
+        type = "lua";
+      }
+      {
+        plugin = comment-nvim;
+        config = ''require("Comment").setup()'';
+        type = "lua";
+      }
 
-        neodev-nvim
-        nvim-cmp
-        miasma-nvim
+      neodev-nvim
+      nvim-cmp
+      miasma-nvim
 
-        {
-          plugin = nvim-cmp;
-          config = toLuaFile ./home/.config/nvim/plugin/cmp.lua;
-        }
-        {
-          plugin = telescope-nvim;
-          config = toLuaFile ./home/.config/nvim/plugin/telescope.lua;
-        }
+      {
+        plugin = nvim-cmp;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/cmp.lua}";
+        type = "lua";
+      }
+      {
+        plugin = telescope-nvim;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/telescope.lua}";
+        type = "lua";
+      }
 
-        telescope-fzf-native-nvim
-        cmp_luasnip
-        cmp-nvim-lsp
-        luasnip
-        friendly-snippets
-        nvim-web-devicons
-        vim-sleuth
+      telescope-fzf-native-nvim
+      cmp_luasnip
+      cmp-nvim-lsp
+      luasnip
+      friendly-snippets
+      nvim-web-devicons
+      vim-sleuth
 
-        {
-          plugin = lualine-nvim;
-          config = toLua "require(\"lualine\").setup({ icons_enabled = true })";
-        }
-        {
-          plugin = (
-            nvim-treesitter.withPlugins (p: [
-              p.tree-sitter-nix
-              p.tree-sitter-vim
-              p.tree-sitter-bash
-              p.tree-sitter-lua
-              p.tree-sitter-python
-              p.tree-sitter-json
-            ])
-          );
-        }
-      ];
-    };
+      {
+        plugin = lualine-nvim;
+        config = ''require("lualine").setup({ icons_enabled = true })'';
+        type = "lua";
+      }
+      {
+        plugin = (
+          nvim-treesitter.withPlugins (p: [
+            p.tree-sitter-nix
+            p.tree-sitter-vim
+            p.tree-sitter-bash
+            p.tree-sitter-lua
+            p.tree-sitter-python
+            p.tree-sitter-json
+          ])
+        );
+      }
+    ];
+  };
 
   # Configure firefox
   programs.firefox = {
