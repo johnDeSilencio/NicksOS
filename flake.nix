@@ -34,6 +34,14 @@
               { pkgs, ... }:
               let
                 rust-stable-toolchain = pkgs.rust-bin.stable.latest.default.override {
+                  extensions = [
+                    "rustfmt"
+                    "rust-std"
+                    "rust-docs"
+                    "rust-analyzer"
+                    "clippy"
+                    "rust-src"
+                  ];
                   targets = [
                     "x86_64-unknown-linux-gnu"
                     "wasm32-unknown-unknown"
@@ -43,6 +51,14 @@
                 rust-nightly-toolchain = pkgs.rust-bin.selectLatestNightlyWith (
                   toolchain:
                   toolchain.default.override {
+                    extensions = [
+                      "rustfmt"
+                      "rust-std"
+                      "rust-docs"
+                      "rust-analyzer"
+                      "clippy"
+                      "rust-src"
+                    ];
                     targets = [
                       "x86_64-unknown-linux-gnu"
                       "wasm32-unknown-unknown"
