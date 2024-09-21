@@ -258,10 +258,13 @@
         cmp-nvim-lsp
         luasnip
         friendly-snippets
-        lualine-nvim
         nvim-web-devicons
         vim-sleuth
 
+        {
+          plugin = lualine-nvim;
+          config = toLua "require(\"lualine\").setup({ icons_enabled = true })";
+        }
         {
           plugin = (
             nvim-treesitter.withPlugins (p: [
