@@ -234,6 +234,7 @@
       nvim-web-devicons
       telescope-fzf-native-nvim
       vim-sleuth
+      vim-visual-multi
 
       {
         plugin = comment-nvim;
