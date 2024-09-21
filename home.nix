@@ -243,6 +243,12 @@
       }
 
       {
+        plugin = gitsigns-nvim;
+        config = ''require("gitsigns").setup()'';
+        type = "lua";
+      }
+
+      {
         plugin = lualine-nvim;
         config = ''require("lualine").setup({ icons_enabled = true })'';
         type = "lua";
