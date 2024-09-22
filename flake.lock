@@ -2,11 +2,11 @@
   "nodes": {
     "catppuccin": {
       "locked": {
-        "lastModified": 1725509983,
-        "narHash": "sha256-NHCgHVqumPraFJnLrkanoLDuhOoUHUvRhvp/RIHJR+A=",
+        "lastModified": 1726952185,
+        "narHash": "sha256-l/HbsQjJMT6tlf8KCooFYi3J6wjIips3n6/aWAoLY4g=",
         "owner": "catppuccin",
         "repo": "nix",
-        "rev": "45745fe5960acaefef2b60f3455bcac6a0ca6bc9",
+        "rev": "630b559cc1cb4c0bdd525af506935323e4ccd5d1",
         "type": "github"
       },
       "original": {
@@ -22,11 +22,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1726863345,
-        "narHash": "sha256-fjbKe1/UJpLT6tQLAKJ/djJFdnmAh2kkdsgmylyFrQA=",
+        "lastModified": 1726902823,
+        "narHash": "sha256-Gkc7pwTVLKj4HSvRt8tXNvosl8RS9hrBAEhOjAE0Tt4=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "dfe4d334b172071e7189d971ddecd3a7f811b48d",
+        "rev": "14929f7089268481d86b83ed31ffd88713dcd415",
         "type": "github"
       },
       "original": {
@@ -67,11 +67,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1726799228,
-        "narHash": "sha256-wn1leQyMAc/TrLRKcPc0GX6YtoziKQpc/MtZjPNiJ2Q=",
+        "lastModified": 1726885519,
+        "narHash": "sha256-wrXknshJMRLv91KQD5d7ovUqJ70FlDM7XeG/upSsKgM=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "ab150c7412db7bea5879ce2776718f53fba37aa2",
+        "rev": "a66e16cb21e4428224925dbf1b66238c727dda0a",
         "type": "github"
       },
       "original": {
