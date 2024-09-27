@@ -40,6 +40,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Enable bluetooth
+  hardware.bluetooth.enable = true;
+
   # Load AMD module for GPU
   services.xserver.videoDrivers = [ "amdgpu" ];
 
