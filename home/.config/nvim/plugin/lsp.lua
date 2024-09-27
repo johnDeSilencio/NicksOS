@@ -14,6 +14,7 @@ local on_attach = function(_, bufnr)
 	bufmap("gr", require("telescope.builtin").lsp_references)
 	bufmap("<leader>s", require("telescope.builtin").lsp_document_symbols)
 	bufmap("<leader>S", require("telescope.builtin").lsp_dynamic_workspace_symbols)
+	bufmap("<leader>e", vim.diagnostic.open_float)
 
 	bufmap("K", vim.lsp.buf.hover)
 
