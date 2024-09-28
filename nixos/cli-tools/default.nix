@@ -57,6 +57,10 @@
     # TL;DR tool for CLI commands
     tealdeer
 
+    # Manage and read RSS feeds in the terminal
+    tuifeed
+    usbutils
+
     # Rust rewrite
     uutils-coreutils-noprefix
 
