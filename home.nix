@@ -98,6 +98,11 @@
       recursive = true;
     };
 
+    ".config/tuifeed" = {
+      source = ./home/.config/tuifeed;
+      recursive = true;
+    };
+
     ".config/waybar" = {
       source = ./home/.config/waybar;
       recursive = true;
