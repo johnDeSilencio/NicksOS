@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     lua-language-server
+    stylua
     yaml-language-server
     nodePackages.typescript-language-server
     markdown-oxide
