@@ -18,8 +18,25 @@
   ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
+    grub = {
+      enable = true;
+      device = "nodev";
+      efiSupport = true;
+      useOSProber = true;
+
+      gfxmodeEfi = "2560x1600";
+      font = "${pkgs.nerdfonts}/share/fonts/truetype/NerdFonts/IntoneMonoNerdFont-Regular.ttf";
+      fontSize = 36;
+
+      # Ensures that /boot doesn't fill up with old kernels
+      configurationLimit = 5;
+    };
+  };
 
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
