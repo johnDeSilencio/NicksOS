@@ -38,3 +38,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
     })
   end
 })
+
+local augroup = vim.api.nvim_create_augroup
+local autocmd = vim.api.nvim_create_autocmd
+augroup("__formater__", { clear = true })
+autocmd("BufWritePost", {
+  group = "__formater__",
+  command = ":FormatWrite",
+})
