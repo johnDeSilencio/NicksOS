@@ -231,6 +231,7 @@
     plugins = with pkgs.vimPlugins; [
       cmp_luasnip
       cmp-nvim-lsp
+      formatter-nvim
       friendly-snippets
       luasnip
       miasma-nvim
@@ -244,6 +245,12 @@
       {
         plugin = comment-nvim;
         config = ''require("Comment").setup()'';
+        type = "lua";
+      }
+
+      {
+        plugin = formatter-nvim;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/fmt.lua}";
         type = "lua";
       }
 
@@ -305,6 +312,7 @@
             p.tree-sitter-llvm
             p.tree-sitter-lua
             p.tree-sitter-make
+            p.tree-sitter-markdown
             p.tree-sitter-markdown_inline
             p.tree-sitter-nix
             p.tree-sitter-passwd
