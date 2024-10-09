@@ -45,7 +45,7 @@ require("lspconfig").lua_ls.setup {
 	}
 }
 
-require("lspconfig").nil_ls.setup {
+require("lspconfig").nil_ls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
@@ -55,12 +55,12 @@ require("lspconfig").nil_ls.setup {
 			}
 		},
 	},
-}
+})
 
-require("lspconfig").marksman.setup {
+require("lspconfig").marksman.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
-}
+})
 
 local util = require("lspconfig/util")
 require("lspconfig").rust_analyzer.setup({
