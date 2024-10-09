@@ -34,7 +34,7 @@
       fontSize = 36;
 
       # Ensures that /boot doesn't fill up with old kernels
-      configurationLimit = 5;
+      configurationLimit = 50;
     };
   };
 
