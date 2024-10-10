@@ -279,6 +279,12 @@
       }
 
       {
+        plugin = startup-nvim;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/startup.lua}";
+        type = "lua";
+      }
+
+      {
         plugin = telescope-nvim;
         config = "${builtins.readFile ./home/.config/nvim/plugin/telescope.lua}";
         type = "lua";
