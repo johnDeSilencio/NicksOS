@@ -30,6 +30,7 @@
 
     # Displaying OS / system information
     neofetch
+    nix-prefetch-github
     nmap
 
     # Compression / decompression tool
