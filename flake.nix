@@ -35,11 +35,11 @@
               let
                 rust-stable-toolchain = pkgs.rust-bin.stable.latest.default.override {
                   extensions = [
-                    "rustfmt"
+                    "rustfmt-preview"
                     "rust-std"
                     "rust-docs"
                     "rust-analyzer"
-                    "clippy"
+                    "clippy-preview"
                     "rust-src"
                   ];
                   targets = [
@@ -52,11 +52,11 @@
                   toolchain:
                   toolchain.default.override {
                     extensions = [
-                      "rustfmt"
+                      "rustfmt-preview"
                       "rust-std"
                       "rust-docs"
                       "rust-analyzer"
-                      "clippy"
+                      "clippy-preview"
                       "rust-src"
                     ];
                     targets = [
