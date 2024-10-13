@@ -35,6 +35,9 @@
 
     # Compression / decompression tool
     ouch
+
+    # JavaScript linter written in Rust
+    oxlint
     pass
 
     # Supports running arbitrary hooks during commit lifecycle
