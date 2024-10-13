@@ -40,6 +40,9 @@
     oxlint
     pass
 
+    # Analyzer power usage
+    powertop
+
     # Supports running arbitrary hooks during commit lifecycle
     pre-commit
     procs
