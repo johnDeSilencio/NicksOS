@@ -28,6 +28,8 @@ in
     cargo-crev
     cargo-deny
     cargo-edit
+    cargo-espflash
+    cargo-espmonitor
     cargo-expand
     cargo-flamegraph
     cargo-generate

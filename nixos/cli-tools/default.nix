@@ -23,6 +23,7 @@
     gping
     htop
     killall
+    loco-cli
 
     # ;) (ls replacement)
     lsd
@@ -45,6 +46,7 @@
 
     # Query and display data about SSD / hard drive health
     smartmontools
+    sea-orm-cli
 
     # Colorful & configurable terminal prompt
     starship
