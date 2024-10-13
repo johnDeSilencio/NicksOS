@@ -42,7 +42,7 @@
           "input=yellow;"
           "action=yellow;"
           "button=yellow;' "
-          "--cmd 'Hyprlanding &>/dev/null'"
+          "--cmd 'Hyprland &>/dev/null'"
         ];
         user = "greeter";
       };
