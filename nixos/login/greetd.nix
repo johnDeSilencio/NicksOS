@@ -26,7 +26,7 @@
     settings = {
       default_session = {
         command = lib.concatStrings [
-          "${pkgs.greetd.tuigreet}/bin/tuigreet "
+          "tuigreet "
           "--time "
           "--asterisks "
           "--remember "
@@ -35,14 +35,14 @@
           "text=yellow;"
           "time=yellow;"
           "container=black;"
-          "border=yellow;"
+          "border=lightyellow;"
           "title=yellow;"
           "greet=yellow;"
           "prompt=yellow;"
           "input=yellow;"
           "action=yellow;"
           "button=yellow;' "
-          "--cmd 'hyprland &>/dev/null'"
+          "--cmd 'Hyprlanding &>/dev/null'"
         ];
         user = "greeter";
       };
