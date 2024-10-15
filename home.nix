@@ -154,37 +154,6 @@
   #
   home.sessionVariables = { };
 
-  # Configure VSCodium
-  programs.vscode = {
-    enable = true;
-    package = pkgs.vscodium;
-    extensions =
-      with pkgs.vscode-extensions;
-      [
-        nonylene.dark-molokai-theme
-        rust-lang.rust-analyzer
-        tamasfe.even-better-toml
-        serayuzgur.crates
-        usernamehw.errorlens
-        esbenp.prettier-vscode
-        davidanson.vscode-markdownlint
-        yzhang.markdown-all-in-one
-        bbenoist.nix
-        streetsidesoftware.code-spell-checker
-        vscodevim.vim
-        usernamehw.errorlens
-        naumovs.color-highlight
-      ]
-      ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-        {
-          name = "dendron";
-          publisher = "dendron";
-          version = "0.124.0";
-          sha256 = "/hxgmmiMUfBtPt5BcuNvtXs3LzDmPwDuUOyDf2udHws=";
-        }
-      ];
-  };
-
   # Enable fish
   programs.fish = {
     enable = true;
