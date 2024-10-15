@@ -175,13 +175,6 @@
     };
   };
 
-  # Configure Alacritty
-  programs.alacritty.settings = {
-    font = {
-      size = 20.0;
-    };
-  };
-
   # Configure NeoVim
   programs.neovim = {
     enable = true;
