@@ -10,6 +10,9 @@
     bat
     cmake
 
+    # Used for pretty diffs
+    delta
+
     # Query and display system information like serial #
     dmidecode
 
