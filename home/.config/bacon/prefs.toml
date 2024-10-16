@@ -62,7 +62,7 @@
 #  - context: unstyled lines of output, separated with escaped newlines (`\\n`)
 [exports.locations]
 # For integration into NeoVim
-auto = false
+auto = true
 path = ".bacon-locations"
 line_format = "{kind} {path}:{line}:{column} {message}"
 [exports.json-report]

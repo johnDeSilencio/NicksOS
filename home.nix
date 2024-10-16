@@ -180,6 +180,7 @@
       luasnip
       miasma-nvim
       neodev-nvim
+      nvim-bacon
       nvim-cmp
       nvim-web-devicons
       telescope-fzf-native-nvim
