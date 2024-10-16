@@ -63,6 +63,11 @@
       recursive = true;
     };
 
+    ".config/bacon/" = {
+      source = ./home/.config/bacon;
+      recursive = true;
+    };
+
     ".config/rofi/" = {
       source = ./home/.config/rofi;
       recursive = true;
