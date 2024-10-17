@@ -12,7 +12,4 @@ blueman-applet &
 # The app bar
 waybar &
 
-# Enable screensharing in X11 apps
-xwaylandvideobridge &
-
 mako
