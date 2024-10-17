@@ -1,5 +1,9 @@
 { config, pkgs, ... }:
 {
+  nixpkgs.overlays = [
+    (import ./discord-overlay.nix)
+  ];
+
   environment.systemPackages = with pkgs; [
     alacritty
     discord
