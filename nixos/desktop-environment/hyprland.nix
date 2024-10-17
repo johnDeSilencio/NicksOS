@@ -6,24 +6,14 @@
     xwayland.enable = true;
   };
 
-  # For screen sharing
-  programs.xwayland.enable = true;
-
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-hyprland
-    ];
-    xdgOpenUsePortal = true;
-  };
-
   environment.systemPackages = with pkgs; [
     hypridle
     hyprpaper
     hyprshot
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
+
+    # BUG: Screensharing in discord through xwaylandvideobridge
+    # only works on built-in monitor. Also, if I spend too much time
+    # on the external monitor, also seems to crash xwaylandvideobridge
     xwaylandvideobridge
   ];
 }
