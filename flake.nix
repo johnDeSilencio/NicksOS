@@ -30,51 +30,6 @@
           modules = [
             ./configuration.nix
             home-manager.nixosModules.home-manager
-            (
-              { pkgs, ... }:
-              let
-                rust-stable-toolchain = pkgs.rust-bin.stable.latest.default.override {
-                  extensions = [
-                    "rustfmt-preview"
-                    "rust-std"
-                    "rust-docs"
-                    "rust-analyzer"
-                    "clippy-preview"
-                    "rust-src"
-                  ];
-                  targets = [
-                    "x86_64-unknown-linux-gnu"
-                    "wasm32-unknown-unknown"
-                  ];
-                };
-
-                rust-nightly-toolchain = pkgs.rust-bin.selectLatestNightlyWith (
-                  toolchain:
-                  toolchain.default.override {
-                    extensions = [
-                      "rustfmt-preview"
-                      "rust-std"
-                      "rust-docs"
-                      "rust-analyzer"
-                      "clippy-preview"
-                      "rust-src"
-                    ];
-                    targets = [
-                      "x86_64-unknown-linux-gnu"
-                      "wasm32-unknown-unknown"
-                    ];
-                  }
-                );
-              in
-              {
-                nixpkgs.overlays = [ rust-overlay.overlays.default ];
-
-                environment.systemPackages = [
-                  rust-stable-toolchain
-                  rust-nightly-toolchain
-                ];
-              }
-            )
           ];
         };
       };
