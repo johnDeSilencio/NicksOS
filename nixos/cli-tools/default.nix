@@ -54,6 +54,7 @@
     pre-commit
     procs
     qemu
+    reveal-md
 
     # A better, faster grep
     ripgrep
