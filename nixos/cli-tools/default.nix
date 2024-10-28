@@ -24,6 +24,7 @@
 
     # A better GNU find
     fd
+    ffmpeg
     gcc
     gnumake
     gping
