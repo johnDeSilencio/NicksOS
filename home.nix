@@ -134,6 +134,10 @@
     ".gitconfig" = {
       source = ./home/.gitconfig;
     };
+
+    ".taskrc" = {
+      source = ./home/.taskrc;
+    };
   };
 
   # Enable fish
