@@ -11,6 +11,7 @@
     gimp
     keepassxc
     minecraft
+    photoqt
     thunderbird
   ];
 
