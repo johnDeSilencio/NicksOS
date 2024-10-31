@@ -1,6 +1,6 @@
 self: super: {
-  # Polyfill to allow Discord to do screensharing on Wayland through xwaylandbridge
-  discord = super.keepassxc.overrideAttrs (oldAttrs: {
+  # Increases the size of the text in KeePassXC by 50%
+  keepassxc = super.keepassxc.overrideAttrs (oldAttrs: {
     postInstall =
       (oldAttrs.postInstall or "")
       + ''
