@@ -34,6 +34,7 @@
 
     # ;) (ls replacement)
     lsd
+    markuplinkchecker
 
     # Displaying OS / system information
     neofetch
