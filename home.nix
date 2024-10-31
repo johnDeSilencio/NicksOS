@@ -320,6 +320,16 @@
       DisableAccounts = true;
       DisableFirefoxScreenshots = true;
 
+      ExtensionSettings = {
+        # Blocks all extensions except the ones below
+        "*".installation_mode = "blocked";
+
+        "{04188724-64d3-497b-a4fd-7caffe6eab29}" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/rust-search-extension/latest.xpi";
+          installation_mode = "force_installed";
+        };
+      };
+
       Preferences = {
         "browser.newtabpage.activity-stream.feeds.section.topstories" = {
           Value = false;
