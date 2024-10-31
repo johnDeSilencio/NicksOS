@@ -84,6 +84,7 @@
 
     # Execute arbitrary commands when a file changes
     watchexec
+    wasm-pack
     wf-recorder
     wget
 
