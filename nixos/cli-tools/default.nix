@@ -84,6 +84,7 @@
 
     # Execute arbitrary commands when a file changes
     watchexec
+    wf-recorder
     wget
 
     # wl-copy and wl-paste
