@@ -19,13 +19,14 @@
       home-manager,
       rust-overlay,
       ...
-    }:
+    }@inputs:
     let
       system = "x86_64-linux";
     in
     {
       nixosConfigurations = {
         framework = nixpkgs.lib.nixosSystem {
+          specialArgs.inputs = inputs;
           inherit system;
           modules = [
             ./configuration.nix
