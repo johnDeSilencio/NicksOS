@@ -30,6 +30,9 @@
     gping
     htop
     killall
+
+    # For getting CPU temperature
+    lm_sensors
     loco-cli
 
     # ;) (ls replacement)
