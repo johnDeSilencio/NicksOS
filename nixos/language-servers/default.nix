@@ -24,8 +24,5 @@
 
     # Nix
     nil
-
-    # Protobuf
-    buf-language-server
   ];
 }
