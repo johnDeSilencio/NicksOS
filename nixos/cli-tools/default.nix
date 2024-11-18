@@ -3,6 +3,9 @@
   environment.systemPackages = with pkgs; [
     android-tools
 
+    # Polyglot tool for code searching, linting, and rewriting
+    ast-grep
+
     # Shell history tool
     atuin
 
