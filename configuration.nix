@@ -63,6 +63,9 @@
   # Load AMD module for GPU
   services.xserver.videoDrivers = [ "amdgpu" ];
 
+  # Disable CPUS
+  services.printing.browsed.enable = false;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
