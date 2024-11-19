@@ -222,6 +222,12 @@
       }
 
       {
+        plugin = nvim-highlight-colors;
+        config = ''require("nvim-highlight-colors").setup({})'';
+        type = "lua";
+      }
+
+      {
         plugin = nvim-lspconfig;
         config = "${builtins.readFile ./home/.config/nvim/plugin/lsp.lua}";
         type = "lua";
