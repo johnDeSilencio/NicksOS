@@ -8,6 +8,7 @@
     cargo-auditable
     cargo-binstall
     cargo-crev
+    cargo-criterion
     cargo-deny
     cargo-edit
     cargo-espflash
