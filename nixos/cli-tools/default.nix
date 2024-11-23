@@ -82,6 +82,9 @@
     # TL;DR tool for CLI commands
     tealdeer
 
+    # Alternative to trash-cli written in Rust
+    trashy
+
     # Manage and read RSS feeds in the terminal
     tuifeed
     usbutils
@@ -104,4 +107,8 @@
 
   # Fish
   programs.fish.enable = true;
+
+  programs.fish.shellAliases = {
+    rm = "trash put";
+  };
 }
