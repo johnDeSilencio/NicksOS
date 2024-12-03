@@ -16,6 +16,9 @@
     # For code formatting
     dprint
 
+    # For grammar and spell checking
+    harper
+
     # Markdown
     marksman
 
