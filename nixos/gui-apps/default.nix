@@ -3,6 +3,7 @@
   nixpkgs.overlays = [
     (import ./discord-overlay.nix)
     (import ./keepassxc-overlay.nix)
+    (import ./qalculate-overlay.nix)
   ];
 
   environment.systemPackages = with pkgs; [
