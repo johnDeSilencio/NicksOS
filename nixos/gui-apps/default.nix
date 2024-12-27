@@ -13,6 +13,7 @@
     minecraft
     obsidian
     photoqt
+    qalculate-qt
     thunderbird
   ];
 
