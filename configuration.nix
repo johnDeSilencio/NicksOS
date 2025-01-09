@@ -48,6 +48,13 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+  networking.extraHosts = ''
+    192.168.88.119 jerusalem
+    192.168.88.120 capernaum
+    192.168.88.121 bethany
+    192.168.88.122 nazareth
+  '';
+
   # Enable experimental features of nix
   nix.settings.experimental-features = [
     "nix-command"
