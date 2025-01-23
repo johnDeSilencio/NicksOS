@@ -22,6 +22,9 @@
     # Query and display system information like serial #
     dmidecode
 
+    # For command-line DNS queries
+    dogdns
+
     # For writing down ideas in the terminal quickly
     eureka-ideas
 
@@ -40,6 +43,10 @@
 
     # ;) (ls replacement)
     lsd
+
+    # Markdown linker
+    lychee
+
     markuplinkchecker
     miniserve
 
