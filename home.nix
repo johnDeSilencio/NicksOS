@@ -186,6 +186,7 @@
       neodev-nvim
       nvim-bacon
       nvim-cmp
+      nvim-ts-autotag
       nvim-web-devicons
       telescope-fzf-native-nvim
       which-key-nvim
