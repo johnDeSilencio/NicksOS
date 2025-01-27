@@ -189,6 +189,7 @@
       nvim-cmp
       nvim-ts-autotag
       nvim-web-devicons
+      telekasten-nvim
       telescope-fzf-native-nvim
       which-key-nvim
       vim-sleuth
