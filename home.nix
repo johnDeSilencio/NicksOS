@@ -179,6 +179,7 @@
     plugins = with pkgs.vimPlugins; [
       cmp_luasnip
       cmp-nvim-lsp
+      crates-nvim
       formatter-nvim
       friendly-snippets
       luasnip
@@ -196,6 +197,12 @@
       {
         plugin = comment-nvim;
         config = ''require("Comment").setup()'';
+        type = "lua";
+      }
+
+      {
+        plugin = crates-nvim;
+        config = ''require("crates").setup()'';
         type = "lua";
       }
 
