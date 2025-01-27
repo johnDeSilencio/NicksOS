@@ -189,7 +189,6 @@
       nvim-cmp
       nvim-ts-autotag
       nvim-web-devicons
-      telekasten-nvim
       telescope-fzf-native-nvim
       which-key-nvim
       vim-sleuth
@@ -246,6 +245,12 @@
       {
         plugin = startup-nvim;
         config = "${builtins.readFile ./home/.config/nvim/plugin/startup.lua}";
+        type = "lua";
+      }
+
+      {
+        plugin = telekasten-nvim;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/telekasten.lua}";
         type = "lua";
       }
 
