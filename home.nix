@@ -177,6 +177,7 @@
     ];
 
     plugins = with pkgs.vimPlugins; [
+      calendar-vim
       cmp_luasnip
       cmp-nvim-lsp
       crates-nvim
