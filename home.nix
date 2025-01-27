@@ -188,6 +188,7 @@
       nvim-cmp
       nvim-web-devicons
       telescope-fzf-native-nvim
+      which-key-nvim
       vim-sleuth
       vim-visual-multi
 
