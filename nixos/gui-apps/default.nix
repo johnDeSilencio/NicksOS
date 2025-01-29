@@ -16,6 +16,7 @@
     photoqt
     qalculate-qt
     thunderbird
+    zoom-us
   ];
 
   # Steam
