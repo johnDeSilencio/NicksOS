@@ -191,7 +191,6 @@
       nvim-ts-autotag
       nvim-web-devicons
       telescope-fzf-native-nvim
-      which-key-nvim
       vim-sleuth
       vim-visual-multi
 
@@ -258,6 +257,12 @@
       {
         plugin = telescope-nvim;
         config = "${builtins.readFile ./home/.config/nvim/plugin/telescope.lua}";
+        type = "lua";
+      }
+
+      {
+        plugin = which-key-nvim;
+        config = "${builtins.readFile ./home/.config/nvim/plugin/which-key-nvim.lua}";
         type = "lua";
       }
 
