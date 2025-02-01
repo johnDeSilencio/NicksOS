@@ -355,6 +355,11 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/rust-search-extension/latest.xpi";
           installation_mode = "force_installed";
         };
+
+        "{d08be0ef-4964-48c9-b6a8-6918e05c6f89}" = {
+          install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/delaywebpage/latest.xpi";
+          installation_mode = "force_installed";
+        };
       };
 
       Preferences = {
