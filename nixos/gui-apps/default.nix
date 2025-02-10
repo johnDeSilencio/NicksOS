@@ -13,7 +13,6 @@
     keepassxc
     obsidian
     photoqt
-    signal-desktop
     spotify
     qalculate-qt
     thunderbird
