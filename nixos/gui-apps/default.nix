@@ -11,7 +11,6 @@
     discord
     gimp
     keepassxc
-    minecraft
     obsidian
     photoqt
     qalculate-qt
