@@ -39,7 +39,7 @@
           specialArgs.inputs = inputs;
           inherit system;
           modules = [
-            ./configuration.nix
+            ./hosts/framework/configuration.nix
             home-manager.nixosModules.home-manager
             {
               home-manager.users.nicholas = import ./home.nix;
