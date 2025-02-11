@@ -149,6 +149,7 @@
     keepassxc.enable = true;
     obsidian.enable = true;
     spotify.enable = true;
+    steam.enable = true;
     vlc.enable = true;
     zoom-us.enable = true;
   };

@@ -9,6 +9,7 @@
     nixos/keepassxc/default.nix
     nixos/obsidian/default.nix
     nixos/spotify/default.nix
+    nixos/steam/default.nix
     nixos/vlc/default.nix
     nixos/zoom-us/default.nix
   ];

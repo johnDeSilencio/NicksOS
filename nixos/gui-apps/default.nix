@@ -10,9 +10,6 @@
     thunderbird
   ];
 
-  # Steam
-  programs.steam.enable = true;
-
   # 1Password
   programs._1password.enable = true;
   programs._1password-gui = {
