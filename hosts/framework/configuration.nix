@@ -140,6 +140,7 @@
 
   custom = {
     home = {
+      neovim.enable = true;
       signal-desktop.enable = true;
     };
 

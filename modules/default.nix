@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    home/neovim/default.nix
     home/signal-desktop/default.nix
 
     nixos/alacritty/default.nix
