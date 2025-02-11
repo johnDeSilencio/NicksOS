@@ -144,6 +144,7 @@
     };
 
     alacritty.enable = true;
+    discord.enable = true;
     gimp.enable = true;
     obsidian.enable = true;
     spotify.enable = true;
