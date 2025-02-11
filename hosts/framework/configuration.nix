@@ -147,6 +147,7 @@
     gimp.enable = true;
     obsidian.enable = true;
     spotify.enable = true;
+    vlc.enable = true;
     zoom-us.enable = true;
   };
 }

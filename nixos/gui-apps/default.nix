@@ -12,7 +12,6 @@
     photoqt
     qalculate-qt
     thunderbird
-    vlc
   ];
 
   # Steam

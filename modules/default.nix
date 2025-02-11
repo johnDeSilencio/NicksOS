@@ -7,6 +7,7 @@
     nixos/gimp/default.nix
     nixos/obsidian/default.nix
     nixos/spotify/default.nix
+    nixos/vlc/default.nix
     nixos/zoom-us/default.nix
   ];
 }
