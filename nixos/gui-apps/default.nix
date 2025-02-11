@@ -1,12 +1,10 @@
 { config, pkgs, ... }:
 {
   nixpkgs.overlays = [
-    (import ./qalculate-overlay.nix)
   ];
 
   environment.systemPackages = with pkgs; [
     photoqt
-    qalculate-qt
   ];
 
   # 1Password

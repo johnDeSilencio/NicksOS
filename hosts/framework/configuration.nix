@@ -148,6 +148,7 @@
     gimp.enable = true;
     keepassxc.enable = true;
     obsidian.enable = true;
+    qalculate-qt.enable = true;
     spotify.enable = true;
     steam.enable = true;
     thunderbird.enable = true;
