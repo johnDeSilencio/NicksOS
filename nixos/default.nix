@@ -12,6 +12,5 @@
     ./localization/default.nix
     ./login/default.nix
     ./printers/default.nix
-    ./sound/default.nix
   ];
 }

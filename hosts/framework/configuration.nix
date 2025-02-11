@@ -150,6 +150,7 @@
     obsidian.enable = true;
     photoqt.enable = true;
     qalculate-qt.enable = true;
+    sound.enable = true;
     spotify.enable = true;
     steam.enable = true;
     thunderbird.enable = true;
