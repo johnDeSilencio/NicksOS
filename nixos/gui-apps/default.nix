@@ -1,12 +1,10 @@
 { config, pkgs, ... }:
 {
   nixpkgs.overlays = [
-    (import ./keepassxc-overlay.nix)
     (import ./qalculate-overlay.nix)
   ];
 
   environment.systemPackages = with pkgs; [
-    keepassxc
     photoqt
     qalculate-qt
     thunderbird

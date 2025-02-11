@@ -146,6 +146,7 @@
     alacritty.enable = true;
     discord.enable = true;
     gimp.enable = true;
+    keepassxc.enable = true;
     obsidian.enable = true;
     spotify.enable = true;
     vlc.enable = true;
