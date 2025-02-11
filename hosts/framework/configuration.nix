@@ -147,6 +147,7 @@
     discord.enable = true;
     gimp.enable = true;
     keepassxc.enable = true;
+    localization.enable = true;
     obsidian.enable = true;
     photoqt.enable = true;
     qalculate-qt.enable = true;

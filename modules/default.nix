@@ -7,6 +7,7 @@
     nixos/discord/default.nix
     nixos/gimp/default.nix
     nixos/keepassxc/default.nix
+    nixos/localization/default.nix
     nixos/obsidian/default.nix
     nixos/photoqt/default.nix
     nixos/qalculate-qt/default.nix
