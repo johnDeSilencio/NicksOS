@@ -8,6 +8,7 @@
     nixos/gimp/default.nix
     nixos/keepassxc/default.nix
     nixos/obsidian/default.nix
+    nixos/photoqt/default.nix
     nixos/qalculate-qt/default.nix
     nixos/spotify/default.nix
     nixos/steam/default.nix
