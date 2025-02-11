@@ -143,6 +143,7 @@
       signal-desktop.enable = true;
     };
 
+    alacritty.enable = true;
     zoom-us.enable = true;
   };
 }
