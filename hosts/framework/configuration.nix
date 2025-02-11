@@ -146,6 +146,7 @@
     alacritty.enable = true;
     discord.enable = true;
     gimp.enable = true;
+    git.enable = true;
     keepassxc.enable = true;
     localization.enable = true;
     obsidian.enable = true;
