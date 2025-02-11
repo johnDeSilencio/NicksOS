@@ -150,6 +150,7 @@
     obsidian.enable = true;
     spotify.enable = true;
     steam.enable = true;
+    thunderbird.enable = true;
     vlc.enable = true;
     zoom-us.enable = true;
   };

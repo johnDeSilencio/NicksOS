@@ -7,7 +7,6 @@
   environment.systemPackages = with pkgs; [
     photoqt
     qalculate-qt
-    thunderbird
   ];
 
   # 1Password
