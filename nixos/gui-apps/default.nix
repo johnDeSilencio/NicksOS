@@ -9,7 +9,6 @@
   environment.systemPackages = with pkgs; [
     discord
     keepassxc
-    obsidian
     photoqt
     qalculate-qt
     thunderbird

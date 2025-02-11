@@ -145,6 +145,7 @@
 
     alacritty.enable = true;
     gimp.enable = true;
+    obsidian.enable = true;
     spotify.enable = true;
     zoom-us.enable = true;
   };
