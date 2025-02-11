@@ -17,7 +17,6 @@
     qalculate-qt
     thunderbird
     vlc
-    zoom-us
   ];
 
   # Steam

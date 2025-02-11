@@ -142,5 +142,7 @@
     home = {
       signal-desktop.enable = true;
     };
+
+    zoom-us.enable = true;
   };
 }
