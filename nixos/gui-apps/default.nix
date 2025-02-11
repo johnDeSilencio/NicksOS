@@ -8,7 +8,6 @@
 
   environment.systemPackages = with pkgs; [
     discord
-    gimp
     keepassxc
     obsidian
     photoqt

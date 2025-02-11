@@ -144,6 +144,7 @@
     };
 
     alacritty.enable = true;
+    gimp.enable = true;
     zoom-us.enable = true;
   };
 }
