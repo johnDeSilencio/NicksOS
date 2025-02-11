@@ -11,7 +11,6 @@
     keepassxc
     obsidian
     photoqt
-    spotify
     qalculate-qt
     thunderbird
     vlc

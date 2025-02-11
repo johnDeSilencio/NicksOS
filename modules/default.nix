@@ -5,6 +5,7 @@
 
     nixos/alacritty/default.nix
     nixos/gimp/default.nix
+    nixos/spotify/default.nix
     nixos/zoom-us/default.nix
   ];
 }
