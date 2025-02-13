@@ -15,10 +15,6 @@
       useUserPackages = true;
 
       users.nicholas = {
-        imports = [
-          ./home.nix
-        ];
-
         home = {
           username = "nicholas";
           homeDirectory = "/home/nicholas";
