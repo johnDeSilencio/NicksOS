@@ -162,6 +162,7 @@
     qalculate-qt.enable = true;
     sound.enable = true;
     spotify.enable = true;
+    starship.enable = true;
     steam.enable = true;
     thunderbird.enable = true;
     vlc.enable = true;

@@ -87,9 +87,6 @@
       # Query and display data about SSD / hard drive health
       smartmontools
       sea-orm-cli
-
-      # Colorful & configurable terminal prompt
-      starship
       tailwindcss
 
       # An engine for writing and checking of to-dos

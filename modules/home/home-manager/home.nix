@@ -70,10 +70,6 @@
       recursive = true;
     };
 
-    ".config/starship.toml" = {
-      source = ../../../home/.config/starship.toml;
-    };
-
     ".dprint.json" = {
       source = ../../../home/.dprint.json;
     };
