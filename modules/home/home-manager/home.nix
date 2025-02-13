@@ -37,11 +37,6 @@
       recursive = true;
     };
 
-    ".config/helix" = {
-      source = ../../../home/.config/helix;
-      recursive = true;
-    };
-
     ".config/tuifeed" = {
       source = ../../../home/.config/tuifeed;
       recursive = true;

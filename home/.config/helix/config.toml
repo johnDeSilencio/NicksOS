@@ -1,5 +1,0 @@
-theme = "catppuccin-frappe"
-
-[editor]
-color-modes = true
-rulers = [80, 120]
