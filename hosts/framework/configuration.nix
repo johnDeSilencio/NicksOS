@@ -146,6 +146,7 @@
     };
 
     alacritty.enable = true;
+    cli-tools.enable = true;
     desktop-environment.enable = true;
     discord.enable = true;
     gimp.enable = true;
