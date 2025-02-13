@@ -166,6 +166,7 @@
     steam.enable = true;
     thunderbird.enable = true;
     vlc.enable = true;
+    zellij.enable = true;
     zoom-us.enable = true;
   };
 }

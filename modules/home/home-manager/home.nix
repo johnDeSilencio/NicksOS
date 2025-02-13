@@ -60,11 +60,6 @@
       recursive = true;
     };
 
-    ".config/zellij" = {
-      source = ../../../home/.config/zellij;
-      recursive = true;
-    };
-
     ".config/zed" = {
       source = ../../../home/.config/zed;
       recursive = true;

@@ -29,6 +29,7 @@
     nixos/steam/default.nix
     nixos/thunderbird/default.nix
     nixos/vlc/default.nix
+    nixos/zellij/default.nix
     nixos/zoom-us/default.nix
   ];
 }
