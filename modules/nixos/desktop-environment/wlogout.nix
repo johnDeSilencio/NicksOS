@@ -1,0 +1,14 @@
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
+{
+  config = lib.mkIf config.custom.desktop-environment.enable {
+    environment.systemPackages = with pkgs; [
+      # For configuring & styling logout / power off modal dialog
+      wlogout
+    ];
+  };
+}
