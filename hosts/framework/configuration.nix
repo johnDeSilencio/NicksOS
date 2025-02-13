@@ -150,6 +150,7 @@
     cli-tools.enable = true;
     desktop-environment.enable = true;
     discord.enable = true;
+    dprint.enable = true;
     fish.enable = true;
     fonts.enable = true;
     gimp.enable = true;

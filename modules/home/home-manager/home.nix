@@ -32,10 +32,6 @@
       recursive = true;
     };
 
-    ".dprint.json" = {
-      source = ../../../home/.dprint.json;
-    };
-
     ".taskrc" = {
       source = ../../../home/.taskrc;
     };

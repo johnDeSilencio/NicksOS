@@ -13,6 +13,7 @@
     nixos/cli-tools/default.nix
     nixos/desktop-environment/default.nix
     nixos/discord/default.nix
+    nixos/dprint/default.nix
     nixos/fish/default.nix
     nixos/fonts/default.nix
     nixos/gimp/default.nix
