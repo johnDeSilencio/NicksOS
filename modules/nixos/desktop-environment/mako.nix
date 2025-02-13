@@ -13,5 +13,14 @@
       # For displaying and styling system notifications
       mako
     ];
+
+    home-manager.users.nicholas = {
+      home.file = {
+        ".config/mako" = {
+          source = ./config/mako;
+          recursive = true;
+        };
+      };
+    };
   };
 }

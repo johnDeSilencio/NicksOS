@@ -34,5 +34,14 @@
         }
       ];
     };
+
+    home-manager.users.nicholas = {
+      home.file = {
+        ".config/waybar" = {
+          source = ./config/waybar;
+          recursive = true;
+        };
+      };
+    };
   };
 }

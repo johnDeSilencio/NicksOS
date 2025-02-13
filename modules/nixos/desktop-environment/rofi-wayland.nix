@@ -10,5 +10,14 @@
       # Wayland app launcher
       rofi-wayland
     ];
+
+    home-manager.users.nicholas = {
+      home.file = {
+        ".config/rofi/" = {
+          source = ./config/rofi;
+          recursive = true;
+        };
+      };
+    };
   };
 }

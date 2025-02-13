@@ -21,5 +21,14 @@
       # on the external monitor, also seems to crash xwaylandvideobridge
       xwaylandvideobridge
     ];
+
+    home-manager.users.nicholas = {
+      home.file = {
+        ".config/hypr/" = {
+          source = ./config/hypr;
+          recursive = true;
+        };
+      };
+    };
   };
 }

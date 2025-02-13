@@ -40,16 +40,6 @@
       recursive = true;
     };
 
-    ".config/rofi/" = {
-      source = ../../../home/.config/rofi;
-      recursive = true;
-    };
-
-    ".config/hypr/" = {
-      source = ../../../home/.config/hypr;
-      recursive = true;
-    };
-
     ".config/bat/" = {
       source = ../../../home/.config/bat;
       recursive = true;
@@ -65,28 +55,13 @@
       recursive = true;
     };
 
-    ".config/mako" = {
-      source = ../../../home/.config/mako;
-      recursive = true;
-    };
-
     ".config/tuifeed" = {
       source = ../../../home/.config/tuifeed;
       recursive = true;
     };
 
-    ".config/waybar" = {
-      source = ../../../home/.config/waybar;
-      recursive = true;
-    };
-
     ".config/zellij" = {
       source = ../../../home/.config/zellij;
-      recursive = true;
-    };
-
-    ".config/wlogout" = {
-      source = ../../../home/.config/wlogout;
       recursive = true;
     };
 
