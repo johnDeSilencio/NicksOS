@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    home/firefox/default.nix
     home/home-manager/default.nix
     home/neovim/default.nix
     home/signal-desktop/default.nix

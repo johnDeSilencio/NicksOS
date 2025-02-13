@@ -139,6 +139,7 @@
 
   custom = {
     home = {
+      firefox.enable = true;
       home-manager.enable = true;
       neovim.enable = true;
       signal-desktop.enable = true;
