@@ -122,6 +122,12 @@
       zellij
     ];
 
+    # Direnv
+    programs.direnv = {
+      enable = true;
+      silent = true;
+    };
+
     # Fish
     programs.fish.enable = true;
 
