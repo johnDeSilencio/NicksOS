@@ -34,6 +34,7 @@
     nixos/steam/default.nix
     nixos/taskwarrior/default.nix
     nixos/thunderbird/default.nix
+    nixos/tuifeed/default.nix
     nixos/vlc/default.nix
     nixos/zellij/default.nix
     nixos/zoom-us/default.nix

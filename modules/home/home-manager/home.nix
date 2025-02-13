@@ -22,10 +22,6 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/tuifeed" = {
-      source = ../../../home/.config/tuifeed;
-      recursive = true;
-    };
   };
 
   # Let Home Manager install and manage itself.

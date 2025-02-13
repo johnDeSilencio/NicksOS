@@ -171,6 +171,7 @@
     steam.enable = true;
     taskwarrior.enable = true;
     thunderbird.enable = true;
+    tuifeed.enable = true;
     vlc.enable = true;
     zellij.enable = true;
     zoom-us.enable = true;

@@ -88,9 +88,6 @@
 
       # Alternative to trash-cli written in Rust
       trashy
-
-      # Manage and read RSS feeds in the terminal
-      tuifeed
       usbutils
 
       # Rust rewrite
