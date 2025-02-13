@@ -10,6 +10,7 @@
     nixos/discord/default.nix
     nixos/gimp/default.nix
     nixos/git/default.nix
+    nixos/gnupg/default.nix
     nixos/keepassxc/default.nix
     nixos/localization/default.nix
     nixos/obsidian/default.nix

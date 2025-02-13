@@ -149,6 +149,7 @@
     discord.enable = true;
     gimp.enable = true;
     git.enable = true;
+    gnupg.enable = true;
     keepassxc.enable = true;
     localization.enable = true;
     obsidian.enable = true;
