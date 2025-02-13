@@ -12,8 +12,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    # Custom system configuration files
-    ../../nixos/default.nix
 
     inputs.home-manager.nixosModules.home-manager
     ../../modules/default.nix
