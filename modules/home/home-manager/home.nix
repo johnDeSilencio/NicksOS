@@ -108,10 +108,6 @@
       source = ../../../home/.dprint.json;
     };
 
-    ".gitconfig" = {
-      source = ../../../home/.gitconfig;
-    };
-
     ".taskrc" = {
       source = ../../../home/.taskrc;
     };
