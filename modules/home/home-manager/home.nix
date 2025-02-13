@@ -32,11 +32,6 @@
       recursive = true;
     };
 
-    ".config/fish/" = {
-      source = ../../../home/.config/fish;
-      recursive = true;
-    };
-
     ".config/tuifeed" = {
       source = ../../../home/.config/tuifeed;
       recursive = true;
@@ -54,11 +49,6 @@
     ".taskrc" = {
       source = ../../../home/.taskrc;
     };
-  };
-
-  # Enable fish
-  programs.fish = {
-    enable = true;
   };
 
   # Let Home Manager install and manage itself.
