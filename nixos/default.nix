@@ -6,7 +6,6 @@
     ./development/default.nix
     ./desktop-environment/default.nix
     ./language-servers/default.nix
-    ./libreoffice/default.nix
     ./login/default.nix
     ./printers/default.nix
   ];
