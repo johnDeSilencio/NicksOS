@@ -35,11 +35,6 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/alacritty/" = {
-      source = ../../../home/.config/alacritty;
-      recursive = true;
-    };
-
     ".config/bacon/" = {
       source = ../../../home/.config/bacon;
       recursive = true;
