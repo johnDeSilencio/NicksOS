@@ -26,10 +26,6 @@
       source = ../../../home/.config/tuifeed;
       recursive = true;
     };
-
-    ".taskrc" = {
-      source = ../../../home/.taskrc;
-    };
   };
 
   # Let Home Manager install and manage itself.

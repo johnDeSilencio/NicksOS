@@ -83,10 +83,6 @@
       sea-orm-cli
       tailwindcss
 
-      # An engine for writing and checking of to-dos
-      taskwarrior3
-      taskwarrior-tui
-
       # TL;DR tool for CLI commands
       tealdeer
 

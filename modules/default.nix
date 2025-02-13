@@ -32,6 +32,7 @@
     nixos/spotify/default.nix
     nixos/starship/default.nix
     nixos/steam/default.nix
+    nixos/taskwarrior/default.nix
     nixos/thunderbird/default.nix
     nixos/vlc/default.nix
     nixos/zellij/default.nix

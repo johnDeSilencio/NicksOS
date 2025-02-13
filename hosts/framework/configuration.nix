@@ -169,6 +169,7 @@
     spotify.enable = true;
     starship.enable = true;
     steam.enable = true;
+    taskwarrior.enable = true;
     thunderbird.enable = true;
     vlc.enable = true;
     zellij.enable = true;
