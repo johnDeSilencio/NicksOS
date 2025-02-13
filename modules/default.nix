@@ -7,6 +7,7 @@
     home/signal-desktop/default.nix
 
     nixos/alacritty/default.nix
+    nixos/cargo/default.nix
     nixos/cli-tools/default.nix
     nixos/desktop-environment/default.nix
     nixos/discord/default.nix
