@@ -27,11 +27,6 @@
       recursive = true;
     };
 
-    ".config/zed" = {
-      source = ../../../home/.config/zed;
-      recursive = true;
-    };
-
     ".taskrc" = {
       source = ../../../home/.taskrc;
     };
