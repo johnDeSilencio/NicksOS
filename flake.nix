@@ -23,27 +23,21 @@
   };
 
   outputs =
-    {
+    inputs@{
       nixpkgs,
-      catppuccin,
-      home-manager,
       rust-overlay,
       ...
-    }@inputs:
+    }:
     let
       system = "x86_64-linux";
     in
     {
       nixosConfigurations = {
         framework = nixpkgs.lib.nixosSystem {
-          specialArgs.inputs = inputs;
           inherit system;
+          specialArgs = { inherit inputs; };
           modules = [
             ./hosts/framework/configuration.nix
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.users.nicholas = import ./home.nix;
-            }
           ];
         };
       };
