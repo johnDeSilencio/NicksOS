@@ -21,9 +21,6 @@
 
       # cat clone that supports colors and paging
       bat
-
-      # Background Rust code checker
-      bacon
       cmake
 
       # Used for pretty diffs

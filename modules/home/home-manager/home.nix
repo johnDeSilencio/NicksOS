@@ -22,11 +22,6 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".config/bacon/" = {
-      source = ../../../home/.config/bacon;
-      recursive = true;
-    };
-
     ".config/bat/" = {
       source = ../../../home/.config/bat;
       recursive = true;
