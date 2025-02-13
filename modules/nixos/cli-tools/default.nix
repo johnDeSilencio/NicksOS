@@ -18,9 +18,6 @@
 
       # Shell history tool
       atuin
-
-      # cat clone that supports colors and paging
-      bat
       cmake
 
       # Used for pretty diffs

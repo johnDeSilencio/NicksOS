@@ -8,6 +8,7 @@
 
     nixos/alacritty/default.nix
     nixos/bacon/default.nix
+    nixos/bat/default.nix
     nixos/cargo/default.nix
     nixos/cli-tools/default.nix
     nixos/desktop-environment/default.nix

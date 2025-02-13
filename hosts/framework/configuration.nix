@@ -145,6 +145,7 @@
 
     alacritty.enable = true;
     bacon.enable = true;
+    bat.enable = true;
     cargo.enable = true;
     cli-tools.enable = true;
     desktop-environment.enable = true;
