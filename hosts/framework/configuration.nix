@@ -148,6 +148,7 @@
     cli-tools.enable = true;
     desktop-environment.enable = true;
     discord.enable = true;
+    fonts.enable = true;
     gimp.enable = true;
     git.enable = true;
     gnupg.enable = true;

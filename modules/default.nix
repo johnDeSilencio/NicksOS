@@ -11,6 +11,7 @@
     nixos/cli-tools/default.nix
     nixos/desktop-environment/default.nix
     nixos/discord/default.nix
+    nixos/fonts/default.nix
     nixos/gimp/default.nix
     nixos/git/default.nix
     nixos/gnupg/default.nix
