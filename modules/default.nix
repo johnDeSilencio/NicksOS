@@ -12,6 +12,7 @@
     nixos/git/default.nix
     nixos/gnupg/default.nix
     nixos/keepassxc/default.nix
+    nixos/language-servers/default.nix
     nixos/libreoffice/default.nix
     nixos/localization/default.nix
     nixos/obsidian/default.nix

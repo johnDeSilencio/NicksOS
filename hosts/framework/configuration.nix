@@ -151,6 +151,7 @@
     git.enable = true;
     gnupg.enable = true;
     keepassxc.enable = true;
+    language-servers.enable = true;
     libreoffice.enable = true;
     localization.enable = true;
     obsidian.enable = true;
