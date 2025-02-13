@@ -157,6 +157,7 @@
     language-servers.enable = true;
     libreoffice.enable = true;
     localization.enable = true;
+    login.enable = true;
     obsidian.enable = true;
     photoqt.enable = true;
     qalculate-qt.enable = true;

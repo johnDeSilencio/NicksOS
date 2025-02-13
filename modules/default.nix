@@ -18,6 +18,7 @@
     nixos/language-servers/default.nix
     nixos/libreoffice/default.nix
     nixos/localization/default.nix
+    nixos/login/default.nix
     nixos/obsidian/default.nix
     nixos/photoqt/default.nix
     nixos/qalculate-qt/default.nix
