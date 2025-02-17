@@ -28,6 +28,7 @@
         calendar-vim
         cmp_luasnip
         cmp-nvim-lsp
+        cmp-path
         crates-nvim
         formatter-nvim
         friendly-snippets
