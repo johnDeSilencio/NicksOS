@@ -38,6 +38,7 @@
         nvim-cmp
         nvim-ts-autotag
         nvim-web-devicons
+        rustaceanvim
         telescope-fzf-native-nvim
         vim-sleuth
         vim-visual-multi
