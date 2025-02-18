@@ -1,5 +1,5 @@
 -- assigning leader key to space
--- you can think of <leader> in keybindings as space
+-- you can think of "<leader> in keybindings" as space
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
