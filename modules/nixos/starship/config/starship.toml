@@ -71,7 +71,7 @@ style = "fg:black bg:#cc922d"
 format = "[ ](fg:black bg:#cc922d)[$symbol$version]($style)[](fg:#cc922d)"
 
 [shell]
-fish_indicator = ""
+fish_indicator = "🐟 "
 bash_indicator = "bash "
 zsh_indicator = "zsh "
 powershell_indicator = ""
