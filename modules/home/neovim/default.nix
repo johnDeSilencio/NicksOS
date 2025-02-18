@@ -50,7 +50,6 @@
         nvim-lspconfig
         nvim-ts-autotag
         nvim-web-devicons
-        rustaceanvim
         startup-nvim
         telekasten-nvim
         telescope-nvim
