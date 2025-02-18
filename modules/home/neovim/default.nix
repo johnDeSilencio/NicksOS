@@ -17,7 +17,10 @@
       vimAlias = true;
       vimdiffAlias = true;
 
-      extraLuaConfig = "${builtins.readFile ./config/options.lua}";
+      extraLuaConfig = ''
+        ${builtins.readFile ./config/colorscheme.lua}
+        ${builtins.readFile ./config/options.lua}
+      '';
 
       extraPackages = with pkgs; [
         lua-language-server
