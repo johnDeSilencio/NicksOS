@@ -20,6 +20,13 @@
       extraLuaConfig = ''
         ${builtins.readFile ./config/colorscheme.lua}
         ${builtins.readFile ./config/options.lua}
+        ${builtins.readFile ./config/plugins/cmp.lua}
+        ${builtins.readFile ./config/plugins/fmt.lua}
+        ${builtins.readFile ./config/plugins/lsp.lua}
+        ${builtins.readFile ./config/plugins/startup.lua}
+        ${builtins.readFile ./config/plugins/telekasten.lua}
+        ${builtins.readFile ./config/plugins/telescope.lua}
+        ${builtins.readFile ./config/plugins/which-key-nvim.lua}
       '';
 
       extraPackages = with pkgs; [
@@ -40,12 +47,17 @@
         neodev-nvim
         nvim-bacon
         nvim-cmp
+        nvim-lspconfig
         nvim-ts-autotag
         nvim-web-devicons
         rustaceanvim
+        startup-nvim
+        telekasten-nvim
+        telescope-nvim
         telescope-fzf-native-nvim
         vim-sleuth
         vim-visual-multi
+        which-key-nvim
 
         {
           plugin = comment-nvim;
@@ -56,12 +68,6 @@
         {
           plugin = crates-nvim;
           config = ''require("crates").setup()'';
-          type = "lua";
-        }
-
-        {
-          plugin = formatter-nvim;
-          config = "${builtins.readFile ./config/plugin/fmt.lua}";
           type = "lua";
         }
 
@@ -78,44 +84,8 @@
         }
 
         {
-          plugin = nvim-cmp;
-          config = "${builtins.readFile ./config/plugin/cmp.lua}";
-          type = "lua";
-        }
-
-        {
           plugin = nvim-highlight-colors;
           config = ''require("nvim-highlight-colors").setup({})'';
-          type = "lua";
-        }
-
-        {
-          plugin = nvim-lspconfig;
-          config = "${builtins.readFile ./config/plugin/lsp.lua}";
-          type = "lua";
-        }
-
-        {
-          plugin = startup-nvim;
-          config = "${builtins.readFile ./config/plugin/startup.lua}";
-          type = "lua";
-        }
-
-        {
-          plugin = telekasten-nvim;
-          config = "${builtins.readFile ./config/plugin/telekasten.lua}";
-          type = "lua";
-        }
-
-        {
-          plugin = telescope-nvim;
-          config = "${builtins.readFile ./config/plugin/telescope.lua}";
-          type = "lua";
-        }
-
-        {
-          plugin = which-key-nvim;
-          config = "${builtins.readFile ./config/plugin/which-key-nvim.lua}";
           type = "lua";
         }
 
