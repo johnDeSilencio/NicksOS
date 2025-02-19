@@ -27,6 +27,7 @@
         ${builtins.readFile ./config/plugins/startup.lua}
         ${builtins.readFile ./config/plugins/telekasten.lua}
         ${builtins.readFile ./config/plugins/telescope.lua}
+        ${builtins.readFile ./config/plugins/ts-autotag.lua}
         ${builtins.readFile ./config/plugins/which-key-nvim.lua}
       '';
 
