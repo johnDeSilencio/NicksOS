@@ -20,6 +20,7 @@
       extraLuaConfig = ''
         ${builtins.readFile ./config/colorscheme.lua}
         ${builtins.readFile ./config/options.lua}
+        ${builtins.readFile ./config/plugins/autopairs.lua}
         ${builtins.readFile ./config/plugins/cmp.lua}
         ${builtins.readFile ./config/plugins/fmt.lua}
         ${builtins.readFile ./config/plugins/lsp.lua}
@@ -45,6 +46,7 @@
         luasnip
         miasma-nvim
         neodev-nvim
+        nvim-autopairs
         nvim-bacon
         nvim-cmp
         nvim-lspconfig
