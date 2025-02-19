@@ -19,6 +19,16 @@ vim.o.relativenumber = true -- Add relative numbers on the side as well
 vim.o.cursorline = true     -- Highlight cursor line
 vim.o.termguicolors = true  -- Enable 24-bit RGB color in the TUI
 
+vim.cmd.highlight("SpellBad gui=undercurl")
+vim.cmd.highlight("SpellCap gui=undercurl")
+vim.cmd.highlight("SpellRare gui=undercurl")
+vim.cmd.highlight("SpellLocal gui=undercurl")
+vim.cmd.highlight("DiagnosticUnderlineError gui=undercurl")
+vim.cmd.highlight("DiagnosticUnderlineWarn gui=undercurl")
+vim.cmd.highlight("DiagnosticUnderlineInfo gui=undercurl")
+vim.cmd.highlight("DiagnosticUnderlineHint gui=undercurl")
+vim.cmd.highlight("DiagnosticUnderlineOk gui=undercurl")
+
 -- Searching
 vim.o.hlsearch = false  -- Do not highlight matches
 vim.o.ignorecase = true -- Ignore case in searches by default
