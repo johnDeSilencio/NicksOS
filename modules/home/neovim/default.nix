@@ -22,6 +22,7 @@
         ${builtins.readFile ./config/options.lua}
         ${builtins.readFile ./config/plugins/autopairs.lua}
         ${builtins.readFile ./config/plugins/cmp.lua}
+        ${builtins.readFile ./config/plugins/comment.lua}
         ${builtins.readFile ./config/plugins/fmt.lua}
         ${builtins.readFile ./config/plugins/lsp.lua}
         ${builtins.readFile ./config/plugins/startup.lua}
@@ -41,6 +42,7 @@
         cmp_luasnip
         cmp-nvim-lsp
         cmp-path
+        comment-nvim
         crates-nvim
         formatter-nvim
         friendly-snippets
@@ -60,12 +62,6 @@
         vim-sleuth
         vim-visual-multi
         which-key-nvim
-
-        {
-          plugin = comment-nvim;
-          config = ''require("Comment").setup()'';
-          type = "lua";
-        }
 
         {
           plugin = crates-nvim;
