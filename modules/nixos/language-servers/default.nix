@@ -13,7 +13,6 @@
     environment.systemPackages = with pkgs; [
       lua-language-server
       yaml-language-server
-      nodePackages.typescript-language-server
       markdown-oxide
       nodePackages.vscode-json-languageserver
       nodePackages.bash-language-server
@@ -34,6 +33,10 @@
 
       # Nix
       nil
+
+      # JavaScript and TypeScript
+      typescript-language-server
+      typescript
     ];
   };
 }
