@@ -56,6 +56,7 @@
         nvim-ts-autotag
         nvim-web-devicons
         startup-nvim
+        tailwindcss-colors-nvim
         telekasten-nvim
         telescope-nvim
         telescope-fzf-native-nvim

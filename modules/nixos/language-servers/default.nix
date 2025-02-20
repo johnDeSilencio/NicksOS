@@ -19,6 +19,7 @@
       gopls
       golangci-lint-langserver
       dockerfile-language-server-nodejs
+      tailwindcss-language-server
       vscode-langservers-extracted
       nixfmt-rfc-style
 

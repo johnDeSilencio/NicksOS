@@ -21,6 +21,9 @@ local on_attach = function(_, bufnr)
 	vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
 		vim.lsp.buf.format()
 	end, {})
+
+	-- For highlighting tailwindcss colors, e.g. text-white
+	require("tailwindcss-colors").buf_attach(bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -48,6 +51,54 @@ require("lspconfig").html.setup({ capabilities = capabilities })
 require("lspconfig").cssls.setup({ capabilities = capabilities })
 require("lspconfig").ts_ls.setup({ capabilities = capabilities })
 require("lspconfig").rust_analyzer.setup({ capabilities = capabilities })
+
+require("lspconfig").tailwindcss.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	root_dir = function(fname)
+		local util = require("lspconfig.util")
+		return util.root_pattern("tailwind.config.js", ".tailwind.config.js")(fname)
+	end,
+	filetypes = {
+		"rust",
+		"html",
+	},
+	init_options = {
+		userLanguages = {
+			rust = "html",
+		},
+	},
+	handlers = {
+		["tailwindcss/getConfiguration"] = function(_, _, params, _, bufnr, _)
+			vim.lsp.buf_notify(bufnr, "tailwindcss/getConfigurationResponse", { _id = params._id })
+		end,
+	},
+	settings = {
+		experimental = {
+			classRegex = {
+				[[class= "([^"]*)]],
+				[[class: "([^"]*)]],
+				'~H""".*class="([^"]*)".*"""',
+				'~F""".*class="([^"]*)".*"""',
+			},
+		},
+		includeLanguages = {
+			rust = "html",
+		},
+		tailwindCSS = {
+			validate = true,
+			lint = {
+				cssConflict = "warning",
+				invalidApply = "error",
+				invalidConfigPath = "error",
+				invalidScreen = "error",
+				invalidTailwindDirective = "error",
+				invalidVariant = "error",
+				recommendedVariantOrder = "warning",
+			},
+		},
+	},
+})
 
 require("neodev").setup()
 require("lspconfig").lua_ls.setup {
