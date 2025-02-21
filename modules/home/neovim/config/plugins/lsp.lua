@@ -21,9 +21,6 @@ local on_attach = function(_, bufnr)
 	vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
 		vim.lsp.buf.format()
 	end, {})
-
-	-- For highlighting tailwindcss colors, e.g. text-white
-	require("tailwindcss-colors").buf_attach(bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -53,7 +50,12 @@ require("lspconfig").ts_ls.setup({ capabilities = capabilities })
 require("lspconfig").rust_analyzer.setup({ capabilities = capabilities })
 
 require("lspconfig").tailwindcss.setup({
-	on_attach = on_attach,
+	on_attach = function(client, bufnr)
+		-- For highlighting tailwindcss colors, e.g. text-white
+		require("tailwindcss-colors").buf_attach(bufnr)
+
+		on_attach(client, bufnr)
+	end,
 	capabilities = capabilities,
 	root_dir = function(fname)
 		local util = require("lspconfig.util")
