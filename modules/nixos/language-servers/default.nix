@@ -26,6 +26,9 @@
       # For grammar and spell checking
       harper
 
+      # For the Leptos view! {} macro
+      leptosfmt
+
       # Markdown
       marksman
 
