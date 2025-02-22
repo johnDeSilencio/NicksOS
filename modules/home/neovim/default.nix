@@ -23,6 +23,7 @@
         ${builtins.readFile ./config/plugins/autopairs.lua}
         ${builtins.readFile ./config/plugins/cmp.lua}
         ${builtins.readFile ./config/plugins/comment.lua}
+        ${builtins.readFile ./config/plugins/conform.lua}
         ${builtins.readFile ./config/plugins/fmt.lua}
         ${builtins.readFile ./config/plugins/lsp.lua}
         ${builtins.readFile ./config/plugins/startup.lua}
@@ -43,6 +44,7 @@
         cmp-nvim-lsp
         cmp-path
         comment-nvim
+        conform-nvim
         crates-nvim
         formatter-nvim
         friendly-snippets
