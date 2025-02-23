@@ -47,7 +47,23 @@ capabilities.textDocument.completion.completionItem = {
 require("lspconfig").html.setup({ capabilities = capabilities })
 require("lspconfig").cssls.setup({ capabilities = capabilities })
 require("lspconfig").ts_ls.setup({ capabilities = capabilities })
-require("lspconfig").rust_analyzer.setup({ capabilities = capabilities })
+require("lspconfig").rust_analyzer.setup({
+	capabilities = capabilities,
+	settings = {
+		["rust-analyzer"] = {
+			procMacro = {
+				enable = true,
+				ignored = {
+					leptos_macro = {
+						-- optional: --
+						-- "component", --
+						"server",
+					},
+				},
+			},
+		},
+	},
+})
 
 require("lspconfig").tailwindcss.setup({
 	on_attach = function(client, bufnr)
