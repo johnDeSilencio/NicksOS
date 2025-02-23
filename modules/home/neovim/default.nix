@@ -60,7 +60,7 @@
           formatter-nvim
           friendly-snippets
           luasnip
-          miasma-nvim
+          melange-nvim
           neodev-nvim
           nvim-autopairs
           nvim-bacon
