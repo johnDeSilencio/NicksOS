@@ -1,12 +1,15 @@
 require("conform").setup({
 	formatters_by_ft = {
-		rust = { "leptosfmt", "--stdin", "--rustfmt", lsp_format = "fallback" },
+		rust = { "leptosfmt" },
+	},
+	formatters = {
+		leptosfmt = {
+			command = "leptosfmt",
+			append_args = { "--rustfmt" },
+		},
 	},
 	format_on_save = {
-		lsp_format = "fallback",
-		timeout_ms = 750,
-	},
-	format_after_save = {
+		timeout_ms = 500,
 		lsp_format = "fallback",
 	},
 })
