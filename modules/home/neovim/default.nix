@@ -29,71 +29,102 @@
         ${builtins.readFile ./config/plugins/startup.lua}
         ${builtins.readFile ./config/plugins/telekasten.lua}
         ${builtins.readFile ./config/plugins/telescope.lua}
+        ${builtins.readFile ./config/plugins/treesitter.lua}
         ${builtins.readFile ./config/plugins/ts-autotag.lua}
         ${builtins.readFile ./config/plugins/which-key-nvim.lua}
       '';
 
-      extraPackages = with pkgs; [
-        lua-language-server
-        nil
-      ];
+      plugins =
+        with pkgs.vimPlugins;
+        let
+          tree-sitter-rust-with-rstml-grammar = pkgs.tree-sitter.buildGrammar {
+            language = "rust_with_rstml";
+            version = "4ab78c0bb76735dbf4e1bd1a2ec43e953949edb7";
+            src = pkgs.fetchFromGitHub {
+              owner = "rayliwell";
+              repo = "tree-sitter-rstml";
+              rev = "4ab78c0bb76735dbf4e1bd1a2ec43e953949edb7";
+              sha256 = "sha256-SFV+MdmY5z6DI86VEZMf/lu75QQmM7H7VYSxQg3gkRI=";
+            };
+            location = "rust_with_rstml";
+          };
+        in
+        [
+          calendar-vim
+          cmp_luasnip
+          cmp-nvim-lsp
+          cmp-path
+          comment-nvim
+          conform-nvim
+          crates-nvim
+          formatter-nvim
+          friendly-snippets
+          luasnip
+          miasma-nvim
+          neodev-nvim
+          nvim-autopairs
+          nvim-bacon
+          nvim-cmp
+          nvim-lspconfig
+          nvim-ts-autotag
+          nvim-web-devicons
+          playground
+          startup-nvim
+          tailwindcss-colors-nvim
+          telekasten-nvim
+          telescope-nvim
+          telescope-fzf-native-nvim
+          vim-sleuth
+          vim-visual-multi
+          which-key-nvim
 
-      plugins = with pkgs.vimPlugins; [
-        calendar-vim
-        cmp_luasnip
-        cmp-nvim-lsp
-        cmp-path
-        comment-nvim
-        conform-nvim
-        crates-nvim
-        formatter-nvim
-        friendly-snippets
-        luasnip
-        miasma-nvim
-        neodev-nvim
-        nvim-autopairs
-        nvim-bacon
-        nvim-cmp
-        nvim-lspconfig
-        nvim-ts-autotag
-        nvim-web-devicons
-        startup-nvim
-        tailwindcss-colors-nvim
-        telekasten-nvim
-        telescope-nvim
-        telescope-fzf-native-nvim
-        vim-sleuth
-        vim-visual-multi
-        which-key-nvim
+          {
+            plugin = crates-nvim;
+            config = ''require("crates").setup()'';
+            type = "lua";
+          }
 
-        {
-          plugin = crates-nvim;
-          config = ''require("crates").setup()'';
-          type = "lua";
-        }
+          {
+            plugin = gitsigns-nvim;
+            config = ''require("gitsigns").setup()'';
+            type = "lua";
+          }
 
-        {
-          plugin = gitsigns-nvim;
-          config = ''require("gitsigns").setup()'';
-          type = "lua";
-        }
+          {
+            plugin = lualine-nvim;
+            config = ''require("lualine").setup({ icons_enabled = true })'';
+            type = "lua";
+          }
 
-        {
-          plugin = lualine-nvim;
-          config = ''require("lualine").setup({ icons_enabled = true })'';
-          type = "lua";
-        }
+          {
+            plugin = nvim-highlight-colors;
+            config = ''require("nvim-highlight-colors").setup({})'';
+            type = "lua";
+          }
 
-        {
-          plugin = nvim-highlight-colors;
-          config = ''require("nvim-highlight-colors").setup({})'';
-          type = "lua";
-        }
-
-        {
-          plugin = nvim-treesitter.withAllGrammars;
-        }
-      ];
+          {
+            plugin = (
+              nvim-treesitter.withPlugins (
+                _:
+                nvim-treesitter.allGrammars
+                ++ [
+                  # Install tree-sitter-rstml for better Leptos support
+                  tree-sitter-rust-with-rstml-grammar
+                ]
+              )
+            );
+            config = ''
+              local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+              parser_config.rust_with_rstml = {
+                install_info = {
+                  url = "${tree-sitter-rust-with-rstml-grammar}",
+                },
+                filetype = "rust",
+              }
+            '';
+            type = "lua";
+          }
+        ];
     };
   };
 }
