@@ -78,6 +78,9 @@
       # A better, faster grep
       ripgrep
 
+      # A modern, faster version of nmap
+      rustscan
+
       # Query and display data about SSD / hard drive health
       smartmontools
       sea-orm-cli
