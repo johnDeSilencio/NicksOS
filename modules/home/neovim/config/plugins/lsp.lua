@@ -65,6 +65,11 @@ require("lspconfig").rust_analyzer.setup({
 	},
 })
 
+require("lspconfig").typst_lsp.setup({
+	capabilities = capabilities,
+	cmd = { "tinymist" },
+})
+
 require("lspconfig").tailwindcss.setup({
 	on_attach = function(client, bufnr)
 		-- For highlighting tailwindcss colors, e.g. text-white
