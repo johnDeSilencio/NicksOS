@@ -44,7 +44,15 @@ capabilities.textDocument.completion.completionItem = {
 	},
 }
 
-require("lspconfig").cucumber_language_server.setup({ capabilities = capabilities })
+require("lspconfig").cucumber_language_server.setup({
+	capabilities = capabilities,
+	settings = {
+		cucumber = {
+			features = { "e2e/features/*.feature" },
+			glue = { "e2e/tests/**/*.rs" },
+		},
+	},
+})
 
 require("lspconfig").html.setup({ capabilities = capabilities })
 require("lspconfig").cssls.setup({ capabilities = capabilities })
