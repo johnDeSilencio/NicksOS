@@ -18,6 +18,11 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    cucumber-language-server = {
+      url = "github:johnDeSilencio/language-server/chore/update-tree-sitter";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

@@ -44,6 +44,8 @@ capabilities.textDocument.completion.completionItem = {
 	},
 }
 
+require("lspconfig").cucumber_language_server.setup({ capabilities = capabilities })
+
 require("lspconfig").html.setup({ capabilities = capabilities })
 require("lspconfig").cssls.setup({ capabilities = capabilities })
 require("lspconfig").ts_ls.setup({ capabilities = capabilities })

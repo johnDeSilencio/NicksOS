@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  inputs,
   ...
 }:
 {
@@ -10,46 +11,54 @@
   };
 
   config = lib.mkIf config.custom.language-servers.enable {
-    environment.systemPackages = with pkgs; [
-      lua-language-server
-      yaml-language-server
-      markdown-oxide
-      nodePackages.vscode-json-languageserver
-      nodePackages.bash-language-server
-      gopls
-      golangci-lint-langserver
-      dockerfile-language-server-nodejs
-      tailwindcss-language-server
-      vscode-langservers-extracted
-      nixfmt-rfc-style
+    environment.systemPackages =
+      with pkgs;
+      let
+        cucumber-language-server = inputs.cucumber-language-server.packages.x86_64-linux.default;
+      in
+      [
+        cucumber-language-server
+        node2nix
+        lua-language-server
+        yaml-language-server
+        markdown-oxide
+        nodePackages.vscode-json-languageserver
+        nodePackages.bash-language-server
+        gopls
+        golangci-lint-langserver
+        dockerfile-language-server-nodejs
+        tailwindcss-language-server
+        tree-sitter
+        vscode-langservers-extracted
+        nixfmt-rfc-style
 
-      # For grammar and spell checking
-      harper
+        # For grammar and spell checking
+        harper
 
-      # For the Leptos view! {} macro
-      leptosfmt
+        # For the Leptos view! {} macro
+        leptosfmt
 
-      # Markdown
-      marksman
+        # Markdown
+        marksman
 
-      # TOML
-      taplo
+        # TOML
+        taplo
 
-      # Nix
-      nil
+        # Nix
+        nil
 
-      # JavaScript and TypeScript
-      typescript-language-server
-      typescript
+        # JavaScript and TypeScript
+        typescript-language-server
+        typescript
 
-      # Markup language and renderer
-      typst
+        # Markup language and renderer
+        typst
 
-      # Language server for typst
-      tinymist
+        # Language server for typst
+        tinymist
 
-      # Formatter for typst
-      typstyle
-    ];
+        # Formatter for typst
+        typstyle
+      ];
   };
 }

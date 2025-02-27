@@ -1,5 +1,26 @@
 {
   "nodes": {
+    "cucumber-language-server": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1740631961,
+        "narHash": "sha256-wmXrjFRG4yWHwscjJmR43CE7Y26OhYyMQne1Sz5M1Cw=",
+        "owner": "johnDeSilencio",
+        "repo": "language-server",
+        "rev": "dd7606c12d1ae49b3e892eb5e622e568edb16a37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "johnDeSilencio",
+        "ref": "chore/update-tree-sitter",
+        "repo": "language-server",
+        "type": "github"
+      }
+    },
     "devshell": {
       "inputs": {
         "nixpkgs": [
@@ -285,6 +306,7 @@
     },
     "root": {
       "inputs": {
+        "cucumber-language-server": "cucumber-language-server",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
