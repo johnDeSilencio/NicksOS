@@ -36,6 +36,10 @@
       fd
       ffmpeg
       gcc
+
+      # For instrumenting browser applications
+      geckodriver
+
       gnumake
       gping
       htop
