@@ -18,6 +18,9 @@
 
       # Shell history tool
       atuin
+
+      # For instrumenting Chrome
+      chromedriver
       cmake
 
       # Used for pretty diffs
@@ -37,7 +40,7 @@
       ffmpeg
       gcc
 
-      # For instrumenting browser applications
+      # For instrumenting Firefox
       geckodriver
 
       gnumake
