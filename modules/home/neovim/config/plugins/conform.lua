@@ -2,6 +2,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		rust = { "leptosfmt" },
 		typst = { "typstyle" },
+		markdown = { "dprint" },
 	},
 	formatters = {
 		leptosfmt = {
