@@ -167,6 +167,7 @@
     printing.enable = true;
     qalculate-qt.enable = true;
     sound.enable = true;
+    sound-engineering.enable = true;
     spotify.enable = true;
     starship.enable = true;
     steam.enable = true;

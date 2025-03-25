@@ -30,6 +30,7 @@
     nixos/printing/default.nix
     nixos/qalculate-qt/default.nix
     nixos/sound/default.nix
+    nixos/sound-engineering/default.nix
     nixos/spotify/default.nix
     nixos/starship/default.nix
     nixos/steam/default.nix
