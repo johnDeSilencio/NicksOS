@@ -24,7 +24,6 @@
         ${builtins.readFile ./config/plugins/cmp.lua}
         ${builtins.readFile ./config/plugins/comment.lua}
         ${builtins.readFile ./config/plugins/conform.lua}
-        ${builtins.readFile ./config/plugins/crates.lua}
         ${builtins.readFile ./config/plugins/fmt.lua}
         ${builtins.readFile ./config/plugins/lsp.lua}
         ${builtins.readFile ./config/plugins/startup.lua}
@@ -39,15 +38,15 @@
         with pkgs.vimPlugins;
         let
           # Version provided by vimPlugins is currently broken
-          crates-nvim-main = pkgs.vimUtils.buildVimPlugin {
-            name = "crates-nvim";
-            src = pkgs.fetchFromGitHub {
-              owner = "saecki";
-              repo = "crates.nvim";
-              rev = "1803c8b5516610ba7cdb759a4472a78414ee6cd4";
-              sha256 = "sha256-xuRth8gfX6ZTV3AUBaTM9VJr7ulsNFxtKEsFDZduDC8=";
-            };
-          };
+          # crates-nvim-main = pkgs.vimUtils.buildVimPlugin {
+          #   name = "crates-nvim";
+          #   src = pkgs.fetchFromGitHub {
+          #     owner = "saecki";
+          #     repo = "crates.nvim";
+          #     rev = "2c8f4fab02e3e9ea42c6ad9b547e4207a914a397";
+          #     sha256 = "sha256-Oh3krtXo38wwrcc9YWLS0uw3q7tuw8eU/QG+sUmqtDU=";
+          #   };
+          # };
 
           tree-sitter-rust-with-rstml-grammar = pkgs.tree-sitter.buildGrammar {
             language = "rust_with_rstml";
@@ -68,12 +67,13 @@
           cmp-path
           comment-nvim
           conform-nvim
-          crates-nvim-main
+          # crates-nvim-main
           formatter-nvim
           friendly-snippets
           luasnip
           melange-nvim
           neodev-nvim
+          null-ls-nvim
           nvim-autopairs
           nvim-bacon
           nvim-cmp
@@ -99,6 +99,12 @@
           {
             plugin = lualine-nvim;
             config = ''require("lualine").setup({ icons_enabled = true })'';
+            type = "lua";
+          }
+
+          {
+            plugin = null-ls-nvim;
+            config = ''require("null-ls")'';
             type = "lua";
           }
 

@@ -18,7 +18,7 @@
           name = "nick";
           search = {
             force = true;
-            default = "DuckDuckGo";
+            default = "ddg";
           };
         };
       };

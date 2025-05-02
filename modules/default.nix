@@ -2,6 +2,7 @@
 {
   imports = [
     home/chrome/default.nix
+    home/corectrl/default.nix
     home/firefox/default.nix
     home/home-manager/default.nix
     home/neovim/default.nix

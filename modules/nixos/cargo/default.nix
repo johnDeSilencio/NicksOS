@@ -12,7 +12,6 @@
   config = lib.mkIf config.custom.cargo.enable {
     environment.systemPackages = with pkgs; [
       bugstalker
-      cargo-asm
       cargo-audit
       cargo-auditable
       cargo-binstall
@@ -32,6 +31,7 @@
       cargo-nextest
       cargo-release
       cargo-semver-checks
+      cargo-show-asm
       cargo-sort
       cargo-tarpaulin
       cargo-udeps

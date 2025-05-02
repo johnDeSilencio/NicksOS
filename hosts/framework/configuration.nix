@@ -30,7 +30,7 @@
       useOSProber = true;
 
       gfxmodeEfi = "2560x1600";
-      font = "${pkgs.nerdfonts}/share/fonts/truetype/NerdFonts/IntoneMonoNerdFont-Regular.ttf";
+      font = "${pkgs.nerd-fonts.intone-mono}/share/fonts/truetype/NerdFonts/IntoneMonoNerdFont-Regular.ttf";
       fontSize = 36;
 
       # Ensures that /boot doesn't fill up with old kernels
@@ -138,6 +138,7 @@
   custom = {
     home = {
       chrome.enable = true;
+      corectrl.enable = true;
       firefox.enable = true;
       home-manager.enable = true;
       neovim.enable = true;

@@ -19,7 +19,7 @@
       # BUG: Screensharing in discord through xwaylandvideobridge
       # only works on built-in monitor. Also, if I spend too much time
       # on the external monitor, also seems to crash xwaylandvideobridge
-      xwaylandvideobridge
+      kdePackages.xwaylandvideobridge
     ];
 
     home-manager.users.nicholas = {

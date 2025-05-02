@@ -19,6 +19,9 @@
       # Shell history tool
       atuin
 
+      # WASM tools
+      binaryen
+
       # For instrumenting Chrome
       chromedriver
       cmake

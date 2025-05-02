@@ -2,10 +2,10 @@
   description = "Nick's OS flake config";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -22,6 +22,10 @@
     cucumber-language-server = {
       url = "github:johnDeSilencio/language-server/chore/update-tree-sitter";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    musnix = {
+      url = "github:musnix/musnix";
     };
   };
 
@@ -41,6 +45,7 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./hosts/framework/configuration.nix
+            inputs.musnix.nixosModules.musnix
           ];
         };
       };
