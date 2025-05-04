@@ -88,9 +88,8 @@ for _, method in ipairs({ "textDocument/diagnostic", "workspace/diagnostic" }) d
 	end
 end
 
-require("lspconfig").typst_lsp.setup({
+require("lspconfig").tinymist.setup({
 	capabilities = capabilities,
-	cmd = { "tinymist" },
 })
 
 require("lspconfig").tailwindcss.setup({
