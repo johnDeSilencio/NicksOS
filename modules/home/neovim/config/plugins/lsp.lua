@@ -89,7 +89,12 @@ for _, method in ipairs({ "textDocument/diagnostic", "workspace/diagnostic" }) d
 end
 
 require("lspconfig").tinymist.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
+	settings = {
+		exportPdf = "onSave", -- Choose onType, onSave or never.
+		formatterMode = "typstyle",
+	},
 })
 
 require("lspconfig").tailwindcss.setup({

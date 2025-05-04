@@ -51,9 +51,6 @@
         typescript-language-server
         typescript
 
-        # Markup language and renderer
-        typst
-
         # Language server for typst
         tinymist
 
