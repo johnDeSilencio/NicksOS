@@ -16,6 +16,12 @@ if set -q _flag_help
     exit 0
 end
 
+if test (count $argv) -lt 1
+    echo "You must specify at least one file or directory to restore from the remote host"
+
+    exit 1
+end
+
 set files_and_directories $argv[..-1]
 
 # Assumes at least one backup exists on the backup server
