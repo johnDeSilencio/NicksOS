@@ -43,7 +43,12 @@ if set -q _flag_time_since_last_full_backup
     # Find the date of the last full backup 
     set -l TIME_ELAPSED_SECONDS (math (date -d "$CURRENT_DATE" +"%s") - (date -d "$LAST_FULL_BACKUP" +"%s"))
     set -l TIME_ELAPSED_DAYS (math $TIME_ELAPSED_SECONDS / 86400)
-    echo "$TIME_ELAPSED_DAYS days have elapsed since the last full backup took place"
+
+    if test $TIME_ELAPSED_DAYS -eq 1
+        echo "$TIME_ELAPSED_DAYS day has elapsed since the last full backup took place"
+    else
+        echo "$TIME_ELAPSED_DAYS days have elapsed since the last full backup took place"
+    end
 
     exit 0
 end
@@ -53,7 +58,12 @@ if set -q _flag_time_since_last_backup
     set -l LAST_BACKUP (ssh nicholas@jerusalem "ls -l /mnt/raid/FRAMEWORK/ | grep -v 'total' | grep -v 'LAST_FULL_BACKUP' | awk '{print \$9}' | tail -1")
     set -l TIME_ELAPSED_SECONDS (math (date -d "$CURRENT_DATE" +"%s") - (date -d "$LAST_BACKUP" +"%s"))
     set -l TIME_ELAPSED_DAYS (math $TIME_ELAPSED_SECONDS / 86400)
-    echo "$TIME_ELAPSED_DAYS days have elapsed since any backup took place"
+
+    if test $TIME_ELAPSED_DAYS -eq 1
+        echo "$TIME_ELAPSED_DAYS day has elapsed since any backup took place"
+    else
+        echo "$TIME_ELAPSED_DAYS days have elapsed since any backup took place"
+    end
 
     exit 0
 end
