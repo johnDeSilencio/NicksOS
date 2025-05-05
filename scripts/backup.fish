@@ -1,5 +1,13 @@
 #!/usr/bin/env fish
 
+set HOME "/home/nicholas"
+
+# Modify this list to add things that should be backed up
+set files_and_directories \
+    "$HOME/./Desktop/" \
+    "$HOME/./Documents/" \
+    "$HOME/./Pictures/"
+
 set -l options (fish_opt -s f -l full)
 set options $options (fish_opt -s i -l incremental)
 set options $options (fish_opt -s h -l help)
@@ -76,16 +84,7 @@ end
 
 cd /home/nicholas
 
-set HOME "/home/nicholas"
-
-# Modify this list to add things that should be backed up
-set files_and_directories \
-    "$HOME/Desktop/" \
-    "$HOME/Documents/" \
-    "$HOME/Pictures/"
-
-if $full
-    
+if $full 
     rsync \
         --archive \
         --verbose \
