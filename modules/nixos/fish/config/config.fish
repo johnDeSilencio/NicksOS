@@ -3,6 +3,7 @@ fish_config theme choose "Catppuccin Macchiato"
 status is-interactive; and begin
     # PATH extensions
     fish_add_path ~/.cargo/bin/
+    fish_add_path ~/.dotfiles/scripts/
 
     # Disable greeting
     set fish_greeting
