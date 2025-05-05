@@ -3,6 +3,8 @@
 set -l options (fish_opt -s f -l full)
 set options $options (fish_opt -s i -l incremental)
 set options $options (fish_opt -s h -l help)
+set options $options (fish_opt -s t -l time-since-last-backup)
+set options $options (fish_opt -s T -l time-since-last-full-backup)
 
 argparse $options -- $argv
 
@@ -15,9 +17,35 @@ if set -q _flag_help
     echo "or modified files with hardlinks to the most recent full backup. Full"
     echo "backups should be performed at least once a month to reduce disk usage."
     echo ""
-    echo "    [-h|--help]        Show this message"
-    echo "    [-f|--full]        Perform a full backup"
-    echo "    [-i|--incremental] Perform an incremental backup"
+    echo "    [-h|--help]                        Show this message"
+    echo "    [-f|--full]                        Perform a full backup"
+    echo "    [-i|--incremental]                 Perform an incremental backup"
+    echo "    [-t|--time-since-last-backup]      Show the number of days since any backup"
+    echo "    [-T|--time-since-last-full-backup] Show the number of days since the last full backup"
+
+    exit 0
+end
+
+# Assumes at least one full backup exists on the backup server
+set -l LAST_FULL_BACKUP (ssh nicholas@jerusalem cat /mnt/raid/FRAMEWORK/LAST_FULL_BACKUP)
+
+set -l CURRENT_DATE (date +%Y%m%d)
+
+if set -q _flag_time_since_last_full_backup
+    # Find the date of the last full backup 
+    set -l TIME_ELAPSED_SECONDS (math (date -d "$CURRENT_DATE" +"%s") - (date -d "$LAST_FULL_BACKUP" +"%s"))
+    set -l TIME_ELAPSED_DAYS (math $TIME_ELAPSED_SECONDS / 86400)
+    echo "$TIME_ELAPSED_DAYS days have elapsed since the last full backup took place"
+
+    exit 0
+end
+
+if set -q _flag_time_since_last_backup
+    # Find the date of whatever the last backup was, whether full or incremental
+    set -l LAST_BACKUP (ssh nicholas@jerusalem "ls -l /mnt/raid/FRAMEWORK/ | grep -v 'total' | grep -v 'LAST_FULL_BACKUP' | awk '{print \$9}' | tail -1")
+    set -l TIME_ELAPSED_SECONDS (math (date -d "$CURRENT_DATE" +"%s") - (date -d "$LAST_BACKUP" +"%s"))
+    set -l TIME_ELAPSED_DAYS (math $TIME_ELAPSED_SECONDS / 86400)
+    echo "$TIME_ELAPSED_DAYS days have elapsed since any backup took place"
 
     exit 0
 end
@@ -56,10 +84,7 @@ set files_and_directories \
     "$HOME/Documents/" \
     "$HOME/Pictures/"
 
-set -l CURRENT_DATE (date +%Y%m%d)
-
 if $full
-    set -l CURRENT_DATE (date +%Y%m%d)
     
     rsync \
         --archive \
