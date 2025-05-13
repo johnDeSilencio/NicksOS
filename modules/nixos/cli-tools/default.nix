@@ -35,6 +35,9 @@
       # For command-line DNS queries
       dogdns
 
+      # For dealing with WebP file format
+      libwebp
+
       # For writing down ideas in the terminal quickly
       eureka-ideas
 
