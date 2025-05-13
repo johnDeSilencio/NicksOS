@@ -7,6 +7,7 @@
     home/home-manager/default.nix
     home/neovim/default.nix
     home/signal-desktop/default.nix
+    home/zed/default.nix
 
     nixos/alacritty/default.nix
     nixos/bacon/default.nix
