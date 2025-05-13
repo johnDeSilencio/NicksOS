@@ -51,7 +51,7 @@
       htop
 
       # For image conversion capabilities
-      imagemagick_light
+      imagemagickBig
 
       killall
 
