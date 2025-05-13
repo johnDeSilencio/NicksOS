@@ -49,6 +49,10 @@
       gnumake
       gping
       htop
+
+      # For image conversion capabilities
+      imagemagick_light
+
       killall
 
       # For getting CPU temperature
