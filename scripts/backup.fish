@@ -6,7 +6,8 @@ set HOME "/home/nicholas"
 set files_and_directories \
     "$HOME/./Desktop/" \
     "$HOME/./Documents/" \
-    "$HOME/./Pictures/"
+    "$HOME/./Pictures/" \
+    "$HOME/./.task/"
 
 set -l options (fish_opt -s f -l full)
 set options $options (fish_opt -s i -l incremental)
