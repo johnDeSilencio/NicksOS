@@ -94,7 +94,8 @@
 
 	"clock#3": {
 		"format": "{:%m-%d}",
-		"tooltip": false
+		"tooltip": false,
+		"on-click": "gnome-calendar"
 	},
 
 	"pulseaudio": {
