@@ -140,6 +140,7 @@
       chrome.enable = true;
       corectrl.enable = true;
       firefox.enable = true;
+      gnome-calendar.enable = true;
       home-manager.enable = true;
       neovim.enable = true;
       signal-desktop.enable = true;
