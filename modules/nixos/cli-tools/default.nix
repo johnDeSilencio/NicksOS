@@ -86,6 +86,9 @@
       oxlint
       pass
 
+      # Over-engineered terminal screensaver written in Rust
+      pipes-rs
+
       # Analyzer power usage
       powertop
 
