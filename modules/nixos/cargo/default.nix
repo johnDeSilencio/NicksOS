@@ -37,6 +37,7 @@
       cargo-udeps
       cargo-update
       cargo-watch
+      panamax
       trunk
     ];
   };
