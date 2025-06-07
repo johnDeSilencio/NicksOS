@@ -53,6 +53,7 @@
     192.168.88.120 nazareth
     192.168.88.121 bethany
     192.168.88.122 jerusalem
+    127.0.0.1      panamax.internal
   '';
 
   # Enable experimental features of nix
