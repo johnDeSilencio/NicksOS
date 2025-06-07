@@ -22,6 +22,9 @@
       # WASM tools
       binaryen
 
+      # For audio visualization on the command-line
+      cava
+
       # For instrumenting Chrome
       chromedriver
       cmake
