@@ -1,10 +1,7 @@
-* {
-	font-size: 24px;
+window {
+	font-size: 30px;
 	font-family: "IntoneOne Nerd Font";
-}
-
-window#waybar {
-	background: #131313;
+	background-color: rgba(19, 19, 19, 0);
 	color: #b18840;
 }
 
@@ -20,36 +17,27 @@ tooltip * {
 	text-shadow: none;
 }
 
-#custom-right-arrow-dark,
-#custom-left-arrow-dark {
-	color: #0f0f0f;
+.modules-left {
+	background-color: #131313;
+	margin: 5px 0px 0px 5px;
+	border-radius: 15px;
 }
 
-#custom-right-arrow-light,
-#custom-left-arrow-light {
-	color: #131313;
-	background: #0f0f0f;
+.modules-center {
+	background-color: #131313;
+	margin: 5px 0px 0px 0px;
+	border-radius: 15px;
 }
 
-#workspaces,
-#clock.1,
-#clock.2,
-#clock.3,
-#pulseaudio,
-#memory,
-#cpu,
-#battery,
-#disk,
-#bluetooth,
-#network,
-#custom-power,
-#tray {
-	background: #0f0f0f;
+.modules-right {
+	background-color: #131313;
+	margin: 5px 5px 0px 0px;
+	border-radius: 15px;
 }
 
 #workspaces button {
-	padding: 0 2px;
 	color: #b18840;
+	border-radius: 10px;
 }
 
 #workspaces button.focused {
@@ -64,7 +52,6 @@ tooltip * {
 #workspaces button:hover {
 	background: #cc922d;
 	border: #cc922d;
-	padding: 0 3px;
 }
 
 #pulseaudio,
@@ -75,11 +62,38 @@ tooltip * {
 	color: #b18840;
 }
 
-#clock,
+#clock.1 {
+	padding: 10px 5px 10px 10px;
+}
+
+#clock.2 {
+	padding: 10px 5px 10px 5px;
+}
+
+#clock.3 {
+	padding: 10px 10px 10px 5px;
+}
+
+#tray {
+	padding: 10px 5px 10px 5px;
+}
+
 #pulseaudio,
 #memory,
 #cpu,
 #battery,
 #disk {
-	padding: 0 10px;
+	padding: 5px 10px;
+}
+
+#bluetooth {
+	padding: 10px 20px 10px 15px;
+}
+
+#network {
+	padding: 10px 20px 10px 15px;
+}
+
+#custom-power {
+	padding: 10px 25px 10px 15px;
 }

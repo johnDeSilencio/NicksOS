@@ -6,49 +6,25 @@
 
 	"modules-left": [
 		"hyprland/workspaces",
-		"custom/right-arrow-dark",
-		"hyprland/window"
+		"hyprland/window",
 	],
 
 	"modules-center": [
-		"custom/left-arrow-dark",
 		"clock#1",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"clock#2",
-		"custom/right-arrow-dark",
-		"custom/right-arrow-light",
 		"clock#3",
-		"custom/right-arrow-dark"
 	],
 
 	"modules-right": [
-		"custom/left-arrow-dark",
 		"tray",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"pulseaudio",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"memory",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"cpu",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"battery",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"disk",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"bluetooth",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"network#wireless",
 		"network#wired",
-		"custom/left-arrow-light",
-		"custom/left-arrow-dark",
 		"custom/power"
 	],
 
@@ -75,11 +51,21 @@
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"on-scroll-up": "hyprctl dispatch workspace e+1",
-		"on-scroll-down": "hyprctl dispatch workspace e-1"
+		"on-scroll-down": "hyprctl dispatch workspace e-1",
+		"persistent-workspaces": {
+			"*": 5, // 5 workspaces by default on every monitor
+		}
 	},
 
 	"hyprland/window": {
-		"separate-outpus": true
+		"separate-outputs": true,
+		"rewrite": {
+    		"(.*)Firefox(.*)": "", // Windows whose classes are "firefox"
+			"(.*)YouTube(.*)": "", // Windows whose titles contain "youtube"
+    		"(.*)GitHub(.*)": "", // Windows whose class is "firefox" and title contains "github".
+    		"foot": "", // Windows that contain "Zellij" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+    		"(.*)Zellij(.*)": "",
+		},
 	},
 
 	"clock#1": {
@@ -146,10 +132,10 @@
 	},
 
 	"bluetooth": {
-		"format-on": " 󰂯 ",
-		"format-off": " 󰂲 ",
-		"format-disabled": " 󰂲 ",
-		"format-connected": " 󰂰 ",
+		"format-on": "󰂯",
+		"format-off": "󰂲",
+		"format-disabled": "󰂲",
+		"format-connected": "󰂰",
 		"tooltip-format-connected": "{device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 		"on-click": "blueman-manager"
@@ -157,10 +143,10 @@
 
 	"network#wireless": {
 		"interface": "wl*",
-		"format": "  ",
-		"format-wifi": " 󰀂 ",
-		"format-disconnected": " 󰯡 ",
-		"format-disabled": " 󰀂 ",
+		"format": "",
+		"format-wifi": "󰀂",
+		"format-disconnected": "󰯡",
+		"format-disabled": "󰀂",
 		"tooltip-format-wifi": "WiFi Network:\t\t{essid}\nIP Address:\t\t{ipaddr}/{cidr}\nSignal Strength:\t{signalStrength}% ({signaldBm}dBm)\nUp Speed:\t\t{bandwidthUpBytes}\nDown Speed:\t\t{bandwidthDownBytes}",
 		"tooltip-format-disconnected": "WiFi Network:\t\tDisconnected",
 		"tooltip-format-disabled": "Wifi Disabled",
@@ -171,15 +157,15 @@
 	"network#wired": {
 		"interface": "en*",
 		"format": "",
-		"format-ethernet": " 󰲝 ",
-		"format-linked": " 󰲝 ",
+		"format-ethernet": "󰲝",
+		"format-linked": "󰲝",
 		"tooltip-format-ethernet": "Ethernet Interface:\t{ifname}\nIP Address:\t\t{ipaddr}/{cidr}\nUp Speed:\t\t{bandwidthUpBytes}\nDown Speed:\t\t{bandwidthDownBytes}",
 		"on-click": "nm-applet --indicator",
 		"interval": 3
 	},
 
 	"custom/power": {
-		"format": "   ",
+		"format": "",
 		"tooltip": false,
 		"on-click": "wlogout --protocol layer-shell"
 	},
