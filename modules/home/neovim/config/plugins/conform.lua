@@ -14,6 +14,7 @@ require("conform").setup({
 		timeout_ms = 500,
 		lsp_format = "fallback",
 	},
+	notify_on_error = false,
 })
 
 -- Format on save
