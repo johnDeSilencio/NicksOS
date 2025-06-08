@@ -56,6 +56,9 @@
       gping
       htop
 
+      # For benchmarking command evocations
+      hyperfine
+
       # For image conversion capabilities
       imagemagickBig
 
