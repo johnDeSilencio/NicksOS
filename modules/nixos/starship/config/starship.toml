@@ -1,4 +1,69 @@
-command_timeout = 1000
+command_timeout = 2000
+format = """$shell$directory$git_branch$character"""
+right_format = """$aws\
+$azure\
+$buf\
+$c\
+$cmake\
+$cobol\
+$conda\
+$container\
+$crystal\
+$daml\
+$dart\
+$deno\
+$docker_context\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gcloud\
+$gleam\
+$golang\
+$gradle\
+$haskell\
+$haxe\
+$helm\
+$java\
+$jobs\
+$julia\
+$kotlin\
+$kubernetes\
+$line_break\
+$lua\
+$meson\
+$mise\
+$nats\
+$netns\
+$nim\
+$nix\
+$nix_shell\
+$nodejs\
+$ocaml\
+$opa\
+$openstack\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$red\
+$rlang\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$spack\
+$swift\
+$terraform\
+$typst\
+$vagrant\
+$vcsh\
+$vlang\
+$zig"""
 
 [character]
 success_symbol = "[❯](#cc922d)"
@@ -9,20 +74,20 @@ style = "#75beff"
 format = "[ ](fg:black bg:#75beff)[⌛$duration](bg:$style fg:black)[](fg:$style)"
 
 [directory]
-style = "#cc922d"
+style = "transparent"
 truncate_to_repo = false
 fish_style_pwd_dir_length = 1
-format = "[ ](fg:black bg:#cc922d)[$path[$read_only](bg:$style fg:black)](bg:$style fg:black)[](fg:$style)"
+format = "[ $path[$read_only](fg:#cc922d bg:$style)](fg:#cc922d bg:$style)[ | ](fg:#cc922d bg:$style)"
 read_only = " "
 
 [docker_context]
-style = "fg:black bg:#cc922d"
+style = "fg:black bg:transparent"
 symbol = "🐳  "
 format = "[ ](fg:black bg:#cc922d)[$symbol$context]($style)[](fg:#cc922d)"
 
 [git_branch]
-style = "#cc922d"
-format = "[](fg:black bg:$style)[ $symbol$branch](fg:black bg:$style)[](fg:$style)"
+style = "transparent"
+format = "(fg:#cc922d bg:$style)[$symbol$branch ](fg:#cc922d bg:$style)"
 
 [git_commit]
 style = "#cc922d"
@@ -42,8 +107,8 @@ renamed = "[ ${count} ](fg:black bg:#cc922d)"
 deleted = "[ ${count} ](fg:black bg:#cc922d)"
 untracked = "[❓${count} ](fg:black bg:#cc922d)"
 stashed = "[ ${count} ](fg:black bg:#cc922d)"
-ahead = "[ ${count} ](fg:#f07178 bg:#cc922d)"
-behind = "[ ${count} ](fg:black bg:#cc922d)"
+ahead = "[  ${count} ](fg:black bg:#cc922d)"
+behind = "[  ${count} ](fg:black bg:#cc922d)"
 diverged = "[ ](fg:88 bg:#cc922d)[ נּ ](fg:black bg:#cc922d)[ ${ahead_count} ](fg:black bg:#cc922d)[ ${behind_count} ](fg:black bg:#cc922d)"
 
 [golang]
@@ -67,14 +132,14 @@ format = "[ ](fg:black bg:#cc922d)[$symbol$version]($style)[](fg:#cc922d)"
 disabled = true
 
 [rust]
-style = "fg:black bg:#cc922d"
-format = "[ ](fg:black bg:#cc922d)[$symbol$version]($style)[](fg:#cc922d)"
+format = "$symbol"
 
 [shell]
-fish_indicator = "🐟 "
-bash_indicator = "bash "
-zsh_indicator = "zsh "
-powershell_indicator = ""
+style = "transparent"
+fish_indicator = "[🐟 |](fg:#cc922d bg:$style)"
+bash_indicator = "[🅱️ |](fg:#cc922d bg:$style)"
+zsh_indicator = "[💤 |](fg:#cc922d bg:$style)"
+powershell_indicator = "[🅿️ |](fg:#cc922d bg:$style)"
 format = "[$indicator](fg:#f07178)"
 disabled = false
 
