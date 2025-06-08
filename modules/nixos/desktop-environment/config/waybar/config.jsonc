@@ -59,6 +59,7 @@
 			"(.*)Bluetooth(.*)": "  Bluetooth Manager",
 			"(.*)Calendar(.*)": "  Calendar",
 			"(.*)Discord(.*)": "  Discord",
+			"(.*)Rust(.*)": "  Rust",
 			"(.*)Hacker News(.*)": "  Hacker News",
 			"(.*)GNU Image Manipulation Program(.*)": "   GIMP",
 			"(.*)GitHub(.*)": "  GitHub",
@@ -81,8 +82,8 @@
 			"(.*)Zoom(.*)": "  Zoom",
 
 			// Not Hacker News, GitHub, NixOS Manual, YouTube,
-			// Stack Overflow, or regex101
-			"^(?!.*(Hacker News|GitHub|NixOS Manual|YouTube|Stack Overflow|regex101))(.*)Firefox(.*)": "  Firefox",
+			// Stack Overflow, or regex101, or Rust
+			"^(?!.*(Hacker News|GitHub|NixOS Manual|YouTube|Stack Overflow|regex101|Rust))(.*)Firefox(.*)": "  Firefox",
 		},
 	},
 
