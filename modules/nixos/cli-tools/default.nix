@@ -61,6 +61,7 @@
 
       # For image conversion capabilities
       imagemagickBig
+      inotify-tools
 
       killall
 
