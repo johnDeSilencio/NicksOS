@@ -69,17 +69,33 @@
     }:
     let
       system = "x86_64-linux";
+
+      overlays = [
+        (final: prev: {
+          zjstatus = zjstatus.packages.${prev.system}.default;
+        })
+      ];
     in
     {
       nixosConfigurations = {
         framework = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit inputs hyprhook hyprhook-mouse-move; };
+          specialArgs = {
+            inherit
+              zjstatus
+              inputs
+              hyprhook
+              hyprhook-mouse-move
+              ;
+          };
           modules = [
+            { nixpkgs.overlays = overlays; }
             ./hosts/framework/configuration.nix
             inputs.musnix.nixosModules.musnix
           ];
+
         };
       };
+
     };
 }

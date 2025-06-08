@@ -1,5 +1,4 @@
 {
-  inputs,
   lib,
   config,
   pkgs,
@@ -13,7 +12,7 @@
   config = lib.mkIf config.custom.zellij.enable {
     environment.systemPackages = with pkgs; [
       zellij
-      inputs.zjstatus
+      zjstatus
     ];
 
     home-manager.users.nicholas = {
@@ -23,6 +22,48 @@
           recursive = true;
         };
       };
+
+      home.file.".config/zellij/layouts/default.kdl".text = ''
+        load_plugins {
+          "${pkgs.zjstatus}/bin/zjframes.wasm" {
+            hide_frame_for_single_pane       "true"
+            hide_frame_except_for_search     "true"
+            hide_frame_except_for_scroll     "true"
+            hide_frame_except_for_fullscreen "true"
+          }
+        }
+
+        layout {
+          default_tab_template {
+            children
+            pane size=1 borderless=true {
+              plugin location="file:${pkgs.zjstatus}/bin/zjstatus.wasm" {
+                format_left   "{mode} #[fg=#8be9fd,bold]{session}"
+                format_center "{tabs}"
+                format_right  "{command_git_branch} {datetime}"
+                format_space  ""
+
+                border_enabled  "false"
+                border_char     "─"
+                border_format   "#[fg=#b3b3b3]{char}"
+                border_position "top"
+
+                hide_frame_for_single_pane "true"
+
+                mode_normal  "#[bg=#cc922d] "
+                mode_tmux    "#[bg=#f07178]"
+
+                tab_normal   "#[fg=#b3b3b3] {name} "
+                tab_active   "#[fg=#b18840,bold,italic] {name} "
+
+                datetime          "#[fg=#b3b3b3] {format} "
+                datetime_format   "%A, %d %b %Y %H:%M"
+                datetime_timezone "America/Los_Angeles"
+              }
+            }
+          }
+        }
+      '';
     };
   };
 }
