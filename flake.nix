@@ -27,12 +27,36 @@
     musnix = {
       url = "github:musnix/musnix";
     };
+
+    hyprland = {
+      url = "github:hyprwm/Hyprland/v0.49.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
+
+    hyprhook = {
+      url = "github:Hyprhook/Hyprhook";
+      inputs.hyprland.follows = "hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprhook-mouse-move = {
+      url = "github:johnDeSilencio/hyprhook-mouse-move";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
     inputs@{
+      self,
       nixpkgs,
       rust-overlay,
+      hyprhook,
+      hyprhook-mouse-move,
       ...
     }:
     let
@@ -42,7 +66,7 @@
       nixosConfigurations = {
         framework = nixpkgs.lib.nixosSystem {
           inherit system;
-          specialArgs = { inherit inputs; };
+          specialArgs = { inherit inputs hyprhook hyprhook-mouse-move; };
           modules = [
             ./hosts/framework/configuration.nix
             inputs.musnix.nixosModules.musnix
