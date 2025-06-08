@@ -5,6 +5,8 @@
 	"position": "top",
 
 	"modules-left": [
+		"custom/home",
+		"custom/pipe",
 		"hyprland/workspaces",
 		"hyprland/window",
 	],
@@ -28,24 +30,15 @@
 		"custom/power"
 	],
 
-	"custom/left-arrow-dark": {
-		"format": "",
-		"tooltip": false
+	"custom/home": {
+		"format": "",
+		"tooltip": false,
+		"on-click": "rofi -show drun -display-drun '' -show-icons",
 	},
 
-	"custom/left-arrow-light": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/right-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/right-arrow-light": {
-		"format": "",
-		"tooltip": false
+	"custom/pipe": {
+		"format": "|",
+		"tooltip": false,
 	},
 
 	"hyprland/workspaces": {
@@ -53,18 +46,43 @@
 		"on-scroll-up": "hyprctl dispatch workspace e+1",
 		"on-scroll-down": "hyprctl dispatch workspace e-1",
 		"persistent-workspaces": {
-			"*": 5, // 5 workspaces by default on every monitor
+			"*": 10, // 5 workspaces by default on every monitor
 		}
 	},
 
 	"hyprland/window": {
 		"separate-outputs": true,
+		"max-length": 1000,
+		"format": "{}",
 		"rewrite": {
-    		"(.*)Firefox(.*)": "", // Windows whose classes are "firefox"
-			"(.*)YouTube(.*)": "", // Windows whose titles contain "youtube"
-    		"(.*)GitHub(.*)": "", // Windows whose class is "firefox" and title contains "github".
-    		"foot": "", // Windows that contain "Zellij" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
-    		"(.*)Zellij(.*)": "",
+    			"(.*)Alacritty(.*)": "  Alacritty",
+			"(.*)Bluetooth(.*)": "  Bluetooth Manager",
+			"(.*)Calendar(.*)": "  Calendar",
+			"(.*)Discord(.*)": "  Discord",
+			"(.*)Hacker News(.*)": "  Hacker News",
+			"(.*)GNU Image Manipulation Program(.*)": "   GIMP",
+			"(.*)GitHub(.*)": "  GitHub",
+			"(.*)KeePassXC(.*)": "󱕵  KeePassXC",
+			"(.*)LibreOffice Calc(.*)": "󱎏  LibreOffice Calc",
+			"(.*)LibreOffice Writer(.*)": "  LibreOffice Writer",
+			"(.*)NixOS Manual(.*)": "  NixOS Manual",
+			"(.*)Obsidian(.*)": "󰂺  Obsidian",
+			"(.*)PhotoQt(.*)": "  Photos",
+			"(.*)Qalculate(.*)": "  Qalculate",
+			"(.*)regex101(.*)": "󰑑  Regex101",
+			"(.*)Signal(.*)": "  Signal",
+			"(.*)Spotify(.*)": "  Spotify",
+			"(.*)Stack Overflow(.*)": "  Stack Overflow",
+			"(.*)Steam(.*)": "  Steam",
+			"(.*)Tiny Glade(.*)": "󰳆  Tiny Glade",
+			"(.*)Volume(.*)": "   Volume",
+			"(.*)YouTube(.*)": "  YouTube",
+			"(.*)Zed(.*)": "󰼭  Zed",
+			"(.*)Zoom(.*)": "  Zoom",
+
+			// Not Hacker News, GitHub, NixOS Manual, YouTube,
+			// Stack Overflow, or regex101
+			"^(?!.*(Hacker News|GitHub|NixOS Manual|YouTube|Stack Overflow|regex101))(.*)Firefox(.*)": "  Firefox",
 		},
 	},
 
