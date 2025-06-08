@@ -108,6 +108,12 @@
           }
 
           {
+            plugin = transparent-nvim;
+            config = "${builtins.readFile ./config/plugins/transparent.lua}";
+            type = "lua";
+          }
+
+          {
             plugin = nvim-highlight-colors;
             config = ''require("nvim-highlight-colors").setup({})'';
             type = "lua";
