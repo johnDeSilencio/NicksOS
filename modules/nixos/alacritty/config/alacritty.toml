@@ -1,5 +1,6 @@
 [window]
 opacity = 0.85
+dynamic_title = false
 
 [font]
 normal = { family = "IntoneMono Nerd Font", style = "Regular" }
