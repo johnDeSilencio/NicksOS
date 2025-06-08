@@ -63,6 +63,8 @@
       imagemagickBig
       inotify-tools
 
+      # For manipulating JSON text on the command-line
+      jaq
       killall
 
       # For getting CPU temperature
