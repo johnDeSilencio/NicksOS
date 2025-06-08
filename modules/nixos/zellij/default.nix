@@ -1,4 +1,5 @@
 {
+  inputs,
   lib,
   config,
   pkgs,
@@ -10,7 +11,10 @@
   };
 
   config = lib.mkIf config.custom.zellij.enable {
-    environment.systemPackages = with pkgs; [ zellij ];
+    environment.systemPackages = with pkgs; [
+      zellij
+      inputs.zjstatus
+    ];
 
     home-manager.users.nicholas = {
       home.file = {

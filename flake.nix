@@ -28,6 +28,13 @@
       url = "github:musnix/musnix";
     };
 
+    # Zellij status bar plugin
+    zjstatus = {
+      url = "github:dj95/zjstatus";
+      inputs.rust-overlay.follows = "rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     hyprland = {
       url = "github:hyprwm/Hyprland/v0.49.0";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -55,6 +62,7 @@
       self,
       nixpkgs,
       rust-overlay,
+      zjstatus,
       hyprhook,
       hyprhook-mouse-move,
       ...
