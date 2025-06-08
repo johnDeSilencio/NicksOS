@@ -37,3 +37,6 @@ vim.o.smartcase = true  -- But make it case sensitive if uppercase is used
 vim.o.updatetime = 300
 
 vim.o.mouse = 'a'
+
+-- Virtual
+vim.diagnostic.config({ virtual_text = true })
