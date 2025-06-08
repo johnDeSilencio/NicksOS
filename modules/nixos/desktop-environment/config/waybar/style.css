@@ -69,18 +69,13 @@ tooltip * {
 	background: transparent;
 }
 
-#workspaces button.focused {
-	color: #cc922d;
-}
-
 #workspaces button:hover {
 	box-shadow: inherit;
 	text-shadow: inherit;
-}
-
-#workspaces button:hover {
-	background: #cc922d;
-	border: #cc922d;
+	color: #89B4FA;
+	border: 0px;
+	border-bottom: 5px solid #89B4FA;
+	padding-top: 5px;
 }
 
 #window {
