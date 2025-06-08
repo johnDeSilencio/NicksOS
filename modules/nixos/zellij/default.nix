@@ -50,8 +50,10 @@
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal  "#[bg=#cc922d] "
-                mode_tmux    "#[bg=#f07178]"
+                mode_normal  "#[bg=#cc922d,bold]   "
+                mode_tmux    "#[bg=#f07178,bold]   "
+                mode_locked  "#[bg=#8be9fd,bold]   "
+                mode_resize  "#[bg=#b3b3b3,bold]   "
 
                 tab_normal   "#[fg=#b3b3b3] {name} "
                 tab_active   "#[fg=#b18840,bold,italic] {name} "
