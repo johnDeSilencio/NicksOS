@@ -1,0 +1,4 @@
+[source.panamax]
+registry = "http://localhost:8080/git/crates.io-index"
+[source.panamax-sparse]
+registry = "sparse+http://localhost:8080/index/"

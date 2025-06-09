@@ -10,6 +10,15 @@
   };
 
   config = lib.mkIf config.custom.cargo.enable {
+    home-manager.users.nicholas = {
+      home.file = {
+        ".cargo/config.toml" = {
+          source = ./config/config.toml;
+          recursive = false;
+        };
+      };
+    };
+
     environment.systemPackages = with pkgs; [
       bugstalker
       cargo-audit
