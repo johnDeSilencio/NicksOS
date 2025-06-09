@@ -3,6 +3,15 @@ local wk = require("which-key")
 wk.add({
 	{
 		mode = { "n", "v" },
+		{ "<leader>r", desc = "Rename symbol" },
+		{ "<leader>a", desc = "Show code actions" },
+		{ "gd", desc = "Go-to definition" },
+		{ "gD", desc = "Go-to declaration" },
+		{ "gI", desc = "Go-to implementation" },
+		{ "gO", desc = "Open external docs" },
+		{ "<leader>D", desc = "Go-to type definition" },
+		{ "gr", desc = "Find references to symbol" },
+		{ "K", desc = "Show details" },
 		{ "<leader><tab>", group = "tabs" },
 		{ "<leader>c", group = "code" },
 		{ "<leader>d", group = "debug" },
