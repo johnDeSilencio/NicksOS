@@ -108,6 +108,18 @@
           }
 
           {
+            plugin = nvim-dap;
+            config = "${builtins.readFile ./config/plugins/dap.lua}";
+            type = "lua";
+          }
+
+          {
+            plugin = nvim-dap-ui;
+            config = "${builtins.readFile ./config/plugins/dapui.lua}";
+            type = "lua";
+          }
+
+          {
             plugin = transparent-nvim;
             config = "${builtins.readFile ./config/plugins/transparent.lua}";
             type = "lua";
