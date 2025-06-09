@@ -59,6 +59,22 @@ require("lspconfig").html.setup({ on_attach = on_attach, capabilities = capabili
 require("lspconfig").cssls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").ts_ls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").rust_analyzer.setup({
+	on_attach = function(client, bufnr)
+		vim.keymap.set("n", "gO", function()
+			vim.lsp.buf_request(
+				vim.api.nvim_get_current_buf(),
+				'experimental/externalDocs',
+				vim.lsp.util.make_position_params(0, client.offset_encoding or "utf-8"),
+				function(err, url)
+					if not err and url then
+						vim.ui.open(url)
+					end
+				end
+			)
+		end)
+
+		on_attach(client, bufnr)
+	end,
 	capabilities = capabilities,
 	settings = {
 		["rust-analyzer"] = {
