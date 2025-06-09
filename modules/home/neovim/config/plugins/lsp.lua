@@ -45,6 +45,7 @@ capabilities.textDocument.completion.completionItem = {
 }
 
 require("lspconfig").cucumber_language_server.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
 		cucumber = {
@@ -54,9 +55,9 @@ require("lspconfig").cucumber_language_server.setup({
 	},
 })
 
-require("lspconfig").html.setup({ capabilities = capabilities })
-require("lspconfig").cssls.setup({ capabilities = capabilities })
-require("lspconfig").ts_ls.setup({ capabilities = capabilities })
+require("lspconfig").html.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").cssls.setup({ on_attach = on_attach, capabilities = capabilities })
+require("lspconfig").ts_ls.setup({ on_attach = on_attach, capabilities = capabilities })
 require("lspconfig").rust_analyzer.setup({
 	capabilities = capabilities,
 	settings = {
@@ -187,6 +188,8 @@ require("lspconfig").marksman.setup({
 })
 
 require("lspconfig").harper_ls.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
 	settings = {
 		["harper-ls"] = {
 			diagnosticSeverity = "hint",
