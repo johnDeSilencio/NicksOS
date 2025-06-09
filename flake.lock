@@ -853,6 +853,7 @@
         "nixpkgs": "nixpkgs_2",
         "nixvim": "nixvim",
         "rust-overlay": "rust-overlay_2",
+        "wild": "wild",
         "zjstatus": "zjstatus"
       }
     },
@@ -889,6 +890,27 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "e7876c387e35dc834838aff254d8e74cf5bd4f19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_3": {
+      "inputs": {
+        "nixpkgs": [
+          "wild",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1749177458,
+        "narHash": "sha256-9HNq3EHZIvvxXQyEn0sYOywcESF1Xqw2Q8J1ZewcXuk=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "d58933b88cef7a05e9677e94352fd6fedba402cd",
         "type": "github"
       },
       "original": {
@@ -975,6 +997,27 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "wild": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_3"
+      },
+      "locked": {
+        "lastModified": 1749445699,
+        "narHash": "sha256-GVe18E3BofPgGX0CdxmkJSOvCxOjW3HbSoNj/S1vYwk=",
+        "owner": "davidlattimore",
+        "repo": "wild",
+        "rev": "370a8019ded05ae6eddf2af16f0c0b6f59725970",
+        "type": "github"
+      },
+      "original": {
+        "owner": "davidlattimore",
+        "repo": "wild",
         "type": "github"
       }
     },

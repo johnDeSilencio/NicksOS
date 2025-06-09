@@ -55,6 +55,11 @@
       url = "github:johnDeSilencio/hyprhook-mouse-move";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    wild = {
+      url = "github:davidlattimore/wild";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -65,12 +70,15 @@
       zjstatus,
       hyprhook,
       hyprhook-mouse-move,
+      wild,
       ...
     }:
     let
       system = "x86_64-linux";
 
       overlays = [
+        (import rust-overlay)
+        wild.overlays.default
         (final: prev: {
           zjstatus = zjstatus.packages.${prev.system}.default;
         })
@@ -86,6 +94,7 @@
               inputs
               hyprhook
               hyprhook-mouse-move
+              wild
               ;
           };
           modules = [
