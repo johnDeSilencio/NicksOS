@@ -51,6 +51,9 @@
         # Nix
         nil
 
+        # For styling Lua
+        stylua
+
         # JavaScript and TypeScript
         typescript-language-server
         typescript
