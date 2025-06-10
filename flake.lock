@@ -1059,11 +1059,11 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1749539628,
-        "narHash": "sha256-0yb5GVn+Bz8QKxhI6qR+lt7ZSqePfxuu2czzCdCNJ+U=",
+        "lastModified": 1749540277,
+        "narHash": "sha256-+92YWKVILAmTtu5YRpQga4fR9X5426xtCda5iD4VLMs=",
         "owner": "johnDeSilencio",
         "repo": "tombi",
-        "rev": "a745e034c820ebb5ddd5cb1bd78b6316f80ccd1c",
+        "rev": "3d1dc79f48b4f1cce99b7deed6c2d6bdad2b1b7b",
         "type": "github"
       },
       "original": {
