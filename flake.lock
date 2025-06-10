@@ -1102,11 +1102,11 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1749537723,
-        "narHash": "sha256-iisaHm/dsZDK+wOs8nC1rFNai5UAHXHVCK3VfPAEpD4=",
+        "lastModified": 1749540391,
+        "narHash": "sha256-mXaEzDk0J/D/spi21jQQeT8BIm3Iyc1dQ/V3kFZZ4gw=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "eb049535f088025cf64c580bbbbaa95e8aa9f11e",
+        "rev": "1c0466f9fdddab4aa1d506822a4d72c901095ec9",
         "type": "github"
       },
       "original": {
