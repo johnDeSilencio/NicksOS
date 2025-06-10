@@ -1,0 +1,21 @@
+layout {
+    pane split_direction="vertical" {
+        pane command="ssh" {
+            args "nicholas@jerusalem"
+        }
+
+        pane command="ssh" {
+            args "nicholas@bethany"
+        }
+    }
+
+    pane split_direction="vertical" {
+        pane command="ssh" {
+            args "nicholas@nazareth"
+        }
+
+        pane command="ssh" {
+            args "nicholas@capernaum"
+        }
+    }
+}

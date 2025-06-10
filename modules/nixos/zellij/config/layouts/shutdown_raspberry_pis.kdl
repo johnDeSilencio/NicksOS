@@ -1,0 +1,21 @@
+layout {
+    pane split_direction="vertical" {
+        pane command="ssh" {
+            args "nicholas@jerusalem" "sudo shutdown now"
+        }
+
+        pane command="ssh" {
+            args "nicholas@bethany" "sudo shutdown now"
+        }
+    }
+
+    pane split_direction="vertical" {
+        pane command="ssh" {
+            args "nicholas@nazareth" "sudo shutdown now"
+        }
+
+        pane command="ssh" {
+            args "nicholas@capernaum" "sudo shutdown now"
+        }
+    }
+}

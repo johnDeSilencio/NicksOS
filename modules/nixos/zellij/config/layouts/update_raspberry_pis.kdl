@@ -1,0 +1,21 @@
+layout {
+    pane split_direction="vertical" {
+        pane command="ssh" {
+            args "nicholas@jerusalem" "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+        }
+
+        pane command="ssh" {
+            args "nicholas@bethany" "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+        }
+    }
+
+    pane split_direction="vertical" {
+        pane command="ssh" {
+            args "nicholas@nazareth" "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+        }
+
+        pane command="ssh" {
+            args "nicholas@capernaum" "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+        }
+    }
+}
