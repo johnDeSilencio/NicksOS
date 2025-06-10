@@ -56,6 +56,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    tombi = {
+      url = "github:johnDeSilencio/tombi/feature/add-nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     wild = {
       url = "github:davidlattimore/wild";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -70,6 +75,7 @@
       zjstatus,
       hyprhook,
       hyprhook-mouse-move,
+      tombi,
       wild,
       ...
     }:
@@ -94,6 +100,7 @@
               inputs
               hyprhook
               hyprhook-mouse-move
+              tombi
               wild
               ;
           };

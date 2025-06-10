@@ -3,8 +3,12 @@
   config,
   pkgs,
   inputs,
+  tombi,
   ...
 }:
+let
+  tombiPkg = tombi.packages.${pkgs.system}.default;
+in
 {
   options = {
     custom.language-servers.enable = lib.mkEnableOption "Language servers to support software development";
@@ -53,6 +57,9 @@
 
         # For styling Lua
         stylua
+
+        # TOML language server
+        tombiPkg
 
         # JavaScript and TypeScript
         typescript-language-server
