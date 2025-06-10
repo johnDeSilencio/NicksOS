@@ -105,6 +105,14 @@ for _, method in ipairs({ "textDocument/diagnostic", "workspace/diagnostic" }) d
 	end
 end
 
+require("lspconfig").taplo.setup({
+	on_attach = on_attach,
+	capabilites = capabilities,
+	cmd = { "tombi", "lsp" },
+	root_markers = { ".git" },
+	filetypes = { "toml" },
+})
+
 require("lspconfig").tinymist.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
