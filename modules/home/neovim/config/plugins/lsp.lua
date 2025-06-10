@@ -63,7 +63,7 @@ require("lspconfig").rust_analyzer.setup({
 		vim.keymap.set("n", "gO", function()
 			vim.lsp.buf_request(
 				vim.api.nvim_get_current_buf(),
-				'experimental/externalDocs',
+				"experimental/externalDocs",
 				vim.lsp.util.make_position_params(0, client.offset_encoding or "utf-8"),
 				function(err, url)
 					if not err and url then
@@ -168,7 +168,7 @@ require("lspconfig").tailwindcss.setup({
 })
 
 require("neodev").setup()
-require("lspconfig").lua_ls.setup {
+require("lspconfig").lua_ls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	root_dir = function()
@@ -183,8 +183,8 @@ require("lspconfig").lua_ls.setup {
 				globals = { "vim" },
 			},
 		},
-	}
-}
+	},
+})
 
 require("lspconfig").nil_ls.setup({
 	on_attach = on_attach,
@@ -193,7 +193,7 @@ require("lspconfig").nil_ls.setup({
 		["nil"] = {
 			formatting = {
 				command = { "nixfmt" },
-			}
+			},
 		},
 	},
 })
@@ -203,7 +203,7 @@ require("lspconfig").marksman.setup({
 	capabilities = capabilities,
 })
 
-require("lspconfig").harper_ls.setup {
+require("lspconfig").harper_ls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
@@ -224,7 +224,7 @@ require("lspconfig").harper_ls.setup {
 			multiple_sequential_pronouns = true,
 			linking_verbs = true,
 			avoid_curses = true,
-			terminating_conjunctions = true
-		}
+			terminating_conjunctions = true,
+		},
 	},
-}
+})
