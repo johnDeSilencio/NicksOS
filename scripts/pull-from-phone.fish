@@ -36,3 +36,6 @@ for directory in $directories
         sudo adb pull "$file" "./$directory"
     end
 end
+
+# End by ensuring that all of the files have the correct permissions
+sudo chown -R nicholas:users *
