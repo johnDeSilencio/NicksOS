@@ -452,11 +452,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1749365743,
-        "narHash": "sha256-HHCO37yJyDQBI8HZGfp1TTujJWW3gcRgdJDlirRjCP4=",
+        "lastModified": 1749696060,
+        "narHash": "sha256-s+xG4nO+MBRyMNlRNb953/UM/wINaDNfBG3pTi1768M=",
         "owner": "johnDeSilencio",
         "repo": "hyprhook-mouse-move",
-        "rev": "2b736664bb95cd069f4dd135d1c8d51ed60112aa",
+        "rev": "d8f551305ed984ed6b409b007883dc6ac774aa5e",
         "type": "github"
       },
       "original": {
@@ -919,11 +919,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1749609482,
-        "narHash": "sha256-R+Y3tXIUAMosrgo/ynhIUPEONZ+cM0ScbgN7KA8OkoE=",
+        "lastModified": 1749695868,
+        "narHash": "sha256-debjTLOyqqsYOUuUGQsAHskFXH5+Kx2t3dOo/FCoNRA=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "a17da8deb943e7c8b4151914abbfe33d5a4e5b0d",
+        "rev": "55f914d5228b5c8120e9e0f9698ed5b7214d09cd",
         "type": "github"
       },
       "original": {
