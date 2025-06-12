@@ -1059,16 +1059,15 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1749649935,
-        "narHash": "sha256-cqBA4xASH4x0wPoQs2lZwe+L1I/cRUG0MQETHgGcKV8=",
-        "owner": "johnDeSilencio",
+        "lastModified": 1749688904,
+        "narHash": "sha256-QaFvqMSx55NTq6An3r62W+42O5uI+rE85vZdMJRqnpE=",
+        "owner": "tombi-toml",
         "repo": "tombi",
-        "rev": "c22c5c9b7b22c3994909a703d2b5be334f592593",
+        "rev": "865b5ba0dfc763112721ea62222c2387beb043a6",
         "type": "github"
       },
       "original": {
-        "owner": "johnDeSilencio",
-        "ref": "feature/add-nix-flake",
+        "owner": "tombi-toml",
         "repo": "tombi",
         "type": "github"
       }

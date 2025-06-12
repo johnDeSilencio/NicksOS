@@ -57,7 +57,7 @@
     };
 
     tombi = {
-      url = "github:johnDeSilencio/tombi/feature/add-nix-flake";
+      url = "github:tombi-toml/tombi";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
