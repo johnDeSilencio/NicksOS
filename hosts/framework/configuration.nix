@@ -143,6 +143,7 @@
       firefox.enable = true;
       gnome-calendar.enable = true;
       home-manager.enable = true;
+      kdenlive.enable = true;
       neovim.enable = true;
       signal-desktop.enable = true;
       zed.enable = true;
