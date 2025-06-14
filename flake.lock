@@ -514,11 +514,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1749539380,
-        "narHash": "sha256-ANeNLaUiKn0r3tVV7pwwwwk70NlHGwO1z1HIzj0S9r4=",
+        "lastModified": 1749820448,
+        "narHash": "sha256-1bHcGMlkcf6H0ag8xhczJi6loEG1s05cYbBhK2mY5tM=",
         "owner": "hyprwm",
         "repo": "hyprland-plugins",
-        "rev": "e8f212e9c86ddb3a5ee34f59e700cff41aff9475",
+        "rev": "a2cc080386f1f58ab08f26bb89d230e5d10cfb58",
         "type": "github"
       },
       "original": {
@@ -1059,11 +1059,11 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1749743934,
-        "narHash": "sha256-uIZMiVNIsN0EXYNte2QesdfZrZT5OQQOx+vl+2AdyRw=",
+        "lastModified": 1749847052,
+        "narHash": "sha256-vU/EkhrFf+OiQYXGGRk/rFOkDg6mZw5T0bEb2yFeDzo=",
         "owner": "tombi-toml",
         "repo": "tombi",
-        "rev": "6098431505874d88d945461046b8a62a159e43ca",
+        "rev": "1eed741e3bad6235a705dbe12abe0a8106b3ce96",
         "type": "github"
       },
       "original": {
@@ -1101,11 +1101,11 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1749778869,
-        "narHash": "sha256-ppwV0oWbYronLtTykgr8ZGJeKEZrzdGzJiOUnFA1+m0=",
+        "lastModified": 1749861196,
+        "narHash": "sha256-3b5M+bIOXj25DuuXi6gaL8TBdnqTN8C68SUl71LN15k=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "d392e9d87ffc74536b11133aed501f1a60268d3b",
+        "rev": "742bc6cf096f960ed97a21f80cccb8641650364c",
         "type": "github"
       },
       "original": {
