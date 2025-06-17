@@ -78,6 +78,21 @@
         "type": "github"
       }
     },
+    "crane_4": {
+      "locked": {
+        "lastModified": 1748970125,
+        "narHash": "sha256-UDyigbDGv8fvs9aS95yzFfOKkEjx1LO3PL3DsKopohA=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "323b5746d89e04b22554b061522dfce9e4c49b18",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
     "cucumber-language-server": {
       "inputs": {
         "nixpkgs": [
@@ -785,11 +800,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1749857119,
-        "narHash": "sha256-tG5xUn3hFaPpAHYIvr2F88b+ovcIO5k1HqajFy7ZFPM=",
+        "lastModified": 1750005367,
+        "narHash": "sha256-h/aac1dGLhS3qpaD2aZt25NdKY7b+JT0ZIP2WuGsJMU=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5f4f306bea96741f1588ea4f450b2a2e29f42b98",
+        "rev": "6c64dabd3aa85e0c02ef1cdcb6e1213de64baee3",
         "type": "github"
       },
       "original": {
@@ -919,11 +934,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1749955444,
-        "narHash": "sha256-CllTHvHX8KAdAZ+Lxzd23AmZTxO1Pfy+zC43/5tYkAE=",
+        "lastModified": 1750041667,
+        "narHash": "sha256-/8F9L6T9w/Fx1D6L+BtWIXg5m9F6jwOFg6uhZpKnM/0=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "539ba15741f0e6691a2448743dbc601d8910edce",
+        "rev": "d72bd8c9fda03c9834ea89d7a5a21c7880b79277",
         "type": "github"
       },
       "original": {
@@ -1095,17 +1110,18 @@
     },
     "wild": {
       "inputs": {
+        "crane": "crane_3",
         "nixpkgs": [
           "nixpkgs"
         ],
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1750023308,
-        "narHash": "sha256-6Nv5M5MHhTTD1aBZCR2eA+ASXNR5301jf+iBzFEcfNc=",
+        "lastModified": 1750114221,
+        "narHash": "sha256-WzbEhjQ20V1AY0iBtFtleGjQ9q9/VKauy1uxGnOeF3U=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "67d87a02f3eb536bfbd611982ccd648069322be8",
+        "rev": "b2d4d1d9e68c1000c7a6f35444a518eae4f88f47",
         "type": "github"
       },
       "original": {
@@ -1157,7 +1173,7 @@
     },
     "zjstatus": {
       "inputs": {
-        "crane": "crane_3",
+        "crane": "crane_4",
         "flake-utils": "flake-utils_4",
         "nixpkgs": [
           "nixpkgs"
