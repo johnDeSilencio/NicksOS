@@ -47,6 +47,7 @@
       # A better GNU find
       fd
       ffmpeg
+      framework-tool
       gcc
 
       # For instrumenting Firefox
