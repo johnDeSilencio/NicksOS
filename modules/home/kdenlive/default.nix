@@ -10,12 +10,18 @@
   };
 
   config = lib.mkIf config.custom.home.kdenlive.enable {
-    nixpkgs = {
-      overlays = [
-        (import ./overlay.nix)
-      ];
-    };
-
-    environment.systemPackages = with pkgs; [ kdePackages.kdenlive ];
+    environment.systemPackages =
+      let
+        kdenlive = pkgs.symlinkJoin {
+          name = "kdenlive-wrapped";
+          paths = [ pkgs.kdePackages.kdenlive ];
+          nativeBuildInputs = [ pkgs.makeBinaryWrapper ];
+          postBuild = ''
+            # Increases the size of the text in kdenlive by 100%
+            wrapProgram $out/bin/kdenlive --set QT_SCALE_FACTOR "2.0"
+          '';
+        };
+      in
+      [ kdenlive ];
   };
 }
