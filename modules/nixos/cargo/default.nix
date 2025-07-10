@@ -48,7 +48,6 @@
       cargo-watch
       panamax
       trunk
-      wild
     ];
   };
 }
