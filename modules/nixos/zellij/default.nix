@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  inputs,
   ...
 }:
 {
@@ -10,6 +11,12 @@
   };
 
   config = lib.mkIf config.custom.zellij.enable {
+    nixpkgs.overlays = [
+      (self: super: {
+        zjstatus = inputs.zjstatus.packages.${super.system}.default;
+      })
+    ];
+
     environment.systemPackages = with pkgs; [
       zellij
       zjstatus

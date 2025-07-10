@@ -3,14 +3,12 @@
   config,
   pkgs,
   inputs,
-  hyprhook,
-  hyprhook-mouse-move,
   ...
 }:
 let
   hyprPluginPkgs = inputs.hyprland-plugins.packages.${pkgs.system};
-  hyprhookPkg = hyprhook.packages.${pkgs.system}.hyprhook;
-  hyprhookMouseMovePkg = hyprhook-mouse-move.packages.${pkgs.system}.default;
+  hyprhookPkg = inputs.hyprhook.packages.${pkgs.system}.hyprhook;
+  hyprhookMouseMovePkg = inputs.hyprhook-mouse-move.packages.${pkgs.system}.default;
   hypr-plugin-dir = pkgs.symlinkJoin {
     name = "hyrpland-plugins";
     paths = with hyprPluginPkgs; [

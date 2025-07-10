@@ -77,11 +77,6 @@
     inputs@{
       self,
       nixpkgs,
-      rust-overlay,
-      zjstatus,
-      hyprhook,
-      hyprhook-mouse-move,
-      tombi,
       wild,
       ...
     }:
@@ -89,11 +84,7 @@
       system = "x86_64-linux";
 
       overlays = [
-        (import rust-overlay)
-        wild.overlays.default
-        (final: prev: {
-          zjstatus = zjstatus.packages.${prev.system}.default;
-        })
+        (wild.overlays.default)
       ];
     in
     {
@@ -106,17 +97,9 @@
               overlays = overlays;
             };
 
-            inherit
-              zjstatus
-              inputs
-              hyprhook
-              hyprhook-mouse-move
-              tombi
-              wild
-              ;
+            inherit inputs;
           };
           modules = [
-            { nixpkgs.overlays = overlays; }
             ./hosts/framework/configuration.nix
             inputs.musnix.nixosModules.musnix
           ];

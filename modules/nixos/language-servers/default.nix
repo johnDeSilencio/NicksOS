@@ -3,11 +3,10 @@
   config,
   pkgs,
   inputs,
-  tombi,
   ...
 }:
 let
-  tombiPkg = tombi.packages.${pkgs.system}.default;
+  tombiPkg = inputs.tombi.packages.${pkgs.system}.default;
 in
 {
   options = {
