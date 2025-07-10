@@ -91,10 +91,6 @@
 
       # JavaScript linter written in Rust
       oxlint
-
-      # For visual representation of relative disk space usage
-      parallel-disk-usage
-
       pass
 
       # Over-engineered terminal screensaver written in Rust

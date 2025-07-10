@@ -149,11 +149,15 @@
       zed.enable = true;
     };
 
+    cli-tools = {
+      enable = true;
+      parallel-disk-usage.enable = true;
+    };
+
     alacritty.enable = true;
     bacon.enable = true;
     bat.enable = true;
     cargo.enable = true;
-    cli-tools.enable = true;
     desktop-environment.enable = true;
     discord.enable = true;
     docker.enable = true;

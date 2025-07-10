@@ -2,7 +2,13 @@
   description = "Nick's OS flake config";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs = {
+      url = "github:NixOS/nixpkgs/nixos-25.05";
+    };
+
+    nixpkgs-unstable = {
+      url = "github:NixOS/nixpkgs/nixos-unstable";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
@@ -95,6 +101,11 @@
         framework = nixpkgs.lib.nixosSystem {
           inherit system;
           specialArgs = {
+            nixpkgs-unstable = import inputs.nixpkgs-unstable {
+              inherit system;
+              overlays = overlays;
+            };
+
             inherit
               zjstatus
               inputs
@@ -109,9 +120,7 @@
             ./hosts/framework/configuration.nix
             inputs.musnix.nixosModules.musnix
           ];
-
         };
       };
-
     };
 }

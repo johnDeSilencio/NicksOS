@@ -16,6 +16,7 @@
     nixos/bat/default.nix
     nixos/cargo/default.nix
     nixos/cli-tools/default.nix
+    nixos/cli-tools/parallel-disk-usage/default.nix
     nixos/desktop-environment/default.nix
     nixos/discord/default.nix
     nixos/docker/default.nix
