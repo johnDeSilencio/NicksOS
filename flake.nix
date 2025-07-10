@@ -15,11 +15,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixvim = {
-      url = "github:nix-community/nixvim/nixos-24.11";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,10 +23,6 @@
     cucumber-language-server = {
       url = "github:johnDeSilencio/language-server/chore/update-tree-sitter";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    musnix = {
-      url = "github:musnix/musnix";
     };
 
     # Zellij status bar plugin
@@ -101,7 +92,6 @@
           };
           modules = [
             ./hosts/framework/configuration.nix
-            inputs.musnix.nixosModules.musnix
           ];
         };
       };
