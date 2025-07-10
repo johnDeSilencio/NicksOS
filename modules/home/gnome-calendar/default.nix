@@ -15,6 +15,7 @@
 
     environment.systemPackages = with pkgs; [
       gnome-calendar
+      evolution
     ];
   };
 }
