@@ -12,6 +12,7 @@
   config = lib.mkIf config.custom.home.gnome-calendar.enable {
     programs.dconf.enable = true;
     services.gnome.evolution-data-server.enable = true;
+    services.gnome.gnome-keyring.enable = true;
 
     environment.systemPackages = with pkgs; [
       gnome-calendar
