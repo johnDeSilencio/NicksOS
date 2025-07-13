@@ -2,6 +2,7 @@
   description = "Nick's OS flake config";
 
   inputs = {
+    # Leaf dependencies
     nixpkgs = {
       url = "github:NixOS/nixpkgs/nixos-25.05";
     };
@@ -10,13 +11,21 @@
       url = "github:NixOS/nixpkgs/nixos-unstable";
     };
 
-    home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
-      inputs.nixpkgs.follows = "nixpkgs";
+    crane = {
+      url = "github:ipetkov/crane/";
+    };
+
+    flake-utils = {
+      url = "github:numtide/flake-utils";
     };
 
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    home-manager = {
+      url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -28,13 +37,15 @@
     # Zellij status bar plugin
     zjstatus = {
       url = "github:dj95/zjstatus";
-      inputs.rust-overlay.follows = "rust-overlay";
+      inputs.crane.follows = "crane";
+      inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
 
     hyprland = {
-      url = "github:hyprwm/Hyprland/v0.49.0";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:hyprwm/Hyprland";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     hyprland-plugins = {
@@ -43,23 +54,29 @@
     };
 
     hyprhook = {
-      url = "github:Hyprhook/Hyprhook";
+      url = "github:johnDeSilencio/Hyprhook/feature/version-mismatch-fix";
       inputs.hyprland.follows = "hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     hyprhook-mouse-move = {
       url = "github:johnDeSilencio/hyprhook-mouse-move";
+      inputs.crane.follows = "crane";
+      inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
 
     tombi = {
       url = "github:tombi-toml/tombi";
+      inputs.crane.follows = "crane";
+      inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
 
     wild = {
       url = "github:davidlattimore/wild";
+      inputs.crane.follows = "crane";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
   };

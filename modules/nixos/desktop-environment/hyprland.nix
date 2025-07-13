@@ -6,36 +6,25 @@
   ...
 }:
 let
-  hyprPluginPkgs = inputs.hyprland-plugins.packages.${pkgs.system};
-  hyprhookPkg = inputs.hyprhook.packages.${pkgs.system}.hyprhook;
-  hyprhookMouseMovePkg = inputs.hyprhook-mouse-move.packages.${pkgs.system}.default;
+  hyprhook = inputs.hyprhook.packages.${pkgs.system}.hyprhook;
+  hyprhook-mouse-move = inputs.hyprhook-mouse-move.packages.${pkgs.system}.default;
   hypr-plugin-dir = pkgs.symlinkJoin {
-    name = "hyrpland-plugins";
-    paths = with hyprPluginPkgs; [
-      hyprexpo
-      hyprhookPkg
-      #...plugins
+    name = "hyprland-plugins";
+    paths = [
+      hyprhook
+      # ... more plugins
     ];
   };
 in
 {
   config = lib.mkIf config.custom.desktop-environment.enable {
-    programs.hyprland = {
-      enable = true;
-      xwayland.enable = true;
-    };
-
-    # To communicate to Hyprland at runtime where the plugins are located
-    environment.sessionVariables = {
-      HYPR_PLUGIN_DIR = hypr-plugin-dir;
-    };
-
-    # Compile Rust binary for efficiently checking mouse position and showing / hiding waybar
     environment.systemPackages = with pkgs; [
       hypridle
       hyprpaper
       hyprshot
-      hyprhookMouseMovePkg
+      hyprhook
+      hyprhook-mouse-move
+      hypr-plugin-dir
 
       # BUG: Screensharing in discord through xwaylandvideobridge
       # only works on built-in monitor. Also, if I spend too much time
@@ -43,6 +32,12 @@ in
       kdePackages.xwaylandvideobridge
     ];
 
+    programs.hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
+
+    # Compile Rust binary for efficiently checking mouse position and showing / hiding waybar
     home-manager.users.nicholas = {
       home.file = {
         ".config/hypr/" = {
@@ -50,6 +45,17 @@ in
           recursive = true;
         };
       };
+
+      home.file.".config/hypr/plugin.conf".text = ''
+        exec-once = hyprctl plugin load ${hypr-plugin-dir}/lib/libhyprhook.so
+
+        plugin {
+            hyprhook {
+                # For triggering this binary whenever the mouse is moved
+                mouseMove = /run/current-system/sw/bin/hyprhook-mouse-move
+            }
+        }
+      '';
     };
   };
 }
