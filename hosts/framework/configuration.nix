@@ -146,6 +146,7 @@
       kdenlive.enable = true;
       neovim.enable = true;
       signal-desktop.enable = true;
+      wireshark.enable = true;
       zed.enable = true;
     };
 

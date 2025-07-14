@@ -9,6 +9,7 @@
     home/kdenlive/default.nix
     home/neovim/default.nix
     home/signal-desktop/default.nix
+    home/wireshark/default.nix
     home/zed/default.nix
 
     nixos/alacritty/default.nix
