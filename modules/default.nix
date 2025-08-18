@@ -45,6 +45,7 @@
     nixos/thunderbird/default.nix
     nixos/tuifeed/default.nix
     nixos/vlc/default.nix
+    nixos/wezterm/default.nix
     nixos/wild/default.nix
     nixos/zellij/default.nix
     nixos/zoom-us/default.nix

@@ -186,6 +186,7 @@
     thunderbird.enable = true;
     tuifeed.enable = true;
     vlc.enable = true;
+    wezterm.enable = true;
     wild.enable = true;
     zellij.enable = true;
     zoom-us.enable = true;
