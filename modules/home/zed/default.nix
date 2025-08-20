@@ -13,5 +13,14 @@
     environment.systemPackages = with pkgs; [
       zed-editor
     ];
+
+    home-manager.users.nicholas = {
+      home.file = {
+        ".config/zed/" = {
+          source = ./config;
+          recursive = true;
+        };
+      };
+    };
   };
 }
