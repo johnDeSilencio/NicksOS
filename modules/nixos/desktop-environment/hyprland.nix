@@ -18,6 +18,8 @@ let
 in
 {
   config = lib.mkIf config.custom.desktop-environment.enable {
+    security.pam.services.hyprland.enableGnomeKeyring = true;
+
     environment.systemPackages = with pkgs; [
       hypridle
       hyprpaper
