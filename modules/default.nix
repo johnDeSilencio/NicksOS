@@ -11,6 +11,7 @@
     home/signal-desktop/default.nix
     home/wireshark/default.nix
     home/zed/default.nix
+    home/zulip/default.nix
 
     nixos/alacritty/default.nix
     nixos/bacon/default.nix
