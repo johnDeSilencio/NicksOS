@@ -74,6 +74,7 @@
 
       # ;) (ls replacement)
       lsd
+      lshw
 
       # Markdown linker
       lychee
