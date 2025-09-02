@@ -109,6 +109,9 @@
       # A better, faster grep
       ripgrep
 
+      # BitTorrent client written in Rust
+      rqbit
+
       # A modern, faster version of nmap
       rustscan
 
