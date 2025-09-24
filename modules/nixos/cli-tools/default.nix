@@ -112,6 +112,9 @@
       # BitTorrent client written in Rust
       rqbit
 
+      # Record & replay debugger
+      rr
+
       # A modern, faster version of nmap
       rustscan
 
