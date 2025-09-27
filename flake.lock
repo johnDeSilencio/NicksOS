@@ -659,11 +659,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1758905732,
-        "narHash": "sha256-ySk+h5GCEgph0aAsajwU2gT4TqCs6gJF4r4kCNABdUQ=",
+        "lastModified": 1758968312,
+        "narHash": "sha256-+HkESc2dfFh0jgis96p1g5aikiCwNcTQMEElJNISry8=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "c4b19d1001b8815f86cb1342d279f8c017292967",
+        "rev": "da42dc69395036cfb210e944d21737905ff27238",
         "type": "github"
       },
       "original": {
