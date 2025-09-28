@@ -138,6 +138,7 @@
 
   custom = {
     home = {
+      android-studio.enable = true;
       chrome.enable = true;
       corectrl.enable = true;
       firefox.enable = true;
