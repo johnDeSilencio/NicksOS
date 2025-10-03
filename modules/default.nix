@@ -10,6 +10,7 @@
     home/kdenlive/default.nix
     home/neovim/default.nix
     home/signal-desktop/default.nix
+    home/teams/default.nix
     home/wireshark/default.nix
     home/zed/default.nix
     home/zulip/default.nix
