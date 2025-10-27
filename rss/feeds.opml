@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+    <head>
+        <title>RSS Feeds</title>
+    </head>
+    <body>
+        <outline text="Jobs" title="Jobs">
+            <outline text="https://oxide.computer/careers/feed" title="https://oxide.computer/careers/feed" type="rss" xmlUrl="https://oxide.computer/careers/feed" />
+        </outline>
+        <outline text="Blog Posts" title="Blog Posts">
+            <outline text="https://fasterthanli.me/index.xml" title="https://fasterthanli.me/index.xml" type="rss" xmlUrl="https://fasterthanli.me/index.xml" htmlUrl="https://fasterthanli.me/index.xml" />
+            <outline text="https://sunshowers.io/atom.xml" title="https://sunshowers.io/atom.xml" type="rss" xmlUrl="https://sunshowers.io/atom.xml" htmlUrl="https://sunshowers.io/atom.xml" />
+            <outline text="https://blog.rust-lang.org/feed.xml" title="https://blog.rust-lang.org/feed.xml" type="rss" xmlUrl="https://blog.rust-lang.org/feed.xml" htmlUrl="https://blog.rust-lang.org/feed.xml" />
+            <outline text="https://smallcultfollowing.com/babysteps/atom.xml" title="https://smallcultfollowing.com/babysteps/atom.xml" type="rss" xmlUrl="https://smallcultfollowing.com/babysteps/atom.xml" htmlUrl="https://smallcultfollowing.com/babysteps/atom.xml" />
+            <outline text="https://without.boats/index.xml" title="https://without.boats/index.xml" type="rss" xmlUrl="https://without.boats/index.xml" htmlUrl="https://without.boats/index.xml" />
+            <outline text="https://nnethercote.github.io/feed.xml" title="https://nnethercote.github.io/feed.xml" type="rss" xmlUrl="https://nnethercote.github.io/feed.xml" htmlUrl="https://nnethercote.github.io/feed.xml" />
+            <outline text="https://blog.0xshadow.dev/rss.xml" title="https://blog.0xshadow.dev/rss.xml" type="rss" xmlUrl="https://blog.0xshadow.dev/rss.xml" htmlUrl="https://blog.0xshadow.dev/rss.xml" />
+        </outline>
+        <outline text="YouTube Videos" title="YouTube Videos">
+            <outline text="https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA" title="https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA" htmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCUMwY9iS8oMyWDYIe6_RmoA" />
+            <outline text="https://www.youtube.com/feeds/videos.xml?channel_id=UCs4fQRyl1TJvoeOdekW6lYA" title="https://www.youtube.com/feeds/videos.xml?channel_id=UCs4fQRyl1TJvoeOdekW6lYA" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCs4fQRyl1TJvoeOdekW6lYA" htmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCs4fQRyl1TJvoeOdekW6lYA" />
+            <outline text="https://www.youtube.com/feeds/videos.xml?channel_id=UCnHX5FjwtQpxkCGziuh4NJA" title="https://www.youtube.com/feeds/videos.xml?channel_id=UCnHX5FjwtQpxkCGziuh4NJA" type="rss" xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCnHX5FjwtQpxkCGziuh4NJA" htmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCnHX5FjwtQpxkCGziuh4NJA" />
+        </outline>
+    </body>
+</opml>
