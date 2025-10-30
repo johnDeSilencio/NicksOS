@@ -43,6 +43,7 @@
         nerd-fonts.zed-mono
 
         # Sans fonts
+        fira
         nerd-fonts.ubuntu-sans
 
         # Other
