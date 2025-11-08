@@ -32,6 +32,9 @@
       # Used for pretty diffs
       delta
 
+      # Rust cross-development frontend framework
+      dioxus-cli
+
       # Query and display system information like serial #
       dmidecode
 
