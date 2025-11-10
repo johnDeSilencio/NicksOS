@@ -29,6 +29,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    neovim = {
+      url = "github:johnDeSilencio/neovim";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
     cucumber-language-server = {
       url = "github:johnDeSilencio/language-server/chore/update-tree-sitter";
       inputs.nixpkgs.follows = "nixpkgs";
