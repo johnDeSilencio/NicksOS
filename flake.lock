@@ -870,11 +870,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762966323,
-        "narHash": "sha256-tMfLAj+cvjxk/BWmIi3t8FeYaOzgYjQV2+ZyDTHFqB4=",
+        "lastModified": 1763050806,
+        "narHash": "sha256-fFz02JhoPXiSDHeFW1ZZ/4QnxkQAXwVtuF7i9M13LYw=",
         "owner": "tombi-toml",
         "repo": "tombi",
-        "rev": "9abba7e0cb39e70c4c6b46c05eea14bda07b54b9",
+        "rev": "a6c7e6aac55ffac60ca2f20adc64e5c34d91508d",
         "type": "github"
       },
       "original": {
