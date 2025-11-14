@@ -143,6 +143,7 @@
       corectrl.enable = true;
       firefox.enable = true;
       gnome-calendar.enable = true;
+      gnome-feeds.enable = true;
       home-manager.enable = true;
       kdenlive.enable = true;
       neovim.enable = true;

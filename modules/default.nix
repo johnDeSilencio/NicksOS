@@ -6,6 +6,7 @@
     home/corectrl/default.nix
     home/firefox/default.nix
     home/gnome-calendar/default.nix
+    home/gnome-feeds/default.nix
     home/home-manager/default.nix
     home/kdenlive/default.nix
     home/neovim/default.nix
