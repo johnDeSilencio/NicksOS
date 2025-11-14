@@ -43,6 +43,7 @@
         layout {
           default_tab_template {
             children
+
             pane size=1 borderless=true {
               plugin location="file:${pkgs.zjstatus}/bin/zjstatus.wasm" {
                 format_left   "{mode} #[fg=#8be9fd,bold]{session}"
