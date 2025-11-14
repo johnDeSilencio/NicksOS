@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  nixpkgs-unstable,
   ...
 }:
 {
@@ -10,10 +11,13 @@
   };
 
   config = lib.mkIf config.custom.git.enable {
-    environment.systemPackages = with pkgs; [
-      git
-      git-credential-manager
-      git-extras
+    environment.systemPackages = [
+      pkgs.git
+      pkgs.git-credential-manager
+      pkgs.git-extras
+
+      # Syntax-aware merge driver
+      nixpkgs-unstable.mergiraf
     ];
 
     home-manager.users.nicholas = {
@@ -36,6 +40,10 @@
       home.file = {
         ".gitconfig" = {
           source = ./config/.gitconfig;
+        };
+
+        ".gitattributes" = {
+          source = ./config/.gitattributes;
         };
       };
     };
