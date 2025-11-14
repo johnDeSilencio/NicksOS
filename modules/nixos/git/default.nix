@@ -14,6 +14,9 @@
       git
       git-credential-manager
       git-extras
+
+      # Syntax-aware merge driver
+      mergiraf
     ];
 
     home-manager.users.nicholas = {
