@@ -112,11 +112,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1762810396,
-        "narHash": "sha256-dxFVgQPG+R72dkhXTtqUm7KpxElw3u6E+YlQ2WaDgt8=",
+        "lastModified": 1762980239,
+        "narHash": "sha256-8oNVE8TrD19ulHinjaqONf9QWCKK+w4url56cdStMpM=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "0bdadb1b265fb4143a75bd1ec7d8c915898a9923",
+        "rev": "52a2caecc898d0b46b2b905f058ccc5081f842da",
         "type": "github"
       },
       "original": {
@@ -624,11 +624,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1763051585,
-        "narHash": "sha256-6iKkmViLskcHdLkwpAOefONPu3SZrkTs/b8DpVh+HLE=",
+        "lastModified": 1763086009,
+        "narHash": "sha256-I/xnLQYjjmitOjCcppZoDz8hHo4y4DHR9PXbU3kKC8U=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "521e4e36c173ce5f0c05a734f64dcc4ce5c456ac",
+        "rev": "719328159f191b5e1e919790a846a20a5928d49d",
         "type": "github"
       },
       "original": {
@@ -695,11 +695,11 @@
         "systems": "systems_4"
       },
       "locked": {
-        "lastModified": 1762904125,
-        "narHash": "sha256-+T9oUulnXOQmy37GGOivHSvEyViA4gQ41mFZEPEDuOA=",
+        "lastModified": 1763078809,
+        "narHash": "sha256-R6wESh58QLCeoK1VQUO4sLcz60RNZde8klTqGgUXQkw=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "84902b354fd0f122c40880b90dc8ac89d4d0daea",
+        "rev": "b51f31cef899e8f152384cda6097a5fde0e39ef3",
         "type": "github"
       },
       "original": {
