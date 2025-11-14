@@ -22,4 +22,7 @@ status is-interactive; and begin
 
     # Import fish aliases
     source ~/.config/fish/aliases.fish
+
+    # Import fish completions
+    source ~/.config/fish/completions/completions.fish
 end
