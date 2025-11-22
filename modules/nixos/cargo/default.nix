@@ -42,6 +42,7 @@
       cargo-semver-checks
       cargo-show-asm
       cargo-sort
+      cargo-sweep
       cargo-tarpaulin
       cargo-udeps
       cargo-update
