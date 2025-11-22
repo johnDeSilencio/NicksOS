@@ -38,6 +38,7 @@
     nixos/login/default.nix
     nixos/obsidian/default.nix
     nixos/photoqt/default.nix
+    nixos/prek/default.nix
     nixos/printing/default.nix
     nixos/qalculate-qt/default.nix
     nixos/sound/default.nix

@@ -179,6 +179,7 @@
     login.enable = true;
     obsidian.enable = true;
     photoqt.enable = true;
+    prek.enable = true;
     printing.enable = true;
     qalculate-qt.enable = true;
     sound.enable = true;
