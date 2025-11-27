@@ -31,7 +31,8 @@
 
     neovim = {
       url = "github:johnDeSilencio/neovim";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
     };
 
     cucumber-language-server = {
