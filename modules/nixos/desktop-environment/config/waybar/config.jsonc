@@ -55,7 +55,7 @@
 		"max-length": 1000,
 		"format": "{}",
 		"rewrite": {
-    			"(.*)Alacritty(.*)": "  Alacritty",
+    			"(.*)Wez(.*)": "  WezTerm",
 			"(.*)Bluetooth(.*)": "  Bluetooth Manager",
 			"(.*)Calendar(.*)": "  Calendar",
 			"(.*)Discord(.*)": "  Discord",

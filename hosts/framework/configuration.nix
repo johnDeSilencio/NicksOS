@@ -159,7 +159,6 @@
       parallel-disk-usage.enable = true;
     };
 
-    alacritty.enable = true;
     bacon.enable = true;
     bat.enable = true;
     cargo.enable = true;

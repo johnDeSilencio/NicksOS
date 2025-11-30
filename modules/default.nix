@@ -16,7 +16,6 @@
     home/zed/default.nix
     home/zulip/default.nix
 
-    nixos/alacritty/default.nix
     nixos/bacon/default.nix
     nixos/bat/default.nix
     nixos/cargo/default.nix
