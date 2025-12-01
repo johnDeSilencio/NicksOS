@@ -146,6 +146,7 @@
       gnome-feeds.enable = true;
       home-manager.enable = true;
       kdenlive.enable = true;
+      minecraft.enable = true;
       neovim.enable = true;
       signal-desktop.enable = true;
       teams.enable = true;

@@ -9,6 +9,7 @@
     home/gnome-feeds/default.nix
     home/home-manager/default.nix
     home/kdenlive/default.nix
+    home/minecraft/default.nix
     home/neovim/default.nix
     home/signal-desktop/default.nix
     home/teams/default.nix
