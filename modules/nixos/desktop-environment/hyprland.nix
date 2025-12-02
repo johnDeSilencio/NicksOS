@@ -7,7 +7,6 @@
 }:
 let
   hyprhook = inputs.hyprhook.packages.${pkgs.system}.hyprhook;
-  hyprhook-mouse-move = inputs.hyprhook-mouse-move.packages.${pkgs.system}.default;
   hypr-plugin-dir = pkgs.symlinkJoin {
     name = "hyprland-plugins";
     paths = [
@@ -25,7 +24,6 @@ in
       hyprpaper
       hyprshot
       hyprhook
-      hyprhook-mouse-move
       hypr-plugin-dir
 
       # BUG: Screensharing in discord through xwaylandvideobridge
@@ -47,17 +45,6 @@ in
           recursive = true;
         };
       };
-
-      home.file.".config/hypr/plugin.conf".text = ''
-        exec-once = hyprctl plugin load ${hypr-plugin-dir}/lib/libhyprhook.so
-
-        plugin {
-            hyprhook {
-                # For triggering this binary whenever the mouse is moved
-                mouseMove = /run/current-system/sw/bin/hyprhook-mouse-move
-            }
-        }
-      '';
     };
   };
 }

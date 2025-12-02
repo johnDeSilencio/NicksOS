@@ -64,14 +64,6 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    hyprhook-mouse-move = {
-      url = "github:johnDeSilencio/hyprhook-mouse-move";
-      inputs.crane.follows = "crane";
-      inputs.flake-utils.follows = "flake-utils";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.rust-overlay.follows = "rust-overlay";
-    };
-
     tombi = {
       url = "github:tombi-toml/tombi";
       inputs.crane.follows = "crane";

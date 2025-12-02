@@ -293,35 +293,6 @@
         "type": "github"
       }
     },
-    "hyprhook-mouse-move": {
-      "inputs": {
-        "crane": [
-          "crane"
-        ],
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": [
-          "rust-overlay"
-        ]
-      },
-      "locked": {
-        "lastModified": 1750035946,
-        "narHash": "sha256-ostxM3DkBlEMO926WlwTrG4B8kRn3lr8X40svQzPFaA=",
-        "owner": "johnDeSilencio",
-        "repo": "hyprhook-mouse-move",
-        "rev": "5db6325c0f1a880bd7879cdc4b948f6a2e13fcc4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "johnDeSilencio",
-        "repo": "hyprhook-mouse-move",
-        "type": "github"
-      }
-    },
     "hyprland": {
       "inputs": {
         "aquamarine": "aquamarine",
@@ -765,7 +736,6 @@
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "hyprhook": "hyprhook",
-        "hyprhook-mouse-move": "hyprhook-mouse-move",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
         "neovim": "neovim",
