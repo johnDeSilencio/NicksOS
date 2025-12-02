@@ -58,6 +58,9 @@
 
       gnumake
       gping
+
+      # For command-line hex viewing (with colors!)
+      hexyl
       htop
 
       # For benchmarking command evocations
