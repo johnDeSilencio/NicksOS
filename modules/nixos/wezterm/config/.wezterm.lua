@@ -62,4 +62,9 @@ config.colors = {
 	quick_select_match_fg = { Color = "#685742" },
 }
 
+-- Configure window title to always be "WezTerm"
+wezterm.on("format-window-title", function ()
+	return "WezTerm"
+end)
+
 return config
