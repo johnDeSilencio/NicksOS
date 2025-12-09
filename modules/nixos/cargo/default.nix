@@ -28,7 +28,6 @@
       cargo-criterion
       cargo-deny
       cargo-edit
-      cargo-espflash
       cargo-espmonitor
       cargo-expand
       cargo-flamegraph
@@ -47,6 +46,7 @@
       cargo-udeps
       cargo-update
       cargo-watch
+      espflash
       panamax
       trunk
     ];

@@ -76,7 +76,7 @@
 
       # For getting CPU temperature
       lm_sensors
-      loco-cli
+      loco
 
       # ;) (ls replacement)
       lsd

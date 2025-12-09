@@ -14,7 +14,6 @@
       botan3
       corectrl
       hwdata
-      libsForQt5.full
       virtualglLib
       vulkan-tools
     ];

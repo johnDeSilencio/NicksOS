@@ -8,7 +8,7 @@
     ./function-keys.nix
     ./hyprland.nix
     ./mako.nix
-    ./rofi-wayland.nix
+    ./rofi.nix
     ./waybar.nix
     ./wlogout.nix
   ];
