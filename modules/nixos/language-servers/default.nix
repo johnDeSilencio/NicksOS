@@ -33,7 +33,7 @@ in
         nodePackages.bash-language-server
         gopls
         golangci-lint-langserver
-        dockerfile-language-server-nodejs
+        dockerfile-language-server
         tailwindcss-language-server
         tree-sitter
         vscode-langservers-extracted

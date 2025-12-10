@@ -24,12 +24,16 @@
       # Configure git
       programs.git = {
         enable = true;
-        userName = "Nicholas R. Smith";
-        userEmail = "nicholasrsmith1600@gmail.com";
-        extraConfig = {
+
+        settings = {
+          user = {
+            name = "Nicholas R. Smith";
+            email = "nicholasrsmith1600@gmail.com";
+            signingkey = "2A603AA9D0619A75";
+          };
+
           commit.gpgsign = true;
           gpg.format = "openpgp";
-          user.signingkey = "2A603AA9D0619A75";
           credential = {
             helper = "manager";
             credentialStore = "gpg";

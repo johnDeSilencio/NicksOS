@@ -11,7 +11,7 @@
 
   config = lib.mkIf config.custom.login.enable {
     environment.systemPackages = with pkgs; [
-      greetd.tuigreet
+      tuigreet
     ];
 
     systemd.services.greetd.serviceConfig = {
