@@ -6,11 +6,9 @@
   ...
 }:
 let
-  hyprhook = inputs.hyprhook.packages.${pkgs.system}.hyprhook;
   hypr-plugin-dir = pkgs.symlinkJoin {
     name = "hyprland-plugins";
     paths = [
-      hyprhook
       # ... more plugins
     ];
   };
@@ -23,7 +21,6 @@ in
       hypridle
       hyprpaper
       hyprshot
-      hyprhook
       hypr-plugin-dir
     ];
 

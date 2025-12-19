@@ -59,11 +59,6 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    hyprhook = {
-      url = "github:johnDeSilencio/Hyprhook/feature/version-mismatch-fix";
-      inputs.hyprland.follows = "hyprland";
-    };
-
     tombi = {
       url = "github:tombi-toml/tombi";
       inputs.crane.follows = "crane";
