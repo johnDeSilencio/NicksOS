@@ -167,6 +167,7 @@
     discord.enable = true;
     docker.enable = true;
     dprint.enable = true;
+    finance.enable = true;
     fish.enable = true;
     fonts.enable = true;
     gimp.enable = true;

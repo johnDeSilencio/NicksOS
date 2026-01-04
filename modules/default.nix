@@ -26,6 +26,7 @@
     nixos/discord/default.nix
     nixos/docker/default.nix
     nixos/dprint/default.nix
+    nixos/finance/default.nix
     nixos/fish/default.nix
     nixos/fonts/default.nix
     nixos/gimp/default.nix
