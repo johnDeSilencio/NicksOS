@@ -2,7 +2,6 @@
 {
   imports = [
     home/android-studio/default.nix
-    home/chrome/default.nix
     home/corectrl/default.nix
     home/firefox/default.nix
     home/gnome-calendar/default.nix
