@@ -41,20 +41,11 @@
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "framework"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  networking.extraHosts = ''
-    192.168.88.119 capernaum
-    192.168.88.120 nazareth
-    192.168.88.121 bethany
-    192.168.88.122 jerusalem
-    127.0.0.1      panamax.internal
-  '';
 
   # Enable experimental features of nix
   nix.settings.experimental-features = [
@@ -62,8 +53,21 @@
     "flakes"
   ];
 
-  # Enable networking
-  networking.networkmanager.enable = true;
+  networking = {
+    networkmanager = {
+      enable = true;
+    };
+
+    hostName = "framework"; # Define your hostname.
+
+    extraHosts = ''
+      192.168.88.119 capernaum
+      192.168.88.120 nazareth
+      192.168.88.121 bethany
+      192.168.88.122 jerusalem
+      127.0.0.1      panamax.internal
+    '';
+  };
 
   # Enable bluetooth
   hardware.bluetooth.enable = true;
