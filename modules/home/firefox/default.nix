@@ -57,13 +57,13 @@
           # Blocks all extensions except the ones below
           "*".installation_mode = "blocked";
 
-          "{04188724-64d3-497b-a4fd-7caffe6eab29}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/latest/rust-search-extension/latest.xpi";
+          "privacypass@kagi.com" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/kagi-privacy-pass/latest.xpi";
             installation_mode = "force_installed";
           };
 
-          "{d08be0ef-4964-48c9-b6a8-6918e05c6f89}" = {
-            install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/delaywebpage/latest.xpi";
+          "{04188724-64d3-497b-a4fd-7caffe6eab29}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/rust-search-extension/latest.xpi";
             installation_mode = "force_installed";
           };
 
