@@ -56,9 +56,18 @@
   networking = {
     networkmanager = {
       enable = true;
+
+      # Enable custom DNS management with NextDNS
+      dns = "none";
     };
 
     hostName = "framework"; # Define your hostname.
+
+    # Custom DNS name servers
+    nameservers = [
+      "45.90.28.236"
+      "45.90.30.236"
+    ];
 
     extraHosts = ''
       192.168.88.119 capernaum
