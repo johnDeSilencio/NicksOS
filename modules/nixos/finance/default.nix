@@ -10,6 +10,12 @@
   };
 
   config = lib.mkIf config.custom.finance.enable {
-    environment.systemPackages = with pkgs; [ gnucash ];
+    environment.systemPackages = with pkgs; [
+      # Double-entry in plaintext
+      beancount
+
+      # Double-entry GUI
+      gnucash
+    ];
   };
 }
