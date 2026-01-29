@@ -57,6 +57,11 @@
           # Blocks all extensions except the ones below
           "*".installation_mode = "blocked";
 
+          "gdpr@cavi.au.dk" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/latest/consent-o-matic/latest.xpi";
+            installation_mode = "force_installed";
+          };
+
           "privacypass@kagi.com" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/kagi-privacy-pass/latest.xpi";
             installation_mode = "force_installed";
