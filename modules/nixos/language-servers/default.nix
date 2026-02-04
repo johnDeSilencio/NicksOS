@@ -5,9 +5,6 @@
   inputs,
   ...
 }:
-let
-  tombiPkg = inputs.tombi.packages.${pkgs.system}.default;
-in
 {
   options = {
     custom.language-servers.enable = lib.mkEnableOption "Language servers to support software development";
@@ -48,17 +45,11 @@ in
         # Markdown
         marksman
 
-        # TOML
-        taplo
-
         # Nix
         nil
 
         # For styling Lua
         stylua
-
-        # TOML language server
-        tombiPkg
 
         # JavaScript and TypeScript
         typescript-language-server

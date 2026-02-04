@@ -550,11 +550,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1770181155,
-        "narHash": "sha256-0km8ttvKRPRRORIS1AqhuKQSIoLtZzoMacFdPwyMC2M=",
+        "lastModified": 1770182980,
+        "narHash": "sha256-6FYJn/kHNvz3q8vJYlpfGpelWv6EeyWMhTuHHBbblJ8=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "d78c516702c9931060f1ae2058f2538e13605906",
+        "rev": "b0745859b94da86c20ca81ee37706e5ee0e4e3ed",
         "type": "github"
       },
       "original": {
@@ -668,7 +668,6 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "rust-overlay": "rust-overlay",
-        "tombi": "tombi",
         "wild": "wild",
         "zjstatus": "zjstatus"
       }
@@ -735,35 +734,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "tombi": {
-      "inputs": {
-        "crane": [
-          "crane"
-        ],
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": [
-          "rust-overlay"
-        ]
-      },
-      "locked": {
-        "lastModified": 1770160685,
-        "narHash": "sha256-pEOdCCZLc5fhyRv1JrU3JULy4JDiAkYWX1d3qTnhwh0=",
-        "owner": "tombi-toml",
-        "repo": "tombi",
-        "rev": "0fb54b03b5419399daddd7b6089079ebb47173ab",
-        "type": "github"
-      },
-      "original": {
-        "owner": "tombi-toml",
-        "repo": "tombi",
         "type": "github"
       }
     },

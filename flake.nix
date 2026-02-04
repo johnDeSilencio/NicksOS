@@ -59,14 +59,6 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    tombi = {
-      url = "github:tombi-toml/tombi";
-      inputs.crane.follows = "crane";
-      inputs.flake-utils.follows = "flake-utils";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.rust-overlay.follows = "rust-overlay";
-    };
-
     wild = {
       url = "github:davidlattimore/wild";
       inputs.crane.follows = "crane";
