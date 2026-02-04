@@ -263,11 +263,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1770164868,
-        "narHash": "sha256-sPyea7oYf5h420tdvkrwn0Z1uxfZdqhpuGrEVcdC7q8=",
+        "lastModified": 1770208963,
+        "narHash": "sha256-5oMhKcLzNLMy9GFpHtrZ6XJdgJpthhprv2ZC88DPN5Q=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "1bc857b12c434b7255119de009a50237856a90b2",
+        "rev": "02ff413002eddd7419ba70eb0f9f92acd2d97ddc",
         "type": "github"
       },
       "original": {
@@ -550,11 +550,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1770182980,
-        "narHash": "sha256-6FYJn/kHNvz3q8vJYlpfGpelWv6EeyWMhTuHHBbblJ8=",
+        "lastModified": 1770220710,
+        "narHash": "sha256-yNtGcsBrhKC7OCj+cMJ3z5nOl3gpN5v9kRmenP5pzAc=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "b0745859b94da86c20ca81ee37706e5ee0e4e3ed",
+        "rev": "314e6037759a233731e2cfd6f85d25f31eb1ccb1",
         "type": "github"
       },
       "original": {
