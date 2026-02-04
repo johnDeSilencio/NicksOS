@@ -1,38 +1,25 @@
-# This is a preferences file for the bacon tool
-# More info at https://github.com/Canop/bacon
+# Whether bacon should start in summary mode
+summary = false
 
-# Uncomment and change the value (true/false) to
-# specify whether bacon should start in summary mode
-#
-# summary = true
-
-# Uncomment and change the value (true/false) to
-# specify whether bacon should start with lines wrapped
-#
-# wrap = false
+# Whether bacon should start with lines wrapped
+wrap = false
 
 # In "reverse" mode, the focus is at the bottom, item
 # order is reversed, and the status bar is on top
-#
-# reverse = true
+reverse = false
 
 # The grace period is a delay after a file event before the real
 # task is launched and during which other events will be ignored.
 # This is useful if several events are often sent quasi-simultaneously
 # (eg your editor backups before saving, then renames).
 # You can set it to "none" if it's useless for you.
-#
-# grace_period = "5ms"
+grace_period = "5ms"
 
-# Uncomment and change the value (true/false) to
-# specify whether bacon should show a help line.
-#
-# help_line = false
+# Whether bacon should show a help line.
+help_line = false
 
-# Uncomment and change the value (true/false) to
-# set whether to display the count of changes since last job start
-#
-# show_changes_count = false
+# Whether to display the count of changes since last job start
+ show_changes_count = false
 
 # Uncomment one of those lines if you don't want the default
 # behavior triggered by a file change. This property can also
