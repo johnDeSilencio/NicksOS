@@ -1,23 +1,18 @@
 # Whether bacon should start in summary mode
 summary = false
-
 # Whether bacon should start with lines wrapped
 wrap = false
-
 # In "reverse" mode, the focus is at the bottom, item
 # order is reversed, and the status bar is on top
 reverse = false
-
 # The grace period is a delay after a file event before the real
 # task is launched and during which other events will be ignored.
 # This is useful if several events are often sent quasi-simultaneously
 # (eg your editor backups before saving, then renames).
 # You can set it to "none" if it's useless for you.
 grace_period = "5ms"
-
 # Whether bacon should show a help line.
 help_line = false
-
 # Whether to display the count of changes since last job start
 show_changes_count = false
 
@@ -30,7 +25,7 @@ show_changes_count = false
 
 # Exports can be executed either
 # - on each job completion (if auto is true)
-# - or called on a key (eg `ctrl-e = "export:analysis"`)
+#  - or called on a key (eg `ctrl-e = "export:analysis"`)
 #
 # They can be used for communication with external tools
 # or for inquiries.
@@ -52,9 +47,11 @@ show_changes_count = false
 auto = true
 path = ".bacon-locations"
 line_format = "{kind} {path}:{line}:{column} {message}"
+
 [exports.json-report]
 auto = false
 path = "bacon-report.json"
+
 [exports.analysis]
 auto = false
 path = "bacon-analysis.json"
