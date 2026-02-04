@@ -12,5 +12,10 @@
   config = lib.mkIf config.custom.printing.enable {
     # Enable CUPS to print documents.
     services.printing.enable = true;
+
+    # Install a simple GUI application for interacting with a scanner
+    environment.systemPackages = with pkgs; [
+      simple-scan
+    ];
   };
 }
