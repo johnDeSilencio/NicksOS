@@ -550,11 +550,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1770221703,
-        "narHash": "sha256-06BGdkhdiQcZhqFmqpP73GqNzrveWGE1W9hEaY4GMhw=",
+        "lastModified": 1770257049,
+        "narHash": "sha256-+rpr3ArEXdJoZsIVnKi2+zsltRSrcwEY5Wt+fe+GQps=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "09f98384cac242f972b87f4e671d30ba5673af19",
+        "rev": "167dce9bc3b35e6c898add7c174e6adaf91b6715",
         "type": "github"
       },
       "original": {
@@ -596,11 +596,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1770115704,
-        "narHash": "sha256-KHFT9UWOF2yRPlAnSXQJh6uVcgNcWlFqqiAZ7OVlHNc=",
+        "lastModified": 1770181073,
+        "narHash": "sha256-ksTL7P9QC1WfZasNlaAdLOzqD8x5EPyods69YBqxSfk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+        "rev": "bf922a59c5c9998a6584645f7d0de689512e444c",
         "type": "github"
       },
       "original": {
@@ -769,11 +769,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1770175749,
-        "narHash": "sha256-a83lwXExt5EOerhDy28scdDhCCZ0GSqsBPt1BD88oKM=",
+        "lastModified": 1770248924,
+        "narHash": "sha256-/amiV6A8X1d4yt+79z7mrz2BLh/NkFdK0vHX+aMPoCo=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "32133270481b0f25b50f1a9c7ce56379378d35d9",
+        "rev": "13ab8ae0d204ce57284ecf1b90c45eb765ad9f71",
         "type": "github"
       },
       "original": {
