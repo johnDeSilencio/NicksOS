@@ -25,4 +25,8 @@ status is-interactive; and begin
 
     # Import fish completions
     source ~/.config/fish/completions/completions.fish
+
+    # Workaround for Primary Device Attribute query bug
+    # https://github.com/fish-shell/fish-shell/issues/11841#issuecomment-3351793705
+    set --universal fish_features no-query-term
 end
