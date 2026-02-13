@@ -156,6 +156,7 @@
       firefox.enable = true;
       gnome-calendar.enable = true;
       gnome-feeds.enable = true;
+      halloy.enable = true;
       home-manager.enable = true;
       kdenlive.enable = true;
       minecraft.enable = true;

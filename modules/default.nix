@@ -6,6 +6,7 @@
     home/firefox/default.nix
     home/gnome-calendar/default.nix
     home/gnome-feeds/default.nix
+    home/halloy/default.nix
     home/home-manager/default.nix
     home/kdenlive/default.nix
     home/minecraft/default.nix

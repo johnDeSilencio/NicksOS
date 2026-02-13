@@ -1,0 +1,14 @@
+# Halloy config.
+#
+# For a complete list of available options,
+# please visit https://halloy.chat/configuration.html
+
+theme = "Gruvbox"
+
+[servers.liberachat]
+nickname = "johnDeSilencio"
+server = "irc.libera.chat"
+channels = ["#halloy"]
+
+[font]
+size = 24
