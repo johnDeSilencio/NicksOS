@@ -35,6 +35,11 @@
       inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
     };
 
+    plover = {
+      url = "github:openstenoproject/plover-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     cucumber-language-server = {
       url = "github:johnDeSilencio/language-server/chore/update-tree-sitter";
       inputs.nixpkgs.follows = "nixpkgs";
