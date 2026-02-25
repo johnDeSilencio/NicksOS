@@ -22,7 +22,6 @@
         # For debugging
         gdb
 
-        node2nix
         lua-language-server
         yaml-language-server
         markdown-oxide
