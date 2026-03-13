@@ -39,6 +39,7 @@
     nixos/localization/default.nix
     nixos/login/default.nix
     nixos/obsidian/default.nix
+    nixos/panamax/default.nix
     nixos/photoqt/default.nix
     nixos/prek/default.nix
     nixos/printing/default.nix

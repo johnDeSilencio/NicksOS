@@ -47,7 +47,6 @@
       cargo-update
       cargo-watch
       espflash
-      panamax
       trunk
     ];
   };

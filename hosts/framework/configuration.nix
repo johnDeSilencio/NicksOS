@@ -193,6 +193,7 @@
     localization.enable = true;
     login.enable = true;
     obsidian.enable = true;
+    panamax.enable = true;
     photoqt.enable = true;
     prek.enable = true;
     printing.enable = true;
