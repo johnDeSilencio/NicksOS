@@ -17,8 +17,8 @@
           paths = [ pkgs.penpot-desktop ];
           nativeBuildInputs = [ pkgs.makeBinaryWrapper ];
           postBuild = ''
-            # Increases the size of the text in Penpot by 50%
-            wrapProgram $out/bin/penpot-desktop --set GDK_SCALE "1.5"
+            # Increases the size of the text in Penpot by 100%
+            wrapProgram $out/bin/penpot-desktop --set GDK_SCALE "2.0"
           '';
         };
       in
