@@ -161,6 +161,7 @@
       kdenlive.enable = true;
       minecraft.enable = true;
       neovim.enable = true;
+      penpot.enable = true;
       plover.enable = true;
       signal-desktop.enable = true;
       teams.enable = true;

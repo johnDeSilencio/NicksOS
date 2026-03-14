@@ -11,6 +11,7 @@
     home/kdenlive/default.nix
     home/minecraft/default.nix
     home/neovim/default.nix
+    home/penpot/default.nix
     home/plover/default.nix
     home/signal-desktop/default.nix
     home/teams/default.nix
