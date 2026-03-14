@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  nixpkgs-unstable,
   ...
 }:
 {
@@ -10,147 +11,152 @@
   };
 
   config = lib.mkIf config.custom.cli-tools.enable {
-    environment.systemPackages = with pkgs; [
-      android-tools
+    environment.systemPackages =
+      with pkgs;
+      [
+        android-tools
 
-      # Polyglot tool for code searching, linting, and rewriting
-      ast-grep
+        # Polyglot tool for code searching, linting, and rewriting
+        ast-grep
 
-      # Shell history tool
-      atuin
+        # Shell history tool
+        atuin
 
-      # WASM tools
-      binaryen
+        # WASM tools
+        binaryen
 
-      # For audio visualization on the command-line
-      cava
+        # For audio visualization on the command-line
+        cava
 
-      # For instrumenting Chrome
-      chromedriver
-      cmake
+        # For instrumenting Chrome
+        chromedriver
+        cmake
 
-      # Used for pretty diffs
-      delta
+        # Used for pretty diffs
+        delta
 
-      # Rust cross-development frontend framework
-      dioxus-cli
+        # Rust cross-development frontend framework
+        dioxus-cli
 
-      # Query and display system information like serial #
-      dmidecode
+        # Query and display system information like serial #
+        dmidecode
 
-      # For command-line DNS queries
-      dogdns
+        # For command-line DNS queries
+        dogdns
 
-      # For dealing with WebP file format
-      libwebp
+        # For dealing with WebP file format
+        libwebp
 
-      # For writing down ideas in the terminal quickly
-      eureka-ideas
+        # For writing down ideas in the terminal quickly
+        eureka-ideas
 
-      # A better GNU find
-      fd
-      ffmpeg
-      framework-tool
-      gcc
+        # A better GNU find
+        fd
+        ffmpeg
+        framework-tool
+        gcc
 
-      # For instrumenting Firefox
-      geckodriver
+        # For instrumenting Firefox
+        geckodriver
 
-      gnumake
-      gping
+        gnumake
+        gping
 
-      # For command-line hex viewing (with colors!)
-      hexyl
-      htop
+        # For command-line hex viewing (with colors!)
+        hexyl
+        htop
 
-      # For benchmarking command evocations
-      hyperfine
+        # For benchmarking command evocations
+        hyperfine
 
-      # For image conversion capabilities
-      imagemagickBig
-      inotify-tools
+        # For image conversion capabilities
+        imagemagickBig
+        inotify-tools
 
-      # For manipulating JSON text on the command-line
-      jaq
-      killall
+        # For manipulating JSON text on the command-line
+        jaq
+        killall
 
-      # For getting CPU temperature
-      lm_sensors
-      loco
+        # For getting CPU temperature
+        lm_sensors
+        loco
 
-      # ;) (ls replacement)
-      lsd
-      lshw
+        # ;) (ls replacement)
+        lsd
+        lshw
 
-      # Markdown linker
-      lychee
+        # Markdown linker
+        lychee
 
-      markuplinkchecker
-      miniserve
+        markuplinkchecker
+        miniserve
 
-      # Displaying OS / system information
-      neofetch
-      nix-prefetch-github
-      nmap
+        # Displaying OS / system information
+        neofetch
+        nix-prefetch-github
+        nmap
 
-      # Compression / decompression tool
-      ouch
+        # Compression / decompression tool
+        ouch
 
-      # JavaScript linter written in Rust
-      oxlint
-      pass
+        # JavaScript linter written in Rust
+        oxlint
+        pass
 
-      # Over-engineered terminal screensaver written in Rust
-      pipes-rs
+        # Over-engineered terminal screensaver written in Rust
+        pipes-rs
 
-      # Analyzer power usage
-      powertop
+        # Analyzer power usage
+        powertop
 
-      # Supports running arbitrary hooks during commit lifecycle
-      pre-commit
-      procs
-      qemu
-      reveal-md
+        # Supports running arbitrary hooks during commit lifecycle
+        pre-commit
+        procs
+        qemu
+        reveal-md
 
-      # A better, faster grep
-      ripgrep
+        # A better, faster grep
+        ripgrep
 
-      # BitTorrent client written in Rust
-      rqbit
+        # BitTorrent client written in Rust
+        rqbit
 
-      # Record & replay debugger
-      rr
+        # Record & replay debugger
+        rr
 
-      # A modern, faster version of nmap
-      rustscan
+        # A modern, faster version of nmap
+        rustscan
 
-      # Query and display data about SSD / hard drive health
-      smartmontools
-      sea-orm-cli
-      tailwindcss
+        # Query and display data about SSD / hard drive health
+        smartmontools
+        sea-orm-cli
+        tailwindcss
 
-      # TL;DR tool for CLI commands
-      tealdeer
+        # TL;DR tool for CLI commands
+        tealdeer
 
-      # Alternative to trash-cli written in Rust
-      trashy
-      usbutils
+        # Alternative to trash-cli written in Rust
+        trashy
+        usbutils
 
-      # Rust rewrite
-      uutils-coreutils-noprefix
+        # Rust rewrite
+        uutils-coreutils-noprefix
 
-      # Execute arbitrary commands when a file changes
-      watchexec
-      wasm-pack
-      wf-recorder
-      wget
+        # Execute arbitrary commands when a file changes
+        watchexec
+        wasm-pack
+        wf-recorder
+        wget
 
-      # wl-copy and wl-paste
-      wl-clipboard-rs
+        # wl-copy and wl-paste
+        wl-clipboard-rs
 
-      # Terminal multiplexer
-      zellij
-    ];
+        # Terminal multiplexer
+        zellij
+      ]
+      ++ [
+        nixpkgs-unstable.pastel
+      ];
 
     # Direnv
     programs.direnv = {
