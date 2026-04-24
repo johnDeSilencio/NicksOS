@@ -150,9 +150,6 @@
 
         # wl-copy and wl-paste
         wl-clipboard-rs
-
-        # Terminal multiplexer
-        zellij
       ]
       ++ [
         nixpkgs-unstable.pastel
