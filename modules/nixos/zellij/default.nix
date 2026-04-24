@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  nixpkgs-unstable,
   inputs,
   ...
 }:
@@ -17,9 +18,9 @@
       })
     ];
 
-    environment.systemPackages = with pkgs; [
-      zellij
-      zjstatus
+    environment.systemPackages = [
+      nixpkgs-unstable.zellij
+      pkgs.zjstatus
     ];
 
     home-manager.users.nicholas = {
