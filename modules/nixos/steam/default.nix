@@ -10,7 +10,13 @@
   };
 
   config = lib.mkIf config.custom.steam.enable {
-    programs.steam.enable = true;
+    programs.steam = {
+      enable = true;
+
+      extraCompatPackages = with pkgs; [
+        proton-ge-bin
+      ];
+    };
 
     environment.systemPackages = with pkgs; [
       umu-launcher
