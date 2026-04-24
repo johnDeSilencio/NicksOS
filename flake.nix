@@ -32,7 +32,8 @@
     neovim = {
       url = "github:johnDeSilencio/neovim";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
+      # TODO: Uncomment when vim-utils on nixpkgs-unstable is fixed
+      # inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
     };
 
     plover = {
