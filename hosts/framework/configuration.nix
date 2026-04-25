@@ -151,6 +151,7 @@
 
   custom = {
     home = {
+      anki.enable = true;
       android-studio.enable = true;
       corectrl.enable = true;
       firefox.enable = true;
