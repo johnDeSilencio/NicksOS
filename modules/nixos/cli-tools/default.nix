@@ -153,6 +153,9 @@
       ]
       ++ [
         nixpkgs-unstable.pastel
+
+        # For the bazel build tool
+        nixpkgs-unstable.bazel_9
       ];
 
     # Direnv
