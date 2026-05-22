@@ -34,7 +34,8 @@
       home.file.".config/zellij/layouts/default.kdl".text = ''
         load_plugins {
           "${pkgs.zjstatus}/bin/zjframes.wasm" {
-            hide_frame_for_single_pane       "true"
+            // TODO: Revert once https://github.com/dj95/zjstatus/issues/258 is resolved
+            hide_frame_for_single_pane       "false"
             hide_frame_except_for_search     "true"
             hide_frame_except_for_scroll     "true"
             hide_frame_except_for_fullscreen "true"
@@ -57,7 +58,8 @@
                 border_format   "#[fg=#b3b3b3]{char}"
                 border_position "top"
 
-                hide_frame_for_single_pane "true"
+                // Revert once https://github.com/dj95/zjstatus/issues/258 is resolved
+                hide_frame_for_single_pane "false"
 
                 mode_normal  "#[bg=#cc922d,bold]   "
                 mode_tmux    "#[bg=#f07178,bold]   "
