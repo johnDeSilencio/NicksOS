@@ -96,6 +96,9 @@
         nix-prefetch-github
         nmap
 
+        # Modern shell written in Rust
+        nushell
+
         # Compression / decompression tool
         ouch
 
