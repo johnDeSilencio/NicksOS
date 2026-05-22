@@ -162,6 +162,9 @@
 
         # For the bazel build tool
         nixpkgs-unstable.bazel_9
+
+        # For diagramming
+        nixpkgs-unstable.oxdraw
       ];
 
     # Direnv
