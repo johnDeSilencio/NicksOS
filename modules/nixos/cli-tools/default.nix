@@ -133,6 +133,9 @@
         # Query and display data about SSD / hard drive health
         smartmontools
         sea-orm-cli
+
+        # For interacting with sqlite databases
+        sqlite
         tailwindcss
 
         # TL;DR tool for CLI commands
