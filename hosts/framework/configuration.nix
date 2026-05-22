@@ -194,6 +194,7 @@
     libreoffice.enable = true;
     localization.enable = true;
     login.enable = true;
+    lutris.enable = true;
     obsidian.enable = true;
     panamax.enable = true;
     photoqt.enable = true;

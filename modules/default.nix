@@ -40,6 +40,7 @@
     nixos/libreoffice/default.nix
     nixos/localization/default.nix
     nixos/login/default.nix
+    nixos/lutris/default.nix
     nixos/obsidian/default.nix
     nixos/panamax/default.nix
     nixos/photoqt/default.nix
