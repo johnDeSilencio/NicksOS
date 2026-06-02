@@ -263,11 +263,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1780258655,
-        "narHash": "sha256-Z+wcmfML4fSFU+3pQUiw8XJuN4iiyGwHXY5jdNq1cWg=",
+        "lastModified": 1780334452,
+        "narHash": "sha256-DczQzvgoXK7v7HorwXOEehygM6LH8BAt+8B4ndLNals=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "515b883da63583bb2582b40deea005e2f3638038",
+        "rev": "13be9a3305150fa9b9492418bbc409707129ab44",
         "type": "github"
       },
       "original": {
@@ -548,11 +548,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1780246094,
-        "narHash": "sha256-xTuIQ2J85WfmDOridr+5GPgr2qOk2Suo4eArTwXD/1w=",
+        "lastModified": 1780362674,
+        "narHash": "sha256-whL0zwdokqPC8hktOQqe/ZT40JX/FZo9KVdhE5S8bis=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "0867e13cf74ecaf7f6840501633dd3666f38b800",
+        "rev": "84dc5cec660d5958f42ee279684b36c75d7e3ea0",
         "type": "github"
       },
       "original": {
@@ -594,11 +594,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1780030872,
-        "narHash": "sha256-u6WU/yd/o8iYQrHX3RAwO1hYa3LkoSL+WNQD0rJfJZQ=",
+        "lastModified": 1780336545,
+        "narHash": "sha256-vhVhuXzFrIOfcssC/9hDHx7MHzDKjF3keHuREOQqQiQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e9a7635a57597d9754eccebdfc7045e6c8600e6b",
+        "rev": "4df1b885d76a54e1aa1a318f8d16fd6005b6401f",
         "type": "github"
       },
       "original": {
@@ -610,11 +610,11 @@
     },
     "nixpkgs-unstable_2": {
       "locked": {
-        "lastModified": 1779560665,
-        "narHash": "sha256-tpyBcxPpcQb8ukyNF7DoCwfSY3VPsxHoYwj00Cayv5o=",
+        "lastModified": 1780243769,
+        "narHash": "sha256-x5UQuRsH3MqI0U9afaXSNqzTPSeZlRLvFAav2Ux1pNw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "64c08a7ca051951c8eae34e3e3cb1e202fe36786",
+        "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
         "type": "github"
       },
       "original": {
@@ -676,11 +676,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1780122855,
-        "narHash": "sha256-WDSnD4l6q3i7HAIp8mEHIw/5y4MuZudlKAwQ29Pl1aA=",
+        "lastModified": 1780304301,
+        "narHash": "sha256-6pP6RWiYQZ6M0J9VUWJPwWmoXP/XbCWJQGZQ/JvVolw=",
         "owner": "openstenoproject",
         "repo": "plover-flake",
-        "rev": "93dc9e615fec8b645e1443c133441fc603dc5108",
+        "rev": "4d3656e066828c76854d5239ab7d8d7000603c13",
         "type": "github"
       },
       "original": {
@@ -902,11 +902,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1775636079,
-        "narHash": "sha256-pc20NRoMdiar8oPQceQT47UUZMBTiMdUuWrYu2obUP0=",
+        "lastModified": 1780220602,
+        "narHash": "sha256-eynAfOmbmxJnkp7YewvCEbShNnnYJ9gLLqkzsYtBPeM=",
         "owner": "numtide",
         "repo": "treefmt-nix",
-        "rev": "790751ff7fd3801feeaf96d7dc416a8d581265ba",
+        "rev": "db947814a175b7ca6ded66e21383d938df01c227",
         "type": "github"
       },
       "original": {
@@ -925,11 +925,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780263851,
-        "narHash": "sha256-5vvbnrez6JD+BjSDPOW6puvtLznq+RibWT66PstRHi8=",
+        "lastModified": 1780361621,
+        "narHash": "sha256-cfdB3eU/XMx/s06aTWRRe267nmi0BzzZ7KuYkJwddyA=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "63b46921435bc2f92e6d7c8c1eea43808969e514",
+        "rev": "7c999a5576d425a701d3e2639ea9a93aa76b7e04",
         "type": "github"
       },
       "original": {
@@ -995,11 +995,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1776491188,
-        "narHash": "sha256-sjMs63OaRhwCrl46v1A+K2EJdqnw63Pc7BMnHqiU790=",
+        "lastModified": 1780341685,
+        "narHash": "sha256-wWLVddsRGqPr0hurHgAR/5YE6oFis+Gme5otJL3bgrE=",
         "owner": "dj95",
         "repo": "zjstatus",
-        "rev": "f7f58bd3cb30352a8da85926636b8ec41770098a",
+        "rev": "f2f2da7c6f062be5c1d1303f15e8172437adf1a4",
         "type": "github"
       },
       "original": {
