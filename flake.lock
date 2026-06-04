@@ -263,11 +263,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1780519208,
-        "narHash": "sha256-Ic3I/mnmsT1HPew7owqDsJ8NxRV9HOWu8zpG6aeKH78=",
+        "lastModified": 1780587204,
+        "narHash": "sha256-Z+AuGLUFdsC1H/K3yBoJ2DvRJVrWVmVdqxzy+dYRR5o=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "04435fb857d4e3c5845bc43b077568d28e048c54",
+        "rev": "04c290efcf4776c9aede65e140dd72b150fcffa6",
         "type": "github"
       },
       "original": {
@@ -548,11 +548,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1780455033,
-        "narHash": "sha256-WXSvdnWPfn+2a+lqjuJYqdQEIvJ12KiT7o4+RbXNE1w=",
+        "lastModified": 1780589233,
+        "narHash": "sha256-YhUMZ5VGwSJxKv2FZXoM2P8aCeQJ4ESxbv+MTaCYy4I=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "dcefd72dc0d1efb1dd42a305cbb4f28076b3d02b",
+        "rev": "ff415337e60cec32ae416f9a8f79facbd3fa8c24",
         "type": "github"
       },
       "original": {
@@ -594,11 +594,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1780336545,
-        "narHash": "sha256-vhVhuXzFrIOfcssC/9hDHx7MHzDKjF3keHuREOQqQiQ=",
+        "lastModified": 1780365719,
+        "narHash": "sha256-QfWfccTN+70ZQ4m2qlU9PiKfz2Yppq94058iJyARNwc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "4df1b885d76a54e1aa1a318f8d16fd6005b6401f",
+        "rev": "ffa10e26ae11d676b2db836259889f1f571cb14f",
         "type": "github"
       },
       "original": {
