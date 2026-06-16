@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }:
 {
@@ -9,9 +10,16 @@
   };
 
   config = lib.mkIf config.custom.docker.enable {
-    virtualisation.docker.rootless = {
+    environment.systemPackages = with pkgs; [
+      docker-compose
+    ];
+
+    virtualisation.docker = {
       enable = true;
-      setSocketVariable = true;
+
+      rootless = {
+        enable = true;
+      };
     };
 
     users.extraGroups.docker.members = [ "nicholas" ];
