@@ -82,6 +82,8 @@
         # Markdown linker
         lychee
 
+        # Displaying OS / system information
+        macchina
         markuplinkchecker
         miniserve
 
