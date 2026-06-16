@@ -70,10 +70,10 @@
     ];
 
     extraHosts = ''
-      192.168.88.119 capernaum
-      192.168.88.120 nazareth
-      192.168.88.121 bethany
-      192.168.88.122 jerusalem
+      192.168.1.31 capernaum
+      192.168.1.48 nazareth
+      192.168.1.10 bethany
+      192.168.1.14 jerusalem
       127.0.0.1      panamax.internal
     '';
   };
