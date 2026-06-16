@@ -41,14 +41,8 @@
         # Query and display system information like serial #
         dmidecode
 
-        # For command-line DNS queries
-        dogdns
-
         # For dealing with WebP file format
         libwebp
-
-        # For writing down ideas in the terminal quickly
-        eureka-ideas
 
         # A better GNU find
         fd
@@ -91,8 +85,6 @@
         markuplinkchecker
         miniserve
 
-        # Displaying OS / system information
-        neofetch
         nix-prefetch-github
         nmap
 
