@@ -17,6 +17,7 @@
         cucumber-language-server = inputs.cucumber-language-server.packages.x86_64-linux.default;
       in
       [
+        bash-language-server
         cucumber-language-server
 
         # For debugging
@@ -25,15 +26,13 @@
         lua-language-server
         yaml-language-server
         markdown-oxide
-        nodePackages.vscode-json-languageserver
-        nodePackages.bash-language-server
         gopls
         golangci-lint-langserver
         dockerfile-language-server
         tailwindcss-language-server
         tree-sitter
         vscode-langservers-extracted
-        nixfmt-rfc-style
+        nixfmt
 
         # For grammar and spell checking
         harper
@@ -59,6 +58,7 @@
 
         # Formatter for typst
         typstyle
+        vscode-json-languageserver
       ];
   };
 }
