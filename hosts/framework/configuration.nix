@@ -168,7 +168,6 @@
       teams.enable = true;
       wireshark.enable = true;
       zed.enable = true;
-      zulip.enable = true;
     };
 
     cli-tools = {

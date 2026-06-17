@@ -18,7 +18,6 @@
     home/teams/default.nix
     home/wireshark/default.nix
     home/zed/default.nix
-    home/zulip/default.nix
 
     nixos/bacon/default.nix
     nixos/bat/default.nix
