@@ -12,6 +12,9 @@
     home-manager.users.nicholas.programs.firefox = {
       enable = true;
 
+      # Suppress warning about XDG_CONFIG_HOME
+      configPath = ".mozilla/firefox";
+
       profiles = {
         nick = {
           id = 0;
