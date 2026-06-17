@@ -61,10 +61,10 @@ local fileManager = "dolphin"
 
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
---
--- exec-once = $terminal
--- exec-once = nm-applet &
--- exec-once = waybar & hyprpaper & firefox
+
+hl.on("hyprland.start", function ()
+  hl.exec_cmd("bash ~/.config/hypr/start.sh")
+end)
 
 
 -----------------------------
@@ -96,7 +96,7 @@ hl.env("HYPRCURSOR_SIZE", "24")
 --- LOOK AND FEEL ---
 ---------------------
 
--- Refer to https://wiki.hyprland.org/Configuring/Basics/Variables/
+-- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
   general = {
     gaps_in = 30,
@@ -112,7 +112,7 @@ hl.config({
     -- Set to true enable resizing windows by clicking and dragging on borders and gaps
     resize_on_border = false,
 
-    -- Please see https://wiki.hyprland.org/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
+    -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
     allow_tearing = false,
 
     layout = "dwindle",
@@ -129,12 +129,12 @@ hl.config({
         enabled = true,
         range = 60,
         render_power = 2,
-        offset = 15, 15,
+        offset = { 15, 15 },
         color = "rgba(1a1a1abb)",
         scale = "1.1",
     },
 
-    -- https://wiki.hyprland.org/Configuring/Variables/#blur
+    -- https://wiki.hypr.land/Configuring/Variables/#blur
     blur = {
         enabled = true,
         new_optimizations = true,
@@ -156,16 +156,16 @@ hl.curve("linear",  { type = "bezier", points = { {1, 1},      {1, 1}      } })
 
 local speed = 10
 
-hl.animation({ "windows", enabled = true, speed = $speed, bezier = "wind", style = "slide" })
-hl.animation({ "windowsIn", enabled = true, speed = $speed, bezier = "winIn", style = "slide" })
-hl.animation({ "windowsOut", enabled = true, speed = $speed, bezier = "winOut", style = "slide" })
-hl.animation({ "windowsMove", enabled = true, speed = $speed, bezier = "wind", style = "slide" })
-hl.animation({ "border", enabled = true, speed = $speed, bezier = "linear" })
-hl.animation({ "borderangle", speed = $speed, 30, bezier = "linear", style = "loop" })
-hl.animation({ "fade", enabled = 1, speed = $speed, style = "default" })
-hl.animation({ "workspaces", enabled = true, speed = $speed, bezier = "wind" })
+hl.animation({ leaf = "windows", enabled = true, speed = speed, bezier = "wind", style = "slide" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = speed, bezier = "winIn", style = "slide" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = speed, bezier = "winOut", style = "slide" })
+hl.animation({ leaf = "windowsMove", enabled = true, speed = speed, bezier = "wind", style = "slide" })
+hl.animation({ leaf = "border", enabled = true, speed = speed, bezier = "linear" })
+hl.animation({ leaf = "borderangle", enabled = true, speed = speed, bezier = "linear", style = "loop" })
+hl.animation({ leaf = "fade", enabled = true, speed = speed, bezier = "linear" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = speed, bezier = "wind" })
 
--- See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
+-- See https://wiki.hypr.land/Configuring/Master-Layout/ for more
 hl.config({
   master = {
       new_status = "master",
@@ -209,9 +209,9 @@ hl.config({
   },
 })
 
-hl.gestures({
-  workspace_swipe_touch = false,
-})
+-- hl.gesture({
+--   workspace_swipe_touch = false,
+-- })
 
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
@@ -221,9 +221,9 @@ hl.device({
 })
 
 
-----------------------
----- KEYBINDINGSS ----
-----------------------
+---------------------
+---- KEYBINDINGS ----
+---------------------
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
@@ -267,7 +267,7 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
-hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direciton = "down" }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
 -- Bind rofi launcher
 hl.bind(mainMod .. "+ SPACE", hl.dsp.exec_cmd("rofi -show drun -display-drun \"\" -show-icons"))
@@ -301,7 +301,7 @@ hl.bind("SHIFT + F11", hl.dsp.exec_cmd("pidof -x \"$(dirname $(readlink -f $(whi
 -- Bind print screen key for printing the current screen and saving to disk.
 hl.bind("SUPER + F11", hl.dsp.exec_cmd("pidof -x \"$(dirname $(readlink -f $(which hyprshot)))/.hyprshot-wrapped\" &>/dev/null || hyprshot -m output -o /home/nicholas/Pictures/Screenshots/"))
 -- Bind print screen key for printing the current window and saving to disk
-hl.bind("SUPER_SHIFT + F11", hl.dsp.exec_cmd("pidof -x \"$(dirname $(readlink -f $(which hyprshot)))/.hyprshot-wrapped\" &>/dev/null || hyprshot -m window -o /home/nicholas/Pictures/Screenshots/"))
+hl.bind("SUPER + SHIFT + F11", hl.dsp.exec_cmd("pidof -x \"$(dirname $(readlink -f $(which hyprshot)))/.hyprshot-wrapped\" &>/dev/null || hyprshot -m window -o /home/nicholas/Pictures/Screenshots/"))
 
 -- Bind framework logo key. Will only run if wlogout is not already running.
 hl.bind("F12", hl.dsp.exec_cmd("pidof $(which wlogout) &>/dev/null || wlogout --protocol layer-shell"))
@@ -310,7 +310,10 @@ hl.bind("F12", hl.dsp.exec_cmd("pidof $(which wlogout) &>/dev/null || wlogout --
 hl.bind("XF86Calculator", hl.dsp.exec_cmd("qalculate-qt"))
 
 -- Bind keyboard shortcut to open query.rs for Rust-related searches
-hl.bind("SUPER_SHIFT + Q", hl.dsp.exec_cmd("xdg-open \"https://query.rs\""))
+hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd("xdg-open \"https://query.rs\""))
+
+-- Toggle Waybar
+hl.bind("SUPER + SHIFT + T", hl.dsp.exec_cmd("pidof $(which waybar) &>/dev/null && kill $(pidof $(which waybar)) &>/dev/null || waybar"))
 
 
 --------------------------------
@@ -328,7 +331,7 @@ hl.window_rule({
 
 -- Polyfill: hide xwaylandvideobridge window which is used to enable screen sharing on Wayland
 
-h.window_rule({
+hl.window_rule({
   name = "polyfill-hide-xwaylandvideobridge",
   match = {
     class = "^(xwaylandvideobridge)$",
@@ -348,5 +351,3 @@ hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("hyprctl dispatch dpms off eDP-1
 
 -- # Handle laptop lid opening (inverted logic). Turns on all displays
 hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("hyprctl dispatch dpms on", { locked = true }))
-
-hl.dsp.exec_cmd("bash ~/.config/hypr/start.sh")
