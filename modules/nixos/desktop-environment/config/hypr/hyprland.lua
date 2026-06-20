@@ -148,7 +148,7 @@ hl.curve("winIn", { type = "bezier", points = { { 0.1, 1.1 }, { 0.1, 1.1 } } })
 hl.curve("winOut", { type = "bezier", points = { { 0.3, -0.3 }, { 0, 1 } } })
 hl.curve("linear", { type = "bezier", points = { { 1, 1 }, { 1, 1 } } })
 
-local speed = 10
+local speed = 5
 
 hl.animation({ leaf = "windows", enabled = true, speed = speed, bezier = "wind", style = "slide" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = speed, bezier = "winIn", style = "slide" })
