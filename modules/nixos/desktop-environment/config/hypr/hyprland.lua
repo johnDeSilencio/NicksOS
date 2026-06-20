@@ -361,7 +361,7 @@ hl.window_rule({
 hl.dsp.exec_cmd("hypridle")
 
 -- Handle laptop lid closing (inverted logic). Only turns off the built-in display
-hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("hyprctl dispatch dpms off eDP-1", { locked = true }))
+hl.bind("switch:on:Lid Switch", hl.dsp.exec_cmd("hyprctl dispatch dpms off eDP-1"), { locked = true })
 
 -- # Handle laptop lid opening (inverted logic). Turns on all displays
-hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("hyprctl dispatch dpms on", { locked = true }))
+hl.bind("switch:off:Lid Switch", hl.dsp.exec_cmd("hyprctl dispatch dpms on"), { locked = true })
