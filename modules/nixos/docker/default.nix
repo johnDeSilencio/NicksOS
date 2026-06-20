@@ -17,6 +17,9 @@
     virtualisation.docker = {
       enable = true;
 
+      # Fixes bug where shutdown hangs on s6-svscan process for ~90 s
+      liveRestore = false;
+
       rootless = {
         enable = true;
       };
