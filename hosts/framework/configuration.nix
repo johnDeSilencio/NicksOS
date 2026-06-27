@@ -87,13 +87,6 @@
   # Disable CPUS
   services.printing.browsed.enable = false;
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-    options = "caps:swapescape"; # Swaps the Esc and Caps Lock keys
-  };
-
   services.avahi = {
     enable = true;
     nssmdns4 = true;

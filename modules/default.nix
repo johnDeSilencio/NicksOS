@@ -35,6 +35,7 @@
     nixos/git/default.nix
     nixos/gnupg/default.nix
     nixos/keepassxc/default.nix
+    nixos/keyboard/default.nix
     nixos/language-servers/default.nix
     nixos/libreoffice/default.nix
     nixos/localization/default.nix
