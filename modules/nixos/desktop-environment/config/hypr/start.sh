@@ -3,6 +3,9 @@
 # Start wallpaper engine
 hyprpaper &
 
+# Start idle detector
+hypridle &
+
 # Network manager applet
 nm-applet --indicator &
 
