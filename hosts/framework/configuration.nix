@@ -38,6 +38,8 @@
     };
   };
 
+  boot.supportedFilesystems = [ "btrfs" ];
+
   # Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
