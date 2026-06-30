@@ -184,10 +184,10 @@ hl.config({
 
 hl.config({
 	input = {
-		kb_layout = "us",
-		kb_variant = "colemak_dh",
+		kb_layout = "us,us",
+		kb_variant = ",colemak_dh",
 		kb_model = "",
-		kb_options = "caps:swapescape",
+		kb_options = "caps:swapescape,grp:alt_shift_toggle",
 		kb_rules = "",
 
 		follow_mouse = 1,

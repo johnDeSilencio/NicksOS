@@ -12,8 +12,9 @@
 
   services = {
     xserver = {
-      xkb.layout = "us";
-      xkb.variant = "colemak_dh";
+      xkb.layout = "us,us";
+      xkb.variant = ",colemak_dh";
+      xkb.options = "caps:swapescape,grp:alt_shift_toggle";
     };
   };
 }
