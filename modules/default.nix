@@ -26,6 +26,7 @@
     nixos/cli-tools/parallel-disk-usage/default.nix
     nixos/desktop-environment/default.nix
     nixos/discord/default.nix
+    nixos/disko/default.nix
     nixos/docker/default.nix
     nixos/dprint/default.nix
     nixos/finance/default.nix

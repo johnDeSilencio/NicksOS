@@ -14,6 +14,7 @@
     ./hardware-configuration.nix
 
     inputs.home-manager.nixosModules.home-manager
+    inputs.disko.nixosModules.disko
     ../../modules/default.nix
   ];
 

@@ -19,6 +19,11 @@
       url = "github:numtide/flake-utils";
     };
 
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -76,6 +81,7 @@
       self,
       nixpkgs,
       wild,
+      disko,
       ...
     }:
     let
