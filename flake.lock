@@ -571,11 +571,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1784609620,
-        "narHash": "sha256-Eq1YppQLj4jtBMJSwUfw2sDJrbjSBcBqGJZo49/UjLg=",
+        "lastModified": 1784649978,
+        "narHash": "sha256-plj7gpOf9lOUqCV1St3SgtDW5PRDeUdgjRGcv6LsL54=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "a64bd921a3e8b117ae1bd384beac92689cc1050e",
+        "rev": "379df69ff2235b74270d5e0bd3334cc911df7b95",
         "type": "github"
       },
       "original": {
