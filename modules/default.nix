@@ -23,6 +23,7 @@
     nixos/bat/default.nix
     nixos/cargo/default.nix
     nixos/cli-tools/default.nix
+    nixos/cli-tools/tailscale.nix
     nixos/cli-tools/parallel-disk-usage/default.nix
     nixos/desktop-environment/default.nix
     nixos/discord/default.nix
@@ -35,6 +36,7 @@
     nixos/gimp/default.nix
     nixos/git/default.nix
     nixos/gnupg/default.nix
+    nixos/jj/default.nix
     nixos/keepassxc/default.nix
     nixos/keyboard/default.nix
     nixos/language-servers/default.nix
