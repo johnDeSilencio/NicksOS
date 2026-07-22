@@ -29,10 +29,14 @@ hl.monitor({
 })
 
 hl.monitor({
-	output = "WDT UW32SC1W 6980Y24405405",
-	mode = "1366x768",
+	output = "DP-4",
+	mode = "1920x1080",
 	position = "2560x0",
-	scale = 0.5,
+	scale = 1,
+	-- Colors look too cold by default
+	-- cm = "hdr",
+	-- sdrsaturation = 1.90,
+	-- sdrbrightness = 1.5,
 })
 
 hl.monitor({
