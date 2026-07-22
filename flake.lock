@@ -945,11 +945,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1784608454,
-        "narHash": "sha256-ukpv6uZkuE+xtiOgeWSwjAQ+886AmrpkBLkeq7Dn4L4=",
+        "lastModified": 1784681601,
+        "narHash": "sha256-AN1/f2p8zY7dY5NSSoGTJc6uGXSiWIfodx9we5NapgM=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "702bd541682679fe5675469160f6f2ad75d96833",
+        "rev": "3cd2b736ef500bce5bd92188440c13e5204c3a61",
         "type": "github"
       },
       "original": {
