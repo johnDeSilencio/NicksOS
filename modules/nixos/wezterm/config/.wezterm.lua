@@ -51,7 +51,7 @@ config.colors = {
 	indexed = { [16] = "#222222" },
 
 	-- Copy mode colors
-	copy_mode_active_highlight_fg = { Color = "none"},
+	copy_mode_active_highlight_fg = { Color = "none" },
 	copy_mode_inactive_highlight_bg = { Color = "#c9a554" },
 	copy_mode_inactive_highlight_fg = { Color = "none" },
 
@@ -63,7 +63,7 @@ config.colors = {
 }
 
 -- Configure window title to always be "WezTerm"
-wezterm.on("format-window-title", function ()
+wezterm.on("format-window-title", function()
 	return "WezTerm"
 end)
 
