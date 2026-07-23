@@ -5,10 +5,10 @@ local config = {}
 config.hide_tab_bar_if_only_one_tab = true
 
 -- Configure font
-config.font = wezterm.font {
-	family = "IntoneMono Nerd Font",
-	weight = "Regular"
-}
+config.font = wezterm.font({
+	family = "DepartureMono Nerd Font",
+	weight = "Regular",
+})
 
 config.font_size = 20
 
