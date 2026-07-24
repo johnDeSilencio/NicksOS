@@ -49,6 +49,7 @@
     nixos/photoqt/default.nix
     nixos/prek/default.nix
     nixos/printing/default.nix
+    nixos/python/default.nix
     nixos/qalculate-qt/default.nix
     nixos/sound/default.nix
     nixos/sound-engineering/default.nix

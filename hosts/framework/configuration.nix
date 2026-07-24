@@ -196,6 +196,7 @@
     photoqt.enable = true;
     prek.enable = true;
     printing.enable = true;
+    python.enable = true;
     qalculate-qt.enable = true;
     sound.enable = true;
     sound-engineering.enable = true;
