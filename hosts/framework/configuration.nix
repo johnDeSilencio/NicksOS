@@ -184,7 +184,7 @@
     gimp.enable = true;
     git.enable = true;
     gnupg.enable = true;
-    jujutsu.enable = true;
+    jj.enable = true;
     keepassxc.enable = true;
     language-servers.enable = true;
     libreoffice.enable = true;
