@@ -25,6 +25,9 @@
         # WASM tools
         binaryen
 
+        # For sandboxing binaries
+        bubblewrap
+
         # For audio visualization on the command-line
         cava
 
