@@ -31,4 +31,4 @@
 
 [credential]
 	credentialStore = "gpg"
-	helper = "/run/current-system/sw/bin/git-credential-manager"
+	helper = /run/current-system/sw/bin/git-credential-manager
