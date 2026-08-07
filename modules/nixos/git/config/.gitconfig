@@ -31,3 +31,4 @@
 
 [credential]
 	credentialStore = "gpg"
+	helper = "git-credential-manager"
