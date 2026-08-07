@@ -28,3 +28,6 @@
 
 [diff]
 	colorMoved = default
+
+[credential]
+	credentialStore = "gpg"
