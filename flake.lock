@@ -283,11 +283,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1788286479,
-        "narHash": "sha256-qWe/uD9EMZKFs8INJfDyngkjZROC4XJQVFPa16jr2YI=",
+        "lastModified": 1788374184,
+        "narHash": "sha256-roADeqTtnH7g2ucddI93kI0aMSuHmLLd7GTwT55a6Xo=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "c1239d02e759673977de0389d3945c7c9adbc1ee",
+        "rev": "59177602ffd75d81e8995e0456057e2d086a01c8",
         "type": "github"
       },
       "original": {
@@ -571,11 +571,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1788316206,
-        "narHash": "sha256-pPdOt40y85Q4FMpPbz7KnOAdVEmELLuHcmkmYmQG7us=",
+        "lastModified": 1788405789,
+        "narHash": "sha256-QlzwYDrx9cev4aHAPi7ITRz/4AGpbSHHFUd4CCdYWEs=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "8554d6e815f55406d7fef62b4861547412a67807",
+        "rev": "d7c3e200ec32ec73d601fae71c144b22fb6aced0",
         "type": "github"
       },
       "original": {
@@ -633,11 +633,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1788187754,
-        "narHash": "sha256-bu1QxmXKmPuvBLN7bHP355OV9Qo13x9WCiRDH62CqRM=",
+        "lastModified": 1788297115,
+        "narHash": "sha256-Z+vUNbfd2FIKkWOTkcT7RYlh3oFCnig/d2eXD1SWf2E=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5dfba6236110080a54247d6460bc2ff5dda939cc",
+        "rev": "a3116115851d68b8952a2a4221cc25a84e56b532",
         "type": "github"
       },
       "original": {
@@ -836,11 +836,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788248235,
-        "narHash": "sha256-siCQqLbY7AbZ9V3oyc65K8bhNr7QgZTXoqLTws3pv0s=",
+        "lastModified": 1788332415,
+        "narHash": "sha256-BTFrmyh0oaVDsvA9NNw0YpbbeppTwU0t70iVx672Ew8=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "6a84c41e705533dcc5569ac0731f18406b4cdf86",
+        "rev": "860d7c835ab91bfc8972b67092f5f2db8e9390a0",
         "type": "github"
       },
       "original": {
@@ -946,11 +946,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788307763,
-        "narHash": "sha256-MSyKz6IQc9y6a9w+RilhVr5DCa7E9Qge+LLDorIOhHM=",
+        "lastModified": 1788391463,
+        "narHash": "sha256-+IUHBaB3kjiMhyvx67MAbl3ExZF+t74bHIEgSx1jsuk=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "edd5af9a8f878b5f5d1b1832a3279a753cda013c",
+        "rev": "ca46129547c3ffbf8e01cb6df09d2772c8b6e438",
         "type": "github"
       },
       "original": {
