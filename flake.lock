@@ -192,11 +192,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1787377438,
-        "narHash": "sha256-Sxu1NLTD/Ern6hFGLlZmtKCSct3YQXZI/lls8RE1XeM=",
+        "lastModified": 1788642154,
+        "narHash": "sha256-sPpQFVaFTDqO/4vvCAhuAhqTgqN/ygu+9eJcs5eB0js=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "65258d5c65a250189fde2e35f490d15e064c4c62",
+        "rev": "fd0956c99c41ae3c13a73a638f1f7e963aebc4ab",
         "type": "github"
       },
       "original": {
@@ -283,11 +283,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1788560231,
-        "narHash": "sha256-dOozE/csX3RzYkXZ8zZv6w6F0hknDZUc/FazWUNHwpY=",
+        "lastModified": 1788777480,
+        "narHash": "sha256-F33tKTtFrhst7rc5P20BkpgAJo4Qp3JQeyaHeVxZNJQ=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "ee0409623e2d6a683374b39a32e0ac3d087841aa",
+        "rev": "7ebf13abb3c391604c60c9f627c7a403bcec8d17",
         "type": "github"
       },
       "original": {
@@ -571,11 +571,11 @@
         "tree-sitter-rstml": "tree-sitter-rstml"
       },
       "locked": {
-        "lastModified": 1788582563,
-        "narHash": "sha256-eQQS7Xdbf6qVztP96f+Zw7PfwxkoTBMWui6Kg61JCYg=",
+        "lastModified": 1788835501,
+        "narHash": "sha256-H8SFn/7/N1Lz6J8VDqh+1Y8i5xkt1L+VZxKJJ1zyt0A=",
         "owner": "johnDeSilencio",
         "repo": "neovim",
-        "rev": "3ed44950af169d755117a96e07699d157d096a6e",
+        "rev": "67623322925601cf08f8cc158336f0766d18e9b1",
         "type": "github"
       },
       "original": {
@@ -617,11 +617,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1788404924,
-        "narHash": "sha256-lhEhY8X5EgkQ/eg6IFz4cc8jRuSYSvnxx1al7d1dvZ0=",
+        "lastModified": 1788752844,
+        "narHash": "sha256-VaWGJ6+cIYN2erfSecbRV+4ljI185Ty2wUrXyvQbgOw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0968519e14f7aa7d3e9b389682bd74d2b51c8ce8",
+        "rev": "dc5d91f840324650bac8c379428c7037a416959a",
         "type": "github"
       },
       "original": {
@@ -633,11 +633,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1788405554,
-        "narHash": "sha256-r2f1oUwixlgq9zOdYLqJLfS/lWBT60/IITjhTKI59JU=",
+        "lastModified": 1788690626,
+        "narHash": "sha256-+v4I4LawmRD/mVxO7QIAerRrCkElp3YImzWkkUnvOTg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a5cc6f2c37bf518436dc8d1c288ccd0c43c2f4c4",
+        "rev": "c25784012c9982bca5b3e0de87e90bbdac8927d3",
         "type": "github"
       },
       "original": {
@@ -696,11 +696,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1788423079,
-        "narHash": "sha256-6gnFLmJQzqXYh0xX/C9rO0Ed8ANnmeZZZYZIIL08/+E=",
+        "lastModified": 1788681688,
+        "narHash": "sha256-174JVVl8KKJnixuJrm3y2t5swuASbh6wcBM9S8mQuNk=",
         "owner": "openstenoproject",
         "repo": "plover-flake",
-        "rev": "458b7c7251e396bc0ecc0d4a48a8a8df70d9e22c",
+        "rev": "e79bd219af8e1cbb15a81a4c5a3781de372be8d3",
         "type": "github"
       },
       "original": {
@@ -836,11 +836,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788505699,
-        "narHash": "sha256-PSPDCdbEBEbSDCWcqv5GkbyD2ACQ9Diz6vmEbWdy4dM=",
+        "lastModified": 1788765185,
+        "narHash": "sha256-pp8lb5CrKjmscZbTK34HuCaq18zDU4Q6zlaD5dS+Hi4=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "9eccf73c5b810052f08aa77ae0548c383259f17f",
+        "rev": "ca7f624be3935a5bc46d2c240515491ab8675503",
         "type": "github"
       },
       "original": {
@@ -946,11 +946,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788558121,
-        "narHash": "sha256-81oGTbCgcfhXvfDYyIAsq4b0Z0T8Ulv6U/NKBgUJGMw=",
+        "lastModified": 1788816512,
+        "narHash": "sha256-vGCkXu+xVMDujoiVomLc3djqqP388TmoiiD9O+xFUsc=",
         "owner": "davidlattimore",
         "repo": "wild",
-        "rev": "671f0e49fc56105d2fbe51b4b77204403cf81708",
+        "rev": "3345b783261ed3c6e422632c19cb1a38e3d92fd4",
         "type": "github"
       },
       "original": {
