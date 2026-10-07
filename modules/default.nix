@@ -3,6 +3,7 @@
   imports = [
     home/anki/default.nix
     home/android-studio/default.nix
+    home/audacity/default.nix
     home/corectrl/default.nix
     home/firefox/default.nix
     home/gnome-calendar/default.nix

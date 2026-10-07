@@ -149,6 +149,7 @@
     home = {
       anki.enable = true;
       android-studio.enable = true;
+      audacity.enable = true;
       corectrl.enable = true;
       firefox.enable = true;
       gnome-calendar.enable = true;
