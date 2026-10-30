@@ -147,7 +147,7 @@
 
   custom = {
     home = {
-      anki.enable = true;
+      # anki.enable = true;
       android-studio.enable = true;
       audacity.enable = true;
       corectrl.enable = true;
