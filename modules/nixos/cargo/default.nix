@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  nixpkgs-unstable,
   ...
 }:
 {
@@ -19,35 +20,39 @@
       };
     };
 
-    environment.systemPackages = with pkgs; [
-      bugstalker
-      cargo-audit
-      cargo-auditable
-      cargo-binstall
-      cargo-crev
-      cargo-criterion
-      cargo-deny
-      cargo-edit
-      cargo-espmonitor
-      cargo-expand
-      cargo-flamegraph
-      cargo-generate
-      cargo-limit
-      cargo-machete
-      cargo-modules
-      cargo-msrv
-      cargo-nextest
-      cargo-release
-      cargo-semver-checks
-      cargo-show-asm
-      cargo-sort
-      cargo-sweep
-      cargo-tarpaulin
-      cargo-udeps
-      cargo-update
-      cargo-watch
-      espflash
-      trunk
-    ];
+    environment.systemPackages =
+      with pkgs;
+      [
+        bugstalker
+        cargo-audit
+        cargo-auditable
+        cargo-binstall
+        cargo-crev
+        cargo-criterion
+        cargo-deny
+        cargo-edit
+        cargo-espmonitor
+        cargo-expand
+        cargo-flamegraph
+        cargo-generate
+        cargo-limit
+        cargo-machete
+        cargo-modules
+        cargo-msrv
+        cargo-nextest
+        cargo-semver-checks
+        cargo-show-asm
+        cargo-sort
+        cargo-sweep
+        cargo-tarpaulin
+        cargo-udeps
+        cargo-update
+        cargo-watch
+        espflash
+        trunk
+      ]
+      ++ [
+        nixpkgs-unstable.cargo-release
+      ];
   };
 }
